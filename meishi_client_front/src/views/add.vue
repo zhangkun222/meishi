@@ -49,12 +49,11 @@
           >
           </el-option>
         </el-select>
-
       </div>
       <br />
       <textarea name="" id="cstory" cols="80" rows="20" v-model="data.pdesc">
-这道菜背后的故事</textarea
-      >
+        这道菜背后的故事
+      </textarea>
       <br />
       <!-- 食材清单 -->
       <div class="public">
@@ -80,8 +79,6 @@
               class="dosage"
               v-model="data.amountlist"
             />
-            <span>+</span>
-            <span>-</span>
           </div>
 
           <div>
@@ -97,8 +94,6 @@
               class="dosage"
               v-model="data.amountlist"
             />
-            <span>+</span>
-            <span>-</span>
           </div>
           <br />
           <div class="public" style="margin: 0 10px">增加一栏</div>
@@ -157,30 +152,38 @@
 export default {
   data() {
     return {
-       options: [{
-          value: '切墩(初级)',
-          label: '切墩(初级)'
-        }, {
-          value: '配菜(中级)',
-          label: '配菜(中级)'
-        }, {
-          value: '掌勺(高级)',
-          label: '掌勺(高级)'
-        }],
-        options1: [{
-          value: '10分钟左右',
-          label: '10分钟左右'
-        }, {
-          value: '10-30分钟',
-          label: '10-30分钟'
-        }, {
-          value: '30-60分钟',
-          label: '30-60分钟'
-        }
-        , {
-          value: '60分钟以上',
-          label: '60分钟以上'
-        }],
+      options: [
+        {
+          value: "切墩(初级)",
+          label: "切墩(初级)",
+        },
+        {
+          value: "配菜(中级)",
+          label: "配菜(中级)",
+        },
+        {
+          value: "掌勺(高级)",
+          label: "掌勺(高级)",
+        },
+      ],
+      options1: [
+        {
+          value: "10分钟左右",
+          label: "10分钟左右",
+        },
+        {
+          value: "10-30分钟",
+          label: "10-30分钟",
+        },
+        {
+          value: "30-60分钟",
+          label: "30-60分钟",
+        },
+        {
+          value: "60分钟以上",
+          label: "60分钟以上",
+        },
+      ],
       data: {
         uid: "1", //用户
         cover: "", //封面
@@ -221,7 +224,8 @@ export default {
       if (
         this.data.uid &&
         this.data.cover &&
-        this.data.title &&
+        !this.data.title=='食谱名称' &&
+        !this.data.degree=='烹饪难度'&&
         this.data.cooktime &&
         this.data.foodlist &&
         this.data.amountlist
@@ -236,6 +240,9 @@ export default {
             console.log(1);
             alert(res.data.msg);
           });
+      }
+      else{
+        alert('请输入正确内容及图片');
       }
     },
   },
