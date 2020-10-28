@@ -2100,3 +2100,19 @@ hostname: silaoshi
 2020-10-28 14:42:16,700 INFO 12900 [egg-watcher:application] watcher start success
 2020-10-28 14:42:16,713 INFO 12900 [egg-mysql] instance[0] status OK, rds currentTime: Wed Oct 28 2020 14:42:16 GMT+0800 (GMT+08:00)
 2020-10-28 14:42:16,740 INFO 12900 [egg:core] dump config after ready, 23ms
+2020-10-28 16:11:44,448 INFO 17564 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\farsight\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-10-28 16:11:44,506 INFO 17564 [egg-multipart] file mode enable
+2020-10-28 16:11:44,506 INFO 17564 [egg-multipart] will save temporary files to "C:\\Users\\farsight\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-10-28 16:11:44,507 INFO 17564 [egg-mysql] connecting root@localhost:3306/meals
+2020-10-28 16:11:47,027 INFO 17564 [egg-static] starting static serve /public/ -> C:\Users\farsight\Desktop\meishi\egg-mysql\app\public
+2020-10-28 16:11:47,061 INFO 17564 [egg-security] use methodnoallow middleware
+2020-10-28 16:11:47,063 INFO 17564 [egg-security] use noopen middleware
+2020-10-28 16:11:47,065 INFO 17564 [egg-security] use nosniff middleware
+2020-10-28 16:11:47,067 INFO 17564 [egg-security] use xssProtection middleware
+2020-10-28 16:11:47,072 INFO 17564 [egg-security] use xframe middleware
+2020-10-28 16:11:47,074 INFO 17564 [egg-security] use dta middleware
+2020-10-28 16:11:47,074 INFO 17564 [egg-security] compose 6 middlewares into one security middleware
+2020-10-28 16:11:47,117 INFO 17564 [egg:core] dump config after load, 14ms
+2020-10-28 16:11:47,236 INFO 17564 [egg-watcher:application] watcher start success
+2020-10-28 16:11:48,617 INFO 17564 [egg-mysql] instance[0] status OK, rds currentTime: Wed Oct 28 2020 16:11:48 GMT+0800 (GMT+08:00)
+2020-10-28 16:11:48,638 INFO 17564 [egg:core] dump config after ready, 17ms
