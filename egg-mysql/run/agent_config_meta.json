@@ -1,0 +1,315 @@
+{
+  "keys": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+  "middleware": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "ignoreJSON": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "type": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "useSession": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "cookieName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "sessionName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "headerName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "bodyName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "queryName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.local.js",
+      "maxAge": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "policy": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    }
+  },
+  "mysql": {
+    "client": {
+      "host": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "port": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "user": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "password": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "database": "D:\\vue\\2\\egg-mysql\\config\\config.default.js"
+    },
+    "default": {
+      "database": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+    },
+    "app": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+    "agent": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+  },
+  "cluster": {
+    "listen": {
+      "path": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "port": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+      "hostname": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+    "allowMethods": "D:\\vue\\2\\egg-mysql\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\vue\\2\\egg-mysql\\config\\config.default.js",
+    "autoFields": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fields": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "files": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "key": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "encrypt": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
+      "development": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js",
+      "file": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "fastReady": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideIgnore": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "cache": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "mapping": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
+  },
+  "env": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "name": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "cookies": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "proxy": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "ipHeaders": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "hostHeaders": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "version": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "description": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "private": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-cors": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mysql": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-scripts": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "autod-egg": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-bin": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-ci": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mock": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "eslint": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "stop": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "dev": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "debug": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "test": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "test-local": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "cov": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "lint": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "ci": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "autod": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "url": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "author": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "license": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "HOME": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "rundir": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "notFound": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "sitefile": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "middlewares": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "httpClient": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "encoding": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "formLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "jsonLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "textLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "strict": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "depth": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "parameterLimit": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "encoding": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "env": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "level": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "consoleLevel": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "outputJSON": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "buffer": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "appLogName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "coreLogName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "agentLogName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "errorLogName": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxSockets": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxSockets": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "logging": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "serverTimeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "clusterClient": {
+    "maxWaitTime": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "responseTimeout": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\vue\\2\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+}
