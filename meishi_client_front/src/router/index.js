@@ -9,6 +9,16 @@ const routes = [
     name: 'Add',
     component: ()=>import("@/views/add.vue")
   },
+  {
+    path: '/addainme',
+    name: 'Addainme',
+    component: ()=>import("@/views/addainme.vue")
+  },
+  {
+    path: '/anime_recipe',
+    name: 'Anime_recipe',
+    component: ()=>import("@/views/anime_recipe.vue")
+  },
 ]
 
 const router = new VueRouter({

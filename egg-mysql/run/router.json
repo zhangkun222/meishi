@@ -19,8 +19,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/getproduct",
-    "regexp": "/^\\/getproduct(?:\\/(?=$))?$/",
+    "path": "/getAnime",
+    "regexp": "/^\\/getAnime(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -33,6 +33,18 @@
     "paramNames": [],
     "path": "/publishMenu",
     "regexp": "/^\\/publishMenu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/publishAnime",
+    "regexp": "/^\\/publishAnime(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -57,6 +69,18 @@
     "paramNames": [],
     "path": "/uppro",
     "regexp": "/^\\/uppro(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/uploadimg",
+    "regexp": "/^\\/uploadimg(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

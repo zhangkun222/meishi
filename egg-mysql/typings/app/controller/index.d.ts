@@ -2,11 +2,13 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportFileUpload = require('../../../app/controller/fileUpload');
 import ExportTbshopgoods = require('../../../app/controller/tbshopgoods');
 import ExportTest = require('../../../app/controller/test');
 
 declare module 'egg' {
   interface IController {
+    fileUpload: ExportFileUpload;
     tbshopgoods: ExportTbshopgoods;
     test: ExportTest;
   }

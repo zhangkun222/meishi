@@ -5,7 +5,7 @@
       <div class="finished_img">
         <el-upload
           class="avatar-uploader"
-          action="https://www.mocky.io/v2/5185415ba171ea3a00704eed/posts/"
+          action="http://localhost:8000/uploadimg"
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
           :before-upload="beforeAvatarUpload"
@@ -112,7 +112,7 @@
             <el-upload
               class="avatar-uploader"
               id="up"
-              action="https://www.mocky.io/v2/5185415ba171ea3a00704eed/posts/"
+              action="http://localhost:8000/uploadimg"
               :show-file-list="false"
               :on-success="handleAvatarSuccess1"
               :before-upload="beforeAvatarUpload"
@@ -144,6 +144,7 @@
       </div>
 
       <div id="sm" @click="submit">提交</div>
+
     </div>
   </div>
 </template>
@@ -202,14 +203,10 @@ export default {
   },
   methods: {
     handleAvatarSuccess(res, file) {
-      console.log(file);
-
-      this.data.cover = URL.createObjectURL(file.raw);
-      console.log(this.data.cover);
+      this.data.cover = file.response.src;
     },
     handleAvatarSuccess1(res, file) {
-      this.data.stepsImg += URL.createObjectURL(file.raw);
-      console.log(this.stepsImg);
+      this.data.stepsImg +=  file.response.src;
     },
     beforeAvatarUpload(file) {
       const isLt2M = file.size / 1024 / 1024 < 8;

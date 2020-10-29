@@ -1,20 +1,13 @@
 const Service = require('egg').Service;
 
 class TbShopGoodsService extends Service {
-  async getproduct(pagenum,total,keyword) {
-	  
-	var sql="select * from shop_goods where status=0"
-	
-	if(keyword){
-		sql+=` and kw like '%${keyword}%'`
-	}
-	sql+=` limit ${(pagenum-1)*total},${total}`
-	
+//获取动漫菜谱
+  async getproduct() {
+	var sql="select * from anime where status=1"
 	var goods=await this.app.mysql.query(sql);
-	
 	return goods;
   }
-
+  	//添加菜谱
 	async addproduct(product){
 		console.log(product)
 		var sql=`INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('${product.title}','${product.degree}','${product.cooktime}','${product.taste}','${product.pdesc}','${product.foodlist}','${product.amountlist}','${product.steps}','${product.stepsImg}','${product.cover}','${product.tips}',${product.uid})`
@@ -36,7 +29,26 @@ class TbShopGoodsService extends Service {
 		}
 		return result;
 	}
-	
+  	//添加动漫菜谱
+	async publishAnime(product){
+		console.log(product)
+		var sql=`INSERT INTO anime(aname,cover,mid) VALUES('${product.aname}','${product.cover}',${product.mid})`
+		console.log(sql)
+		var result=await this.app.mysql.query(sql);
+		if(result.affectedRows){
+			result={
+				code:1,
+				msg:"提交成功",
+				id:result.insertId
+			}
+		}else{
+			result={
+				code:0,
+				msg:"提交失败"
+			}
+		}
+		return result;
+	}
 	async delproduct(id){
 		var sql=`update shop_goods set status=1 where id=${id}`
 		var result=await this.app.mysql.query(sql);

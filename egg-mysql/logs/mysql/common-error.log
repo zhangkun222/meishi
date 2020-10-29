@@ -2257,3 +2257,263 @@ name: "ER_DATA_TOO_LONGError"
 pid: 12900
 hostname: farsight-PC
 
+2020-10-28 18:40:58,652 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 18:48:01,838 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 18:49:11,199 ERROR 7372 [-/::1/-/597ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('333','undefined','undefined','undefined','undefined','undefined','undefined','undefined','undefined','http://localhost:8000/public/upload/7885dd6e-9df3-4f05-a6a8-d4b1513a313f.jpg','undefined',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('333','undefined','undefined','undefined','undefined','undefined','undefined','undefined','undefined','http://localhost:8000/public/upload/7885dd6e-9df3-4f05-a6a8-d4b1513a313f.jpg','undefined',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 7372
+hostname: farsight-PC
+
+2020-10-28 18:50:08,361 ERROR 7372 [-/::1/-/7ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('333','undefined','undefined','undefined','undefined','undefined','undefined','undefined','undefined','http://localhost:8000/public/upload/7885dd6e-9df3-4f05-a6a8-d4b1513a313f.jpg','undefined',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('333','undefined','undefined','undefined','undefined','undefined','undefined','undefined','undefined','http://localhost:8000/public/upload/7885dd6e-9df3-4f05-a6a8-d4b1513a313f.jpg','undefined',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 7372
+hostname: farsight-PC
+
+2020-10-28 18:50:20,232 ERROR 7372 [-/::1/-/35ms POST /publishAnime] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'title' in 'field list'
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO anime(title,cover,uid) VALUES('食谱名称df ','http://localhost:8000/public/upload/c43bb823-07a0-4e64-9494-81d1372d795d.jpg',1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'title' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO anime(title,cover,uid) VALUES('食谱名称df ','http://localhost:8000/public/upload/c43bb823-07a0-4e64-9494-81d1372d795d.jpg',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 7372
+hostname: farsight-PC
+
+2020-10-28 18:53:33,712 ERROR 23704 [-/::1/-/31ms POST /publishAnime] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'title' in 'field list'
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO anime(title,cover,mid) VALUES('食谱名称1','http://localhost:8000/public/upload/0aad5976-eeb3-49cc-8b72-180ca31c52ed.jpg',1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'title' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO anime(title,cover,mid) VALUES('食谱名称1','http://localhost:8000/public/upload/0aad5976-eeb3-49cc-8b72-180ca31c52ed.jpg',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 23704
+hostname: farsight-PC
+
+2020-10-28 18:54:56,157 ERROR 23704 [-/::1/-/19ms POST /publishAnime] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'title' in 'field list'
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO anime(title,cover,mid) VALUES('食谱名称','http://localhost:8000/public/upload/1c54a0bf-28a8-4152-8e03-dd9dac99cf5e.jpg',1)
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'title' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO anime(title,cover,mid) VALUES('食谱名称','http://localhost:8000/public/upload/1c54a0bf-28a8-4152-8e03-dd9dac99cf5e.jpg',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 23704
+hostname: farsight-PC
+
+2020-10-28 19:26:44,940 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:26:58,920 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:27:10,313 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:27:19,189 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:27:36,233 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:30:12,718 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:31:29,114 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
+2020-10-28 19:31:33,202 ERROR 17536 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17536
+hostname: farsight-PC
+
