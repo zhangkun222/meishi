@@ -1,11 +1,16 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div id="nav">
+      <div>
+        <router-link to="/Recipe">食谱页面</router-link>
+      </div>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
-*{
+* {
   margin: 0;
   padding: 0;
 }
