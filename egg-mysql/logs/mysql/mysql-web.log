@@ -2334,3 +2334,318 @@ name: "ER_BAD_FIELD_ERRORError"
 pid: 23704
 hostname: farsight-PC
 
+2020-10-29 16:50:47,578 ERROR 18820 [-/::1/-/44ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18820
+hostname: USER-20170826XD
+
+2020-10-29 16:51:18,683 ERROR 18820 [-/::1/-/4ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18820
+hostname: USER-20170826XD
+
+2020-10-29 16:51:42,312 ERROR 17596 [-/127.0.0.1/-/15ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"http://localhost","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17596
+hostname: USER-20170826XD
+
+2020-10-29 16:52:44,763 ERROR 17100 [-/127.0.0.1/-/40ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17100
+hostname: USER-20170826XD
+
+2020-10-29 16:52:53,524 ERROR 17100 [-/127.0.0.1/-/2ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17100
+hostname: USER-20170826XD
+
+2020-10-29 16:53:19,836 ERROR 17100 [-/127.0.0.1/-/3ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17100
+hostname: USER-20170826XD
+
+2020-10-29 16:53:56,483 ERROR 17100 [-/127.0.0.1/-/1ms POST /login?username=kk] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17100
+hostname: USER-20170826XD
+
+2020-10-29 16:54:11,194 ERROR 17100 [-/127.0.0.1/-/1ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17100
+hostname: USER-20170826XD
+
+2020-10-29 18:17:03,473 ERROR 17568 [-/::1/-/66ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17568
+hostname: USER-20170826XD
+
+2020-10-29 18:18:05,921 ERROR 9920 [-/::1/-/78ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9920
+hostname: USER-20170826XD
+
+2020-10-29 18:20:33,378 ERROR 220 [-/::1/-/27ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 220
+hostname: USER-20170826XD
+
+2020-10-29 18:21:46,914 ERROR 15864 [-/::1/-/35ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15864
+hostname: USER-20170826XD
+
+2020-10-29 18:24:41,735 ERROR 10916 [-/::1/-/26ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 10916
+hostname: USER-20170826XD
+
+2020-10-29 18:26:58,024 ERROR 15620 [-/::1/-/24ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15620
+hostname: USER-20170826XD
+
+2020-10-29 18:29:21,501 ERROR 12092 [-/::1/-/34ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12092
+hostname: USER-20170826XD
+
+2020-10-29 18:31:37,719 ERROR 12092 [-/::1/-/20722ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12092
+hostname: USER-20170826XD
+
+2020-10-29 18:31:37,758 ERROR 12092 [-/::1/-/4ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12092
+hostname: USER-20170826XD
+
+2020-10-29 18:33:52,863 ERROR 12092 [-/::1/-/5447ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:41)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12092
+hostname: USER-20170826XD
+
+2020-10-29 18:34:40,751 ERROR 18752 [-/::1/-/45ms POST /login] nodejs.TypeError: Cannot read property 'username' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:63)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 18752
+hostname: USER-20170826XD
+
+2020-10-29 18:35:06,221 ERROR 17728 [-/::1/-/27ms POST /login] nodejs.TypeError: Cannot read property 'username' of undefined
+    at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:13:63)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 17728
+hostname: USER-20170826XD
+
+2020-10-29 19:50:20,075 ERROR 12128 [-/::1/-/39ms POST /reg] nodejs.ReferenceError: ctx is not defined
+    at TbShopGoodsService.reg (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\service\tbshopgoods.js:20:106)
+    at TbShopGoodsController.reg (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:25:54)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 12128
+hostname: USER-20170826XD
+

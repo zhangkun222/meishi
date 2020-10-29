@@ -165,6 +165,7 @@
       }
     },
     "cors": {
+      "credentials": true,
       "origin": "*",
       "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
     },
@@ -314,7 +315,7 @@
     "cluster": {
       "listen": {
         "path": "",
-        "port": 8000,
+        "port": 83,
         "hostname": ""
       }
     },

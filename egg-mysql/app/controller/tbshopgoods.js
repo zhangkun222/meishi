@@ -5,25 +5,46 @@
 const Controller = require('egg').Controller;
 
 class TbShopGoodsController extends Controller {
+  
+  async getAllMenu() {
+    const { ctx } = this;
+	  ctx.body=await this.ctx.service.tbshopgoods.getAllMenu();
+  }
+
+  async reg() {
+    const { ctx } = this;
+    let regdata=ctx.request.body;
+    console.log(789789);
+    console.log(regdata);
+    let data = { code: 1, msg: '注册成功!去登录吧' };
+    let result = await ctx.service.tbshopgoods.regfindName(regdata.username);
+    if(result.regcode!=-1){
+      console.log(result.regcode);
+      data = { code: -1, msg: '该用户名已存在，请重新输入' };
+    }else{
+      let results=await this.ctx.service.tbshopgoods.reg(regdata);
+      console.log(123);
+      console.log(results);
+    }
+	  ctx.body=data;
+  }
 
   async login() {
     const { ctx, app } = this;
-    // 接收客户端提交上来的数据
     let formData = ctx.request.body;
-    console.log(formData);
-    // 需要去数据验证信息的正确性
-    let result = await ctx.service.user.login(formData.username);
+    // console.log(formData);
+    let result = await ctx.service.tbshopgoods.login(formData.username);
     console.log(result);
-    let data = { code: 1, Msg: '登录成功' };
+    let data = { code: 1, msg: '登录成功' };
     if (!result) {
-      data = { code: -1, Msg: '账号不存在' };
+      data = { code: -1, msg: '账号不存在' };
     } else if (result.passwd != formData.passwd) {
-      data = { code: 0, Msg: '密码错误' };
+      data = { code: 0, msg: '密码错误' };
     } else {
       // 表示登录成功 
-      ctx.service.user.updateLogin(result.uid);
-      ctx.body = data;
+      ctx.service.tbshopgoods.updateLogin(result.uid);
     }
+    ctx.body = data;
   }
 
   async getproduct(data) {

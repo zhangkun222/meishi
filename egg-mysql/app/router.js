@@ -16,6 +16,9 @@ module.exports = app => {
  //添加食谱
   router.post("/publishMenu",controller.tbshopgoods.addproduct);
 
+ //获取食谱
+  router.post("/getAllMenu",controller.tbshopgoods.getAllMenu);
+
  //添加漫画食谱
   router.post("/publishAnime",controller.tbshopgoods.publishAnime)
 
@@ -30,6 +33,9 @@ module.exports = app => {
   
   //登录
   router.post("/login",controller.tbshopgoods.login)
+
+  //注册
+  router.post("/reg",controller.tbshopgoods.reg)
 
 
 	router.post("/delpro",controller.tbshopgoods.delproduct)

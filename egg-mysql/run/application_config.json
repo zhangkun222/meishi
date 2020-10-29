@@ -196,7 +196,8 @@
     },
     "cors": {
       "origin": "*",
-      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH",
+      "credentials": true
     },
     "env": "local",
     "name": "mysql",

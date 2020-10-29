@@ -19,6 +19,10 @@ const routes = [
     name: 'Anime_recipe',
     component: ()=>import("@/views/anime_recipe.vue")
   },
+  {
+    path: '/login',
+    component: ()=>import("@/views/Login.vue")
+  },
 ]
 
 const router = new VueRouter({

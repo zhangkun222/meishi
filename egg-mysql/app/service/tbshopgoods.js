@@ -2,8 +2,27 @@ const Service = require('egg').Service;
 
 class TbShopGoodsService extends Service {
 	
+	
+	async getAllMenu() {
+		let sql = "select * from recipe where status=1"
+		let goods = await this.app.mysql.query(sql);
+		return goods;
+	}
+
+	async regfindName(data) {
+		let sql = `select * from user where username='${data.username}' and status=1`
+		let result = await this.app.mysql.query(sql);
+		result.regcode=-1;
+		return result;
+	}
+
+	async reg(data) {
+		let sql = `insert into user(username,passwd,ip,addtimes) values('${data.username}','${data.passwd}','${ctx.request.ip}',NOW())`
+		let result = await this.app.mysql.query(sql);
+		return result;
+	}
+
 	async login(username) {
-		//   是可以直接执行SQL语句的
 		const userData = await this.app.mysql.get('user', { username });
 		return userData;
 	  }

@@ -43,6 +43,18 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/getAllMenu",
+    "regexp": "/^\\/getAllMenu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/publishAnime",
     "regexp": "/^\\/publishAnime(?:\\/(?=$))?$/",
     "stack": [
@@ -93,6 +105,18 @@
     "paramNames": [],
     "path": "/login",
     "regexp": "/^\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/reg",
+    "regexp": "/^\\/reg(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
