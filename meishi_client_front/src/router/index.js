@@ -12,24 +12,22 @@ const routes = [
   },
   {
     path: '/Recipe',
+    redirect:"/Recipe/recipe_desc",
+    // component: () => import('@/components/recipe/recipe_desc.vue')
+    component: recipeDesc,
+  },
+  {
+    path: '/Recipe',
     component: () => import('@/views/Recipe.vue')
   },
   {
     path: '/Recipe/recipe_desc',
     component: () => import('@/components/recipe/recipe_desc.vue')
   },
-  {
-    path: '/Recipe',
-    redirect:"/Recipe/recipe_desc",
-    // component: () => import('@/components/recipe/recipe_desc.vue')
-    component: recipeDesc
-  },
 ]
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
-
 export default router
