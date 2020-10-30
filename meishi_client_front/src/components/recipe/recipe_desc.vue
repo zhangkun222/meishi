@@ -157,7 +157,7 @@
           <div class="recipe_desc_right">
             <div class="recipe-right">
               <!-- 点击跳转到商城 -->
-              <div class="shop-top">
+              <div class="shop-top" @click="jumpShop">
                 <img
                   src="https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652"
                   alt=""
@@ -166,7 +166,7 @@
               <div class="pageview_top">
                 <div class="hot-search">热门搜索</div>
                 <div class="msgall">
-                  <div class="msg" v-for="(items, i) in recipehot" :key="i">
+                  <div class="msg" v-for="(items, i) in recipehot" :key="i" @click="jumpanywhere">
                     <img :src="items.recipecover" alt="" />
                     <div class="title">{{ items.title }}</div>
                     <div class="desc">{{ items.desc }}</div>
@@ -324,7 +324,10 @@ export default {
 
     };
   },
-  created() {},
+  
+  created() {
+    console.log(this);
+  },
   methods: {
     sendcomment() {
       this.sendmsg.commentcontent = "11111111111111";
@@ -333,7 +336,39 @@ export default {
     // 收藏
     like(e){
          e.target.classList.toggle('el-icon-star-on');
-    }
+    },
+    // 跳转至商城
+    jumpShop(){
+      this.$router.push("/shop");
+    },
+    // 热门内容跳转传值
+    jumpanywhere(){
+       console.log(this.$router.push("/Recipe/recipe_desc?kw=1"));
+    },
+     watch: {
+    //1、 路由传参方式一query，路由地址上拼接参数字段及参数值
+    // "$route.query.kw"() {
+    //   // 路由切换不在创造时，监听路由参数的改变来获取参数
+    //   console.log(this.$route.query.kw);
+    //   this.shopping = this.$route.query.kw;
+    // },
+    //2、 路由传参方式二params
+    "$route.params.wd"() {
+      console.log(this.$route.params.wd);
+      this.shopping = this.$route.params.wd;
+      console.log(this.$route);
+    },
+  },
+  created() {
+    // 路由传参方式一query，路由地址上拼接参数字段及参数值
+    //组件初始化获取导航参数
+    // console.log(this.$route.query.kw);
+    // this.shopping=this.$route.query.kw
+
+    //2、 路由传参方式二params
+    this.shopping = this.$route.params.wd;
+    // console.log(this.$route);
+  },
   },
 };
 </script>

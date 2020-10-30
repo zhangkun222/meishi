@@ -197,20 +197,20 @@ export default {
     changeList(e) {
       console.log(e.target.innerHTML);
       switch (e.target.innerHTML.trim()) {
-        case "1":
-          this.pagenum = 1;
+        case e.target.innerHTML.trim():
+          this.pagenum =e.target.innerHTML;
           break;
-        case "2":
-          this.pagenum = 2;
+        case e.target.innerHTML.trim():
+          this.pagenum = e.target.innerHTML;
           break;
-        case "3":
-          this.pagenum = 3;
+        case e.target.innerHTML.trim():
+          this.pagenum = e.target.innerHTML;
           break;
-        case "4":
-          this.pagenum = 4;
+        case e.target.innerHTML.trim():
+          this.pagenum = e.target.innerHTML;
           break;
-        case "5":
-          this.pagenum = 5;
+        case e.target.innerHTML.trim():
+          this.pagenum = e.target.innerHTML;
           break;
       }
     },

@@ -8,22 +8,25 @@ const routes = [
   {
     path: '/add',
     name: 'Add',
-    component: ()=>import("@/views/add.vue")
+    component: () => import("@/views/add.vue")
   },
+  // {
+  //   path: '/',
+  //   redirect: "/Recipe/recipe_desc",
+  //   // component: () => import('@/components/recipe/recipe_desc.vue')
+  //   component: recipeDesc,
+  // },
   {
     path: '/Recipe',
-    redirect:"/Recipe/recipe_desc",
-    // component: () => import('@/components/recipe/recipe_desc.vue')
-    component: recipeDesc,
+    component: () => import('@/views/Recipe.vue'),
+    children: [
+      {
+        path: 'recipe_desc',
+        component: () => import('@/components/recipe/recipe_desc.vue')
+      },
+    ],
   },
-  {
-    path: '/Recipe',
-    component: () => import('@/views/Recipe.vue')
-  },
-  {
-    path: '/Recipe/recipe_desc',
-    component: () => import('@/components/recipe/recipe_desc.vue')
-  },
+
 ]
 const router = new VueRouter({
   mode: 'history',
