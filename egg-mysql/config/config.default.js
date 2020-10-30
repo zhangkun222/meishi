@@ -25,8 +25,6 @@ module.exports = appInfo => {
 		}
 	}
 
-
-
 	config.mysql = {
 		client: {
 			host: "localhost",
@@ -51,15 +49,15 @@ module.exports = appInfo => {
 	//plugin.js  里做配置
 	// 跨域的配置
 	config.cors = {
-	  // origin: 'http://localhost'
-	  // ,allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
-	  // // 允许跨域携带凭证
-	  // ,credentials: true
+	//   origin: 'http://localhost',
+	//   ,allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+	//   // // 允许跨域携带凭证
+	//   ,credentials: true,
 	  
-	  origin: '*'
-	  ,allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+	  origin: '*',
+	  allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
 	  // 允许跨域携带凭证
-	  // ,credentials: true
+	  ,credentials: true
 	};
 	
 	

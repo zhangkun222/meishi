@@ -4,16 +4,16 @@
       <div class="recipe-desc">
         <div class="top-title">
           <span class="title-back">食谱</span> ·
-          <span class="menu-title">蒜蓉粉丝蒸龙利鱼</span>
+          <span class="menu-title">{{ codesc.title }}</span>
         </div>
         <div class="recipecontent">
           <!-- 左边信息 -->
           <div class="recipe_desc_left">
             <div class="coverimg">
-              <img :src="cover[0]" alt="" />
+              <img :src="codesc.cover" alt="" />
             </div>
             <div class="title">
-              <div>蒜蓉粉丝蒸龙利鱼</div>
+              <div>{{ codesc.title }}</div>
             </div>
             <!-- tag 时间 口味 -->
             <div class="desc-option">
@@ -21,16 +21,16 @@
                 <ul>
                   <li class="tag">
                     <img src="@/assets/img/eattag.png" alt="" />
-                    <div>普通</div>
+                    <div>{{ codesc.degree }}</div>
                   </li>
                   <li class="time">
                     <img src="@/assets/img/time.png" alt="" />
-                    <div>300分钟</div>
+                    <div>{{ codesc.cooktime }}</div>
                   </li>
 
                   <li class="taste">
                     <img src="@/assets/img/taste.png" alt="" />
-                    <div>咸鲜鲜嫩</div>
+                    <div>{{ codesc.taste }}</div>
                   </li>
                 </ul>
               </div>
@@ -58,15 +58,12 @@
             <div class="auther_desc">
               <!-- 头像昵称 -->
               <div class="auther_head">
-                <img :src="head[0]" alt="" />
-                <span>2345678</span>
+                <img :src="codesc.cover" alt="" />
+                <span>{{ codesc.author }}</span>
               </div>
               <!-- 简介 -->
               <div class="desc">
-                龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，
-                经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，
-                适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，
-                味道又鲜又嫩，营养成分还不流失，老少皆宜！
+                {{ codesc.pdesc }}
               </div>
             </div>
             <!-- 食材清单 -->
@@ -79,7 +76,7 @@
                     v-for="(items, index) in foodmany"
                     :key="index"
                   >
-                    <div class="food">{{ items.food }}</div>
+                    <div class="food">{{ items.foodlist }}</div>
                     <div class="many">{{ items.many }}</div>
                   </li>
                 </ul>
@@ -89,13 +86,13 @@
             <div class="food_step">
               <div class="step-title">制作步骤</div>
               <div class="step-every">
-                <ul v-for="(stepitem, index) in step" :key="index">
+                <ul v-for="(stepitem, index) in steps" :key="index">
                   <li class="steps">
                     <!-- 步骤几 -->
                     <div class="stepnum">{{ stepitem.stepnum }}</div>
                     <!-- 步骤说明 -->
                     <div class="explain">
-                      {{ stepitem.explain }}
+                      {{ stepitem.stepcontent }}
                     </div>
                   </li>
                   <li>
@@ -108,12 +105,8 @@
             <div class="small_tips">
               <div class="tips">小贴士</div>
               <div></div>
-              <span
-                class="tips_num"
-                v-for="(tipsitems, index) in tips"
-                :key="index"
-              >
-                {{ tipsitems }}
+              <span class="tips_num">
+                {{ codesc.tips }}
               </span>
             </div>
             <!-- 评论 -->
@@ -130,8 +123,8 @@
                 ></textarea>
                 <button type="button" @click="sendcomment">发布评论</button>
               </div>
-              <input type="text" v-model="commentcon">
-              <div>{{commentcon}}</div>
+              <input type="text" v-model="commentcon" />
+              <div>{{ commentcon }}</div>
               <div>{{ comment }}</div>
               <div class="com" v-for="(items, index) in user" :key="index">
                 <div class="user-comment">
@@ -144,7 +137,7 @@
                       <!-- 作者昵称 -->
                       <div class="usern">{{ items.commentname }}</div>
                       <!-- 回复时间 -->
-                      <div class="times">{{items.addtime  }}</div>
+                      <div class="times">{{ items.addtime }}</div>
                     </div>
                     <div class="reply">回复</div>
                   </div>
@@ -207,43 +200,17 @@ export default {
         { food: "fre", many: "400克" },
         { food: "rgrt", many: "400克" },
       ],
+      // 食谱页面跳转过来对应的信息
+      codesc: {},
+      // 食谱信息
+      recipemsg: [],
       // 步骤
-      step: [
-        {
-          stepnum: "步骤一",
-          explain: `
-           将粉丝放入容器中，加入热水浸泡变软。
-          `,
-          img: `https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191008/jBRE4BFCAn.jpg?x-oss-process=image/crop,x_9,y_9,w_2820,h_1880`,
-        },
-        {
-          stepnum: "步骤二",
-          explain: `
-           将粉丝放入容器中，加入热水浸泡变软。
-          `,
-          img: `https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191008/jBRE4BFCAn.jpg?x-oss-process=image/crop,x_9,y_9,w_2820,h_1880`,
-        },
-        {
-          stepnum: "步骤三",
-          explain: `
-           将粉丝放入容器中，加入热水浸泡变软。
-          `,
-          img: `https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191008/jBRE4BFCAn.jpg?x-oss-process=image/crop,x_9,y_9,w_2820,h_1880`,
-        },
-        {
-          stepnum: "步骤四",
-          explain: `
-           将粉丝放入容器中，加入热水浸泡变软。
-          `,
-          img: `https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191008/jBRE4BFCAn.jpg?x-oss-process=image/crop,x_9,y_9,w_2820,h_1880`,
-        },
-      ],
-      head: [
-        `http://app-file.beitaichufang.com/img/EE11CBB19052E40B07AAC0CA060C23EE/20171023/1508763274245_267X356.jpg?x-oss-process=image/crop,x_0,y_23,w_266,h_266`,
-      ],
-      cover: [
-        `https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191008/rYnKJFSKWR.jpg?x-oss-process=image/crop,x_9,y_9,w_2820,h_1880`,
-      ],
+      steps: [],
+      step: {
+        stepnum: "",
+        stepcontent: "",
+        cover: "",
+      },
       tips: [
         `
          1.鱼类蒸煮时间不必太久，以免口感过于老了。
@@ -259,21 +226,21 @@ export default {
           commentimghead:
             "https://app-file.beitaichufang.com/img/EE11CBB19052E40B07AAC0CA060C23EE/20200825/1598355946892_738X738.jpeg",
           commentcontent: "哈哈哈哈哈哈哈哈哈哈",
-          addtime:"Fri Oct 30 2020 11:20:09 GMT+0800 (中国标准时间)"
+          addtime: "Fri Oct 30 2020 11:20:09 GMT+0800 (中国标准时间)",
         },
         {
           commentname: "kwang",
           commentimghead:
             "https://app-file.beitaichufang.com/img/EE11CBB19052E40B07AAC0CA060C23EE/20200825/1598355946892_738X738.jpeg",
           commentcontent: "sdfhtyuk64y532refgdfbc哈哈哈哈",
-          addtime:"Fri Oct 30 2020 11:20:09 GMT+0800 (中国标准时间)"
+          addtime: "Fri Oct 30 2020 11:20:09 GMT+0800 (中国标准时间)",
         },
         {
           commentname: "kwang",
           commentimghead:
             "https://app-file.beitaichufang.com/img/EE11CBB19052E40B07AAC0CA060C23EE/20200825/1598355946892_738X738.jpeg",
           commentcontent: "这里萨尔为23456789o78ikyhjmnbgvf哈哈哈",
-          addtime:"20:20:55"
+          addtime: "20:20:55",
         },
       ],
       sendmsg: {
@@ -330,7 +297,7 @@ export default {
       ],
       // 热门Tag
       hotTags: ["火锅", "土豆", "川菜", "串", "火锅"],
-      commentcon:"",
+      commentcon: "",
     };
   },
   methods: {
@@ -348,12 +315,43 @@ export default {
       this.$router.push("/shop");
     },
     // 热门内容跳转传值
-    jumpanywhere() {
-      // console.log(this.$router.push("/Recipe/recipe_desc?kw=1"));
+    jumpanywhere() {},
+  },
+  watch: {
+    "$route.query.rid"() {
+      console.log(this.$route.query.rid);
+      this.recipemsg = this.$route.query.query;
     },
-    created() {
-     console.log(this);
-    },
+  },
+  created() {
+    console.log(this.$route.query.rid);
+    this.codesc.aid = this.$route.query.rid;
+    this.$http
+      .post(`/getAllMenu`)
+      // recipe+'?rid='+item.rid
+      .then((response) => {
+        this.recipemsg = response.data;
+        this.recipemsg.forEach((recipe) => {
+          if (recipe.rid == this.$route.query.rid) {
+            this.codesc = recipe;
+            this.codesc.steps = recipe.steps;
+            console.log(this.codesc.steps);
+            // let step = recipe.steps.split(",").forEach((step) => {
+            //   console.log(step);
+            //   arr.push({});
+            //   // 步骤几
+            //   let stepnum = step.split(",")[0].slice(0, 3);
+            //   // 步骤内容
+            //   let stepcontent = step.split(",")[0].slice(4);
+            //   this.step.stepnum = stepnum;
+            //   this.step.stepcontent = stepcontent;
+            // });
+          }
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>

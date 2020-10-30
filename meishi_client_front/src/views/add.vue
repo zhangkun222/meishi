@@ -1,11 +1,11 @@
 <template>
-  <div class="created">
+  <div class="created" style="background-image: url('http://localhost:8000/public/bg/hehua.jpg')">
     <div class="centent">
       <!-- 添加菜谱成品图 -->
       <div class="finished_img">
         <el-upload
           class="avatar-uploader"
-          action="https://www.mocky.io/v2/5185415ba171ea3a00704eed/posts/"
+          action="http://localhost:8000/uploadimg"
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
           :before-upload="beforeAvatarUpload"
@@ -25,7 +25,12 @@
       </div>
       <br />
       <!-- 添加菜谱名称 -->
-      <input type="text" value="菜谱名称" id="cname" v-model="data.title" />
+      <input
+        type="text"
+        value="菜谱名称"
+        id="cname"
+        v-model.trim="data.title"
+      />
       <br />
       <div class="public">
         <!-- 烹饪难度 -->
@@ -63,10 +68,10 @@
         <div>
           <div class="public">
             <span style="margin: 0 10px">食材</span>
-            <span style="margin: 0 0 0 335px">用量</span>
+            <span style="margin: 0 0 0 335px"> 用量</span>
           </div>
 
-          <div>
+          <div v-for="(i, j) in shicai" :key="j">
             <input
               type="text"
               value="如:五花肉"
@@ -79,68 +84,61 @@
               class="dosage"
               v-model="data.amountlist"
             />
+            <br />
           </div>
 
-          <div>
-            <input
-              type="text"
-              value="如:五花肉"
-              class="food_m"
-              v-model="data.foodlist"
-            />
-            <input
-              type="text"
-              value="如:500g"
-              class="dosage"
-              v-model="data.amountlist"
-            />
-          </div>
           <br />
-          <div class="public" style="margin: 0 10px">增加一栏</div>
+          <div class="public" style="margin: 0 10px" @click="addshicai">
+            增加一栏
+          </div>
           <br />
         </div>
       </div>
       <!-- 步骤 -->
       <div class="Step">
-        <div class="public">
-          <span style="font-size: 20px; margin: 0 10px">步骤</span>
-          <span>（支持上传图片格式有jpg、jpeg、png、gif、webp）</span>
-        </div>
-        <!-- 添加步骤图 -->
-        <div class="Step_i_d">
-          <div class="Step_img">
-            <el-upload
-              class="avatar-uploader"
-              id="up"
-              action="https://www.mocky.io/v2/5185415ba171ea3a00704eed/posts/"
-              :show-file-list="false"
-              :on-success="handleAvatarSuccess1"
-              :before-upload="beforeAvatarUpload"
-            >
-              <img
-                v-if="data.stepsImg"
-                :src="data.stepsImg"
-                class="avatar"
-                style="width: 224px; height: 224px"
-              />
-              <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-            </el-upload>
+        <div v-for="(i, j) in imgs" :key="j">
+          <div class="public">
+            <span style="font-size: 20px; margin: 0 10px">步骤</span>
+            <span>（支持上传图片格式有jpg、jpeg、png、gif、webp）</span>
           </div>
-          <textarea
-            name=""
-            id=""
-            class="bz_desc"
-            v-model="data.steps"
-          ></textarea>
+          <!-- 添加步骤图 -->
+          <div class="Step_i_d">
+            <div class="Step_img">
+              <el-upload
+                class="avatar-uploader"
+                id="up"
+                action="http://localhost:8000/uploadimg"
+                :show-file-list="false"
+                :on-success="handleAvatarSuccess1"
+                :before-upload="beforeAvatarUpload"
+              >
+                <img
+                  v-if="data.stepsImg"
+                  :src="data.stepsImg"
+                  class="avatar"
+                  style="width: 224px; height: 224px"
+                />
+                <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+              </el-upload>
+            </div>
+            <textarea
+              name=""
+              id=""
+              class="bz_desc"
+              v-model.trim="data.steps"
+              @click="add"
+            ></textarea>
+          </div>
+          <br />
         </div>
-        <br />
-        <div class="public" style="margin: 0 10px">增加一栏</div>
-        <br />
+          <div class="public" style="margin: 0 10px" @click="add">增加一栏</div>
+          <br />
       </div>
+
       <!-- 小贴士 -->
       <div class="public">
         <div style="font-size: 20px">小贴士</div>
-        <textarea name="" id="xiaotieshi" v-model="data.tips"></textarea>
+        <textarea name="" id="xiaotieshi" v-model.trim="data.tips"></textarea>
       </div>
 
       <div id="sm" @click="submit">提交</div>
@@ -184,6 +182,8 @@ export default {
           label: "60分钟以上",
         },
       ],
+      imgs: [1],
+      shicai: [1],
       data: {
         uid: "1", //用户
         cover: "", //封面
@@ -201,18 +201,33 @@ export default {
     };
   },
   methods: {
+    addshicai() {
+      this.shicai.push(1);
+    },
+    add() {
+      this.imgs.push(1);
+    },
     handleAvatarSuccess(res, file) {
-      console.log(file);
-
-      this.data.cover = URL.createObjectURL(file.raw);
+      this.data.cover = file.response.src;
       console.log(this.data.cover);
     },
     handleAvatarSuccess1(res, file) {
-      this.data.stepsImg += URL.createObjectURL(file.raw);
-      console.log(this.stepsImg);
+      this.data.stepsImg += file.response.src;
+    },
+    handleAvatarSuccess2(res, file) {
+      this.data.stepsImg += file.response.src;
+    },
+    handleAvatarSuccess3(res, file) {
+      this.data.stepsImg += file.response.src;
+    },
+    handleAvatarSuccess4(res, file) {
+      this.data.stepsImg += file.response.src;
+    },
+    handleAvatarSuccess5(res, file) {
+      this.data.stepsImg += file.response.src;
     },
     beforeAvatarUpload(file) {
-      const isLt2M = file.size / 1024 / 1024 < 8;
+      const isLt2M = file.size / 1024 / 1024 < 5;
 
       if (!isLt2M) {
         this.$message.error("上传图片大小不能超过 5MB!");
@@ -220,17 +235,20 @@ export default {
       return isLt2M;
     },
     submit() {
+      if (this.data.tips == "小贴士") {
+        this.data.tips = "";
+      }
+      if (this.data.pdesc == "这道菜背后的故事") {
+        this.data.pdesc = "";
+      }
       console.log(this.data);
       if (
         this.data.uid &&
         this.data.cover &&
-        !this.data.title=='食谱名称' &&
-        !this.data.degree=='烹饪难度'&&
         this.data.cooktime &&
         this.data.foodlist &&
         this.data.amountlist
       ) {
-        console.log(1);
         let data = this.data;
         this.$http
           .post(`/publishMenu`, {
@@ -239,10 +257,10 @@ export default {
           .then((res) => {
             console.log(1);
             alert(res.data.msg);
+            window.location.reload();
           });
-      }
-      else{
-        alert('请输入正确内容及图片');
+      } else {
+        alert("请输入正确内容及图片");
       }
     },
   },
@@ -251,6 +269,7 @@ export default {
 
 <style lang="scss">
 //ui
+
 .avatar-uploader .el-upload {
   width: 690px;
   height: 390px;
@@ -284,11 +303,10 @@ export default {
 }
 
 .created {
-  background: rgb(63, 180, 206);
+ 
 
   .centent {
     width: 1000px;
-    height: 2000px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;

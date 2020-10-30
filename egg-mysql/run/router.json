@@ -6,21 +6,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/test",
-    "regexp": "/^\\/test(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/getproduct",
-    "regexp": "/^\\/getproduct(?:\\/(?=$))?$/",
+    "path": "/getAnime",
+    "regexp": "/^\\/getAnime(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -43,8 +30,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/delpro",
-    "regexp": "/^\\/delpro(?:\\/(?=$))?$/",
+    "path": "/getAllMenu",
+    "regexp": "/^\\/getAllMenu(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -55,8 +42,80 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/uppro",
-    "regexp": "/^\\/uppro(?:\\/(?=$))?$/",
+    "path": "/publishAnime",
+    "regexp": "/^\\/publishAnime(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/updateMenu",
+    "regexp": "/^\\/updateMenu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/deleteMenu",
+    "regexp": "/^\\/deleteMenu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/comment",
+    "regexp": "/^\\/comment(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/login",
+    "regexp": "/^\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/reg",
+    "regexp": "/^\\/reg(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/uploadimg",
+    "regexp": "/^\\/uploadimg(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

@@ -9,9 +9,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 // 引入axios使用
 import axios from "axios"
-Vue.prototype.$http=axios;
-// 通过this.$http可获取
-
 // 公共的底部
 import footerNav from "@/components/public/footer-nav.vue"
 Vue.component("footer-nav",footerNav);

@@ -5,78 +5,38 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  
-  //演示MVVM 案例新开的接口
-  router.get('/test', controller.test.index);
-  
-  //商品分页查询+按关键词查询
-  /*
-  {
-	  name:"/getproduct",
-	  type:"get"
-	  data:{
-		  pagenum:2,
-		  total:20,
-		  keyword:""
-	  },
-	  res:{
-		  proArr:[{id,kw,c1,c2,c3}]
-	  }
-  }
-  */
  
-  router.get("/getproduct",controller.tbshopgoods.getproduct);
+ //获取漫画食谱
+  router.get("/getAnime",controller.recipe.getproduct);
+
+ //添加食谱
+  router.post("/publishMenu",controller.recipe.addproduct);
+
+ //获取食谱
+  router.post("/getAllMenu",controller.recipe.getAllMenu);
+
+ //添加漫画食谱
+  router.post("/publishAnime",controller.recipe.publishAnime)
+
+  //修改食谱
+  router.post("/updateMenu",controller.recipe.updateMenu)
+
+  //删除食谱
+  router.post("/deleteMenu",controller.recipe.deleteMenu)
+
+  //添加评论
+  router.post("/comment",controller.comments.comment)
   
+  //登录
+  router.post("/login",controller.reglogin.userlogin)
+
+  //注册
+  router.post("/reg",controller.reglogin.reg)
   
-  //新增产品的接口
-//   {
-// 		name:"/addpro",
-// 		type:"post",
-// 		data:{
-//			product:{
-			// 			kw:"",//必填
-			// 			c1:"",//必填
-			// 			c2:"",
-			// 			c3:""
-			//}	
-// 		},
-// 		res:{
-// 			code:1
-// 			msg:"提交成功”,
-//			id：200010//插入成功的id号
-// 		
-// 	}
-
-  router.post("/publishMenu",controller.tbshopgoods.addproduct)
-
-
-  //删除产品的接口
-	//   {
-	// 		name:"/delpro",
-	// 		type:"post",
-	// 		data:{
-	//			id:10001//需要删除的商品id
-	// 		},
-	// 		res:{
-	// 			code:1,//1成功0失败
-	// 			msg:"提交成功”
-	// 	}
-
-	router.post("/delpro",controller.tbshopgoods.delproduct)
+	router.post('/uploadimg', controller.fileUpload.uploadImg);
+  
+	// router.post("/delpro",controller.tbshopgoods.delproduct)
 	
-  //修改产品的接口
-	//   {
-	// 		name:"/delpro",
-	// 		type:"post",
-	// 		data:{
-	//			id:10001//需要删除的商品id
-	// 		},
-	// 		res:{
-	// 			code:1,//1成功0失败
-	// 			msg:"提交成功”
-	// 	}
-
-	router.post("/uppro",controller.tbshopgoods.upproduct)
-
-  
+	// router.post("/uppro",controller.tbshopgoods.upproduct)
+	
 };

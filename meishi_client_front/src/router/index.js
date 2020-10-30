@@ -10,12 +10,12 @@ const routes = [
     name: 'Add',
     component: () => import("@/views/add.vue")
   },
-  {
-    path: '/',
-    redirect: "/Recipe/recipe_desc",
-    // component: () => import('@/components/recipe/recipe_desc.vue')
-    component: recipeDesc,
-  },
+  // {
+  //   path: '/',
+  //   redirect: "/Recipe/recipe_desc",
+  //   // component: () => import('@/components/recipe/recipe_desc.vue')
+  //   component: recipeDesc,
+  // },
   {
     path: '/Recipe/recipe_desc',
     component: () => import('@/components/recipe/recipe_desc.vue')
@@ -24,7 +24,34 @@ const routes = [
     path: '/Recipe',
     component: () => import('@/views/Recipe.vue')
   },
-
+  {
+    path: '/addainme',
+    name: 'Addainme',
+    component: () => import("@/views/addainme.vue")
+  },
+  {
+    path: '/anime_recipe',
+    name: 'Anime_recipe',
+    component: () => import("@/views/anime_recipe.vue"),
+  },
+  {
+    path: '/login',
+    component: () => import("@/views/Login.vue")
+  }, {
+    path: '/shop',
+    name: 'Shop',
+    component: () => import("@/views/shop.vue")
+  },
+  {
+    path: '/anime_r_t/:Aid',
+    name: 'Anime_r_t',
+    component: () => import("@/components/anime_r_t.vue")
+  },
+  {
+    path: '/shop_desc/:Aid',
+    name: 'Shop_desc',
+    component: () => import("@/components/anime_r_t.vue")
+  }
 ]
 const router = new VueRouter({
   mode: 'hash',
