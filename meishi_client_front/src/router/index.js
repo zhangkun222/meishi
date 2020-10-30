@@ -6,14 +6,14 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-<<<<<<< HEAD
     path: '/',
     component: Home
   },
   {
     path: '/admin',
     component: () => import('../views/Admin.vue')
-=======
+  },
+   {
     path: '/add',
     name: 'Add',
     component: () => import("@/views/add.vue")
@@ -45,7 +45,7 @@ const routes = [
     path: '/shop_desc/:Aid',
     name: 'Shop_desc',
     component: () => import("@/components/anime_r_t.vue")
->>>>>>> 1a5e68b6391e9c7b5e4c232f484e3593ad8482c6
+
   }
   
 ]
