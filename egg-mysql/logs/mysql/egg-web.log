@@ -5725,3 +5725,4 @@ hostname: silaoshi
 2020-10-30 11:17:56,516 INFO 21528 [egg-watcher:application] watcher start success
 2020-10-30 11:17:56,543 INFO 21528 [egg-mysql] instance[0] status OK, rds currentTime: Fri Oct 30 2020 11:17:56 GMT+0800 (GMT+08:00)
 2020-10-30 11:17:56,553 INFO 21528 [egg:core] dump config after ready, 8ms
+2020-10-30 13:07:32,575 WARN 21528 [ClusterClient:Watcher] follower closed, and try to init it again
