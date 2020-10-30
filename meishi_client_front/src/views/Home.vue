@@ -138,7 +138,6 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 import banner1 from "@/assets/img/banner1.jpg";
 import banner2 from "@/assets/img/banner2.jpg";
 import banner3 from "@/assets/img/banner3.jpg";
@@ -246,10 +245,10 @@ export default {
       console.log(e.target.innerHTML.length);
     },
   },
-  name: "Home",
-  components: {
-    HelloWorld,
-  },
+  // name: "Home",
+  // components: {
+  //  Home
+  // },
 };
 </script>
 

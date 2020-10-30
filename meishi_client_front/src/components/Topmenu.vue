@@ -61,7 +61,7 @@ export default {
   position: fixed;
   top: 0;
   z-index: 99;
-  width: 100%;
+  width: 120%;
   height: 80px;
   // background-color: red;
   // background: rgba(180, 71, 194, 0.8);
