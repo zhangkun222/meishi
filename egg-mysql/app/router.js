@@ -19,6 +19,19 @@ module.exports = app => {
  //添加漫画食谱
   router.post("/publishAnime",controller.tbshopgoods.publishAnime)
 
+  //修改食谱
+  router.post("/updateMenu",controller.tbshopgoods.updateMenu)
+
+  //删除食谱
+  router.post("/deleteMenu",controller.tbshopgoods.deleteMenu)
+
+  //添加评论
+  router.post("/comment",controller.tbshopgoods.comment)
+  
+  //登录
+  router.post("/login",controller.tbshopgoods.login)
+
+
 	router.post("/delpro",controller.tbshopgoods.delproduct)
 	
 	router.post("/uppro",controller.tbshopgoods.upproduct)

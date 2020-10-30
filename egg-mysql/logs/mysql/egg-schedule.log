@@ -781,3 +781,12 @@
 2020-10-30 09:32:25,490 INFO 8660 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
 2020-10-30 09:32:25,490 INFO 8660 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
 2020-10-30 09:32:25,490 INFO 8660 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 09:55:20,412 INFO 10364 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:55:20,412 INFO 10364 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:55:20,412 INFO 10364 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 09:55:30,986 INFO 10664 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:55:30,986 INFO 10664 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:55:30,986 INFO 10664 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 09:55:36,668 INFO 9420 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:55:36,668 INFO 9420 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:55:36,668 INFO 9420 [egg-schedule]: register schedule C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
