@@ -2,8 +2,13 @@ const Service = require('egg').Service;
 
 class TbShopGoodsService extends Service {
 //获取动漫菜谱
-  async getproduct() {
+  async getproduct(a) {
+	  console.log(a.Aid)
+	 
 	var sql="select * from anime where status=1"
+	if(a.Aid){
+		  sql=`select * from anime where Aid=${a.Aid}`
+	}
 	var goods=await this.app.mysql.query(sql);
 	return goods;
   }

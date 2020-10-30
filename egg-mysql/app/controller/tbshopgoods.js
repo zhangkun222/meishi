@@ -5,9 +5,9 @@
 const Controller = require('egg').Controller;
 
 class TbShopGoodsController extends Controller {
-  async getproduct(data) {
+  async getproduct() {
     const { ctx } = this;
-	  ctx.body=await this.ctx.service.tbshopgoods.getproduct(data)
+	  ctx.body=await this.ctx.service.tbshopgoods.getproduct(ctx.request.query)
   }
   async addproduct() {
     const { ctx } = this;
