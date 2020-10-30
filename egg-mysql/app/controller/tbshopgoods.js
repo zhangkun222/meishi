@@ -42,7 +42,8 @@ class TbShopGoodsController extends Controller {
       data = { code: 0, msg: '密码错误' };
     } else {
       // 表示登录成功 
-      ctx.service.tbshopgoods.updateLogin(result.uid);
+      
+      ctx.service.tbshopgoods.updateLogin(result.uid,ctx.request.ip);
     }
     ctx.body = data;
   }

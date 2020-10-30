@@ -26,9 +26,9 @@ class TbShopGoodsService extends Service {
 		const userData = await this.app.mysql.get('user', { username });
 		return userData;
 	  }
-	updateLogin(uid) {
+	updateLogin(uid,ip) {
 		const {ctx, app} = this;
-		app.mysql.query('UPDATE user SET ip = ?, lasttimes = NOW(), nums = nums +1 WHERE uid = ?', [ctx.request.ip, uid]);
+		app.mysql.query('UPDATE user SET ip = ?, lasttimes = NOW(), nums = nums +1 WHERE uid = ?', [ip, uid]);
 	  }
 	//获取动漫菜谱
 	async getproduct() {
