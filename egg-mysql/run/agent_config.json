@@ -165,9 +165,9 @@
       }
     },
     "cors": {
-      "credentials": true,
       "origin": "*",
-      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH",
+      "credentials": true
     },
     "env": "local",
     "name": "mysql",
@@ -315,7 +315,7 @@
     "cluster": {
       "listen": {
         "path": "",
-        "port": 83,
+        "port": 8000,
         "hostname": ""
       }
     },

@@ -93,7 +93,7 @@
       <router-link to="">关于我们</router-link>|
       <router-link to="">意见反馈</router-link>|
       <router-link to="">菜谱大全</router-link>|
-      <router-link to="">购物商城</router-link>|
+      <router-link to="">购物商城</router-link>
     </div>
   </div>
 </template>
@@ -198,9 +198,8 @@ export default {
                 message: res.data.msg,
                 type: "success",
               });
+              localStorage.setItem('username',this.ruleForm.name);
               //登陆成功后的跳转
-
-              
             }
           });
         } else {
@@ -211,23 +210,29 @@ export default {
     },
     submitFormReg(formName) {
       this.$refs[formName].validate((valid) => {
-          let _this=this;
+        let _this = this;
         if (valid) {
-         this.$http.post('reg',{username:this.ruleForm.namereg,passwd:this.ruleForm.pass}).then(function(res){
-             if(res.data.code==-1){
-                 _this.$message({
-                showClose: true,
-                message: res.data.msg,
-                type: "error",
-              });
-             }else if(res.data.code==1){
-                 _this.$message({
-                showClose: true,
-                message: res.data.msg,
-                type: "success",
-              });
-             }
-         })
+          this.$http
+            .post("reg", {
+              username: this.ruleForm.namereg,
+              passwd: this.ruleForm.pass,
+            })
+            .then(function (res) {
+              if (res.data.code == -1) {
+                _this.$message({
+                  showClose: true,
+                  message: res.data.msg,
+                  type: "error",
+                });
+              } else if (res.data.code == 1) {
+                _this.$message({
+                  showClose: true,
+                  message: res.data.msg,
+                  type: "success",
+                });
+                location.reload();
+              }
+            });
         } else {
           console.log("error!");
           return false;

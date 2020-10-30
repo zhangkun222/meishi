@@ -78,9 +78,9 @@
     }
   },
   "cors": {
-    "credentials": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
     "origin": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
-    "allowMethods": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
+    "allowMethods": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+    "credentials": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
   },
   "multipart": {
     "mode": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",

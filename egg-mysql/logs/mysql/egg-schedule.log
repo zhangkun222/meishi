@@ -289,3 +289,36 @@
 2020-10-29 20:00:47,673 INFO 22364 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
 2020-10-29 20:00:47,673 INFO 22364 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
 2020-10-29 20:00:47,673 INFO 22364 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 00:15:08,560 INFO 23800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 00:15:08,560 INFO 23800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 00:15:08,560 INFO 23800 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 00:15:09,724 INFO 11340 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15290279ms at 2020-10-30 04:30:00.003
+2020-10-30 00:15:09,725 INFO 11340 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 85490276ms at 2020-10-31 00:00:00.001
+2020-10-30 00:15:09,726 INFO 11340 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 85491275ms at 2020-10-31 00:00:01.001
+2020-10-30 00:15:13,709 INFO 24136 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 00:15:13,709 INFO 24136 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 00:15:13,709 INFO 24136 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 00:15:17,533 INFO 24324 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 00:15:17,533 INFO 24324 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 00:15:17,533 INFO 24324 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 00:21:25,222 INFO 12528 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 00:21:25,222 INFO 12528 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 00:21:25,222 INFO 12528 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 00:21:29,915 INFO 13000 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 00:21:29,915 INFO 13000 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 00:21:29,915 INFO 13000 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 08:47:23,749 INFO 19192 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 08:47:23,749 INFO 19192 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 08:47:23,749 INFO 19192 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 08:47:24,874 INFO 17600 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 70955138ms at 2020-10-31 04:30:00.012
+2020-10-30 08:47:24,874 INFO 17600 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 54755126ms at 2020-10-31 00:00:00.000
+2020-10-30 08:47:24,875 INFO 17600 [Timer] C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 54756126ms at 2020-10-31 00:00:01.001
+2020-10-30 09:50:27,457 INFO 14720 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:50:27,457 INFO 14720 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:50:27,457 INFO 14720 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 09:50:31,611 INFO 8304 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:50:31,611 INFO 8304 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:50:31,612 INFO 8304 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-30 09:50:35,319 INFO 6296 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-30 09:50:35,319 INFO 6296 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-30 09:50:35,319 INFO 6296 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js

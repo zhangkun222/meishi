@@ -385,3 +385,18 @@ name: "unhandledExceptionError"
 pid: 8164
 hostname: USER-20170826XD
 
+2020-10-30 00:20:13,625 ERROR 24324 [-/::1/-/36ms POST /reg] nodejs.ReferenceError: ctx is not defined
+    at TbShopGoodsService.reg (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\service\tbshopgoods.js:20:106)
+    at TbShopGoodsController.reg (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:25:54)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 24324
+hostname: USER-20170826XD
+
