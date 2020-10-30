@@ -1,41 +1,24 @@
 const Service = require('egg').Service;
 
-class TbShopGoodsService extends Service {
-	
-	
-	async getAllMenu() {
-		let sql = "select * from recipe where status=1"
-		let goods = await this.app.mysql.query(sql);
-		return goods;
-	}
-
-	async regfindName(data) {
-		let sql = `select * from user where username='${data.username}' and status=1`
-		let result = await this.app.mysql.query(sql);
-		result.regcode=-1;
-		return result;
-	}
-
-	async reg(data) {
-		let sql = `insert into user(username,passwd,ip,addtimes) values('${data.username}','${data.passwd}','${this.ctx.request.ip}',NOW())`
-		let result = await this.app.mysql.query(sql);
-		return result;
-	}
-
-	async login(username) {
-		const userData = await this.app.mysql.get('user', { username });
-		return userData;
-	  }
-	updateLogin(uid,ip) {
-		const {ctx, app} = this;
-		app.mysql.query('UPDATE user SET ip = ?, lasttimes = NOW(), nums = nums +1 WHERE uid = ?', [ip, uid]);
-	  }
+class RecipeService extends Service {
 	//获取动漫菜谱
-	async getproduct() {
+	async getproduct(a) {
+		console.log(a.Aid)
+
 		var sql = "select * from anime where status=1"
+		if (a.Aid) {
+			sql = `select * from anime where Aid=${a.Aid}`
+		}
 		var goods = await this.app.mysql.query(sql);
 		return goods;
 	}
+
+	// //获取动漫菜谱
+	// async getproduct() {
+	// 	var sql = "select * from anime where status=1"
+	// 	var goods = await this.app.mysql.query(sql);
+	// 	return goods;
+	// }
 	//添加菜谱
 	async addproduct(product) {
 		console.log(product)
@@ -57,7 +40,15 @@ class TbShopGoodsService extends Service {
 			}
 		}
 		return result;
+    }
+    
+    async getAllMenu() {
+		let sql = "select * from recipe where status=1"
+		let goods = await this.app.mysql.query(sql);
+		return goods;
 	}
+
+
 	//添加动漫菜谱
 	async publishAnime(product) {
 		console.log(product)
@@ -117,25 +108,6 @@ class TbShopGoodsService extends Service {
 		return result;
 	}
 
-	async comment(data) {
-		// console.log(data)
-		//
-		var sql = `insert into comment(content，uid，rid) values('${data.comment}',${data.uid},${data.rid}) `
-		var result = await this.app.mysql.query(sql);
-		if (result.affectedRows) {
-			result = {
-				code: 1,
-				msg: "删除成功",
-			}
-		} else {
-			result = {
-				code: 0,
-				msg: "删除失败"
-			}
-		}
-		return result;
-	}
-
 
 }
-module.exports = TbShopGoodsService;
+module.exports = RecipeService;

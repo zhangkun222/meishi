@@ -2,14 +2,16 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportComments = require('../../../app/controller/comments');
 import ExportFileUpload = require('../../../app/controller/fileUpload');
-import ExportTbshopgoods = require('../../../app/controller/tbshopgoods');
-import ExportTest = require('../../../app/controller/test');
+import ExportRecipe = require('../../../app/controller/recipe');
+import ExportReglogin = require('../../../app/controller/reglogin');
 
 declare module 'egg' {
   interface IController {
+    comments: ExportComments;
     fileUpload: ExportFileUpload;
-    tbshopgoods: ExportTbshopgoods;
-    test: ExportTest;
+    recipe: ExportRecipe;
+    reglogin: ExportReglogin;
   }
 }

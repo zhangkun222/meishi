@@ -5,44 +5,38 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  
-
-  router.get('/test', controller.test.index);
-  
-  
+ 
  //获取漫画食谱
-  router.get("/getAnime",controller.tbshopgoods.getproduct);
+  router.get("/getAnime",controller.recipe.getproduct);
 
  //添加食谱
-  router.post("/publishMenu",controller.tbshopgoods.addproduct);
+  router.post("/publishMenu",controller.recipe.addproduct);
 
  //获取食谱
-  router.post("/getAllMenu",controller.tbshopgoods.getAllMenu);
+  router.post("/getAllMenu",controller.recipe.getAllMenu);
 
  //添加漫画食谱
-  router.post("/publishAnime",controller.tbshopgoods.publishAnime)
+  router.post("/publishAnime",controller.recipe.publishAnime)
 
   //修改食谱
-  router.post("/updateMenu",controller.tbshopgoods.updateMenu)
+  router.post("/updateMenu",controller.recipe.updateMenu)
 
   //删除食谱
-  router.post("/deleteMenu",controller.tbshopgoods.deleteMenu)
+  router.post("/deleteMenu",controller.recipe.deleteMenu)
 
   //添加评论
-  router.post("/comment",controller.tbshopgoods.comment)
+  router.post("/comment",controller.comments.comment)
   
   //登录
-  router.post("/login",controller.tbshopgoods.login)
+  router.post("/login",controller.reglogin.userlogin)
 
   //注册
-  router.post("/reg",controller.tbshopgoods.reg)
-
-
-	router.post("/delpro",controller.tbshopgoods.delproduct)
-	
-	router.post("/uppro",controller.tbshopgoods.upproduct)
-
+  router.post("/reg",controller.reglogin.reg)
+  
 	router.post('/uploadimg', controller.fileUpload.uploadImg);
-
+  
+	// router.post("/delpro",controller.tbshopgoods.delproduct)
+	
+	// router.post("/uppro",controller.tbshopgoods.upproduct)
 	
 };

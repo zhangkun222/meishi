@@ -2334,6 +2334,7 @@ name: "ER_BAD_FIELD_ERRORError"
 pid: 23704
 hostname: farsight-PC
 
+<<<<<<< HEAD
 2020-10-29 16:50:47,578 ERROR 18820 [-/::1/-/44ms POST /login] nodejs.TypeError: Cannot read property 'login' of undefined
     at TbShopGoodsController.login (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\tbshopgoods.js:15:41)
     at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
@@ -2663,4 +2664,447 @@ hostname: USER-20170826XD
 headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
 pid: 24324
 hostname: USER-20170826XD
+=======
+2020-10-29 15:38:41,174 ERROR 2836 [-/::1/-/157ms GET /getAnime?Aid=3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2836
+hostname: farsight-PC
+
+2020-10-29 15:39:47,398 ERROR 21472 [-/::1/-/32ms GET /getAnime] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 21472
+hostname: farsight-PC
+
+2020-10-29 15:39:51,525 ERROR 23344 [-/::1/-/17ms GET /getAnime] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 23344
+hostname: farsight-PC
+
+2020-10-29 15:39:57,409 ERROR 23344 [-/::1/-/4ms GET /getAnime] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 23344
+hostname: farsight-PC
+
+2020-10-29 15:40:22,593 ERROR 23344 [-/::1/-/19ms GET /getAnime] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 23344
+hostname: farsight-PC
+
+2020-10-29 15:42:19,007 ERROR 20552 [-/::1/-/9ms GET /getAnime?Aid=2] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=[object Object]
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from anime where id=[object Object]"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 20552
+hostname: farsight-PC
+
+2020-10-29 15:43:05,166 ERROR 22712 [-/::1/-/56ms GET /getAnime?Aid=2] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=2
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'id' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from anime where id=2"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 22712
+hostname: farsight-PC
+
+2020-10-29 15:43:59,697 ERROR 10040 [-/::1/-/8ms GET /getAnime?Aid=2] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where id=2
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'id' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from anime where id=2"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 10040
+hostname: farsight-PC
+
+2020-10-29 19:22:53,831 ERROR 21312 [-/::1/-/1492ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 21312
+hostname: farsight-PC
+
+2020-10-29 19:22:59,077 ERROR 21312 [-/::1/-/52ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 21312
+hostname: farsight-PC
+
+2020-10-29 19:23:03,587 ERROR 21312 [-/::1/-/43ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 21312
+hostname: farsight-PC
+
+2020-10-29 19:27:28,443 ERROR 21312 [-/::1/-/79ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('食谱名称54','配菜(中级)','10-30分钟','','这道菜背后的故事45','45','546','56','http://localhost:8000/public/upload/f6cfb5f1-8711-427b-b2cd-6900a2258da9.jpg','http://localhost:8000/public/upload/8ea5a013-5eaa-431b-94a6-f9b944d18884.jpg','5元',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 21312
+hostname: farsight-PC
+
+2020-10-29 19:31:08,791 ERROR 21312 [-/::1/-/170ms POST /publishMenu] nodejs.ER_DATA_TOO_LONGError: ER_DATA_TOO_LONG: Data too long for column 'degree' at row 1
+    at Query.Sequence._packetToError (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\farsight\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('2','切墩(初级)','60分钟以上','','这道菜背后的故事2额3','32额',' 2','步骤2额','http://localhost:8000/public/upload/7f76cbdf-76fd-4fb4-98a8-c5fb9c94b984.jpg','http://localhost:8000/public/upload/1bc6b673-d2a3-4835-9c62-b04b724cca25.jpg','小贴士饿 2',1)
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'degree' at row 1"
+sqlState: "22001"
+index: 0
+sql: "INSERT INTO recipe(title,degree,cooktime,taste,pdesc,foodlist,amountlist,steps,stepsImg,cover,tips,uid) VALUES('2','切墩(初级)','60分钟以上','','这道菜背后的故事2额3','32额',' 2','步骤2额','http://localhost:8000/public/upload/7f76cbdf-76fd-4fb4-98a8-c5fb9c94b984.jpg','http://localhost:8000/public/upload/1bc6b673-d2a3-4835-9c62-b04b724cca25.jpg','小贴士饿 2',1)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_DATA_TOO_LONGError"
+pid: 21312
+hostname: farsight-PC
+>>>>>>> 37138f8842d93f6ba02b983885f576911cbcc90e
 

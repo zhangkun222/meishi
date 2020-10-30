@@ -3,20 +3,16 @@
     <div class="centent">
       <!-- 漫画食谱成品展示 -->
       <div class="w690">
-        <!-- 懒加载 -->
-        <a
-          v-for="i in value"
-          :key="i.Aid"
-          class="anime_link demo-image__lazy"
-          @click="link(i.Aid)"
-        >
-          <el-image :src="i.cover" alt="" class="anime_img" lazy></el-image>
-          <p>{{ i.aname }}</p>
-        </a>
+        <div>{{value.aname}}</div>
+        <img :src="value.cover" alt="" style="width:498px">
+        <br>
+        <br>
         <el-breadcrumb separator="/">
           <el-breadcrumb-item>你当前的位置</el-breadcrumb-item>
           <el-breadcrumb-item :to="{ path: '/' }">一日三餐</el-breadcrumb-item>
-          <el-breadcrumb-item>动漫</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/anime_recipe' }">动漫</el-breadcrumb-item>
+          <el-breadcrumb-item>{{value.aname}}</el-breadcrumb-item>
+
         </el-breadcrumb>
       </div>
 
@@ -41,31 +37,19 @@
 export default {
   data() {
     return {
-      value: [],
-      h: `/anime_r_t`,
-      data: {
-        mid: 1, //用户
-        cover: "", //封面
-        aname: "食谱名称", //食谱名称
-      },
+        value:{},
     };
   },
-  methods: {
-    link(id) {
-      this.h = `./anime_r_t/${id}`;
-      console.log(this.h);
-      this.$router.push(this.h);
-    },
-  },
   created() {
-    this.$http.get(`/getAnime`).then((res) => {
-      console.log(res.data);
-      this.value = res.data;
+    console.log(this.$route.params.Aid);
+    let Aid=this.$route.params.Aid
+    this.$http.get(`/getAnime?Aid=${Aid}`).then((res) => {
+      console.log(res.data[0]);
+      this.value = res.data[0];
     });
   },
 };
 </script>
-
 <style lang="scss">
 //自己
 .created {
@@ -81,7 +65,6 @@ export default {
       a {
         text-decoration: none;
         margin: 10px auto;
-
         &:link,
         &:visited {
           color: rgb(100, 99, 99);
