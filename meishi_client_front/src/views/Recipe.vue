@@ -30,94 +30,19 @@
           </div>
           <!-- 菜谱 -->
           <div class="menu">
-            <ul @click="changetoDesc">
+            <ul>
               <!-- 每个 -->
-              <li class="menu-every">
-                <a href="###">
+              <li class="menu-every" v-for="(item, i) in recipemsg" :key="i" @click="changetoDesc">
+                <a href="/">
                   <div class="image">
-                    <img :src="cover[0]" alt="" />
+                    <img :src="item.cover" alt="" />
                   </div>
                   <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
+                    {{ item.title }}
                   </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
+                  <div class="desc">
+                    {{ item.desc }}
                   </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
-                </a>
-              </li>
-              <li class="menu-every">
-                <a href="###">
-                  <div class="image">
-                    <img :src="cover[0]" alt="" />
-                  </div>
-                  <div class="title">
-                    哈哈哈哈哈哈哈4444444444444444444444444444444444444哈哈哈哈哈
-                  </div>
-                  <div class="desc">啊啊6666666666666啊啊啊啊111</div>
                 </a>
               </li>
             </ul>
@@ -175,19 +100,59 @@
 export default {
   data() {
     return {
-      cover: [
-        "http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
-      ],
       activeIndex: "1",
       title: [],
       desc: [],
       pagenum: 1,
+      recipemsg: [
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        {
+          desc: "龙利鱼是深海鱼的一种，它不仅营养丰富，脂肪含量也非常低，含有不饱和脂肪酸，经常食用可以美容养颜、提高免疫力。龙利鱼的口感嫩滑鲜美，而且没有鱼刺，适合各种煎、炸、蒸、煮的烹饪方式。用龙利鱼搭配粉丝和金针菇蒸食，味道又鲜又嫩，营养成分还不流失，老少皆宜！",
+          cover:"http://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20180917/QbD4ZdBfrH.jpg?x-oss-process=image/crop,x_36,y_516,w_2169,h_1446/resize,w_454/format,webp",
+          title: "回锅肉炖土豆",
+        },
+        
+      ],
     };
   },
   methods: {
     // 点击图片跳转到详情页
     changetoDesc(e) {
-      this.$router.push("/Recipe/recipe_desc")
+      this.$router.push("/Recipe/recipe_desc");
     },
 
     handleSelect(key, keyPath) {
@@ -198,7 +163,7 @@ export default {
       console.log(e.target.innerHTML);
       switch (e.target.innerHTML.trim()) {
         case e.target.innerHTML.trim():
-          this.pagenum =e.target.innerHTML;
+          this.pagenum = e.target.innerHTML;
           break;
         case e.target.innerHTML.trim():
           this.pagenum = e.target.innerHTML;

@@ -10,26 +10,24 @@ const routes = [
     name: 'Add',
     component: () => import("@/views/add.vue")
   },
-  // {
-  //   path: '/',
-  //   redirect: "/Recipe/recipe_desc",
-  //   // component: () => import('@/components/recipe/recipe_desc.vue')
-  //   component: recipeDesc,
-  // },
+  {
+    path: '/',
+    redirect: "/Recipe/recipe_desc",
+    // component: () => import('@/components/recipe/recipe_desc.vue')
+    component: recipeDesc,
+  },
+  {
+    path: '/Recipe/recipe_desc',
+    component: () => import('@/components/recipe/recipe_desc.vue')
+  },
   {
     path: '/Recipe',
-    component: () => import('@/views/Recipe.vue'),
-    children: [
-      {
-        path: 'recipe_desc',
-        component: () => import('@/components/recipe/recipe_desc.vue')
-      },
-    ],
+    component: () => import('@/views/Recipe.vue')
   },
 
 ]
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
