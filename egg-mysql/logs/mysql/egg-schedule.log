@@ -1162,3 +1162,27 @@
 2020-10-30 15:23:58,889 INFO 47580 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
 2020-10-30 15:23:58,889 INFO 47580 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
 2020-10-30 15:23:58,889 INFO 47580 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 11:01:10,305 INFO 49860 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 11:01:10,305 INFO 49860 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 11:01:10,305 INFO 49860 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 11:01:15,706 INFO 29288 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 11:01:15,706 INFO 29288 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 11:01:15,706 INFO 29288 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 11:01:21,889 INFO 36868 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 62918173ms at 2020-11-01 04:30:00.062
+2020-10-31 11:01:21,889 INFO 36868 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 46718111ms at 2020-11-01 00:00:00.000
+2020-10-31 11:01:21,889 INFO 36868 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 46719111ms at 2020-11-01 00:00:01.000
+2020-10-31 11:01:24,789 INFO 25648 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 11:01:24,789 INFO 25648 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 11:01:24,789 INFO 25648 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 11:52:15,884 INFO 18436 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 11:52:15,884 INFO 18436 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 11:52:15,884 INFO 18436 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 11:52:17,344 INFO 48092 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 59862659ms at 2020-11-01 04:30:00.003
+2020-10-31 11:52:17,344 INFO 48092 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 43662656ms at 2020-11-01 00:00:00.000
+2020-10-31 11:52:17,345 INFO 48092 [Timer] C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 43663656ms at 2020-11-01 00:00:01.001
+2020-10-31 18:12:30,820 INFO 18280 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 18:12:30,820 INFO 18280 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 18:12:30,820 INFO 18280 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-31 18:12:42,864 INFO 30124 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-31 18:12:42,864 INFO 30124 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-10-31 18:12:42,864 INFO 30124 [egg-schedule]: register schedule C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js

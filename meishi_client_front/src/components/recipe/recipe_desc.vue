@@ -59,25 +59,33 @@
               <!-- 头像昵称 -->
               <div class="auther_head">
                 <img :src="codesc.cover" alt="" />
-                <span>{{ codesc.author }}</span>
+                <span>{{ codesc.uid }}</span>
               </div>
               <!-- 简介 -->
               <div class="desc">
                 {{ codesc.pdesc }}
               </div>
+              <div class="bottomline"></div>
             </div>
             <!-- 食材清单 -->
             <div class="detail-food">
               <div class="detail-food-title">食材清单</div>
               <div>
                 <ul>
-                  <li
-                    class="food_many"
-                    v-for="(items, index) in foodmany"
-                    :key="index"
-                  >
-                    <div class="food">{{ items.foodlist }}</div>
-                    <div class="many">{{ items.many }}</div>
+                  <li class="food_many">
+                    <div class="food">
+                      <div v-for="(ifoodlist, index) in foodlist" :key="index">
+                        {{ ifoodlist }}
+                      </div>
+                    </div>
+                    <div class="many">
+                      <div
+                        v-for="(iamountlist, index) in amountlist"
+                        :key="index"
+                      >
+                        {{ iamountlist }}
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -88,15 +96,13 @@
               <div class="step-every">
                 <ul v-for="(stepitem, index) in steps" :key="index">
                   <li class="steps">
-                    <!-- 步骤几 -->
-                    <div class="stepnum">{{ stepitem.stepnum }}</div>
                     <!-- 步骤说明 -->
                     <div class="explain">
                       {{ stepitem.stepcontent }}
                     </div>
                   </li>
                   <li>
-                    <img :src="stepitem.img" alt="" />
+                    <img :src="stepitem.cover" alt="" />
                   </li>
                 </ul>
               </div>
@@ -154,7 +160,7 @@
               <!-- 点击跳转到商城 -->
               <div class="shop-top" @click="jumpShop">
                 <img
-                  src="https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652"
+                  src="https://cp1.douguo.com/upload/caiku/1/c/e/220x220_1c7941876ec01115f4d397fdffff8b2e.jpg"
                   alt=""
                 />
               </div>
@@ -167,9 +173,9 @@
                     :key="i"
                     @click="jumpanywhere"
                   >
-                    <img :src="items.recipecover" alt="" />
+                    <img :src="items.cover" alt="" />
                     <div class="title">{{ items.title }}</div>
-                    <div class="desc">{{ items.desc }}</div>
+                    <div class="desc">{{ items.pdesc }}</div>
                   </div>
                 </div>
                 <div class="tags">
@@ -191,15 +197,9 @@
 export default {
   data: function () {
     return {
-      foodmany: [
-        { food: "姜", many: "400克" },
-        { food: "鱼3333", many: "500克" },
-        { food: "fgfees", many: "22克" },
-        { food: "bd", many: "400克" },
-        { food: "34", many: "400克" },
-        { food: "fre", many: "400克" },
-        { food: "rgrt", many: "400克" },
-      ],
+      foodmany: [{ foodlist: "", many: "" }],
+      foodlist: [],
+      amountlist: [],
       // 食谱页面跳转过来对应的信息
       codesc: {},
       // 食谱信息
@@ -207,18 +207,10 @@ export default {
       // 步骤
       steps: [],
       step: {
-        stepnum: "",
         stepcontent: "",
-        cover: "",
+        // cover: "",
       },
-      tips: [
-        `
-         1.鱼类蒸煮时间不必太久，以免口感过于老了。
-       `,
-        `
-         2.调味料可以按照个人口味调配，不喜欢麻辣味道的就把花椒和小米椒省略。
-        `,
-      ],
+      tips: [],
       comment: "",
       user: [
         {
@@ -249,54 +241,9 @@ export default {
         commentcontent: "",
       },
       // 热门;
-      recipehot: [
-        {
-          title: "蒜蓉粉丝蒸龙利鱼",
-          desc:
-            "秋冬季节正是吃羊肉的大好时节，毕竟羊肉属温性，正好可以滋补身体。用羊肉搭配白萝卜，那更是极品搭配呀！因为民间常有“冬吃萝卜夏吃姜不劳医生开处方”的谚语。秋冬季节，很难找出羊肉和白萝卜之外，还有什么更完美的搭档了。",
-          recipecover:
-            "https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652",
-          recipeauthor: "辛墨墨",
-          taste: "咸味",
-          time: "30分钟",
-          type: "普通",
-        },
-        {
-          title: "蒜蓉粉丝蒸龙利鱼",
-          desc:
-            "秋冬季节正是吃羊肉的大好时节，毕竟羊肉属温性，正好可以滋补身体。用羊肉搭配白萝卜，那更是极品搭配呀！因为民间常有“冬吃萝卜夏吃姜不劳医生开处方”的谚语。秋冬季节，很难找出羊肉和白萝卜之外，还有什么更完美的搭档了。",
-          recipecover:
-            "https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652",
-          recipeauthor: "辛墨墨",
-          taste: "咸味",
-          time: "30分钟",
-          type: "普通",
-        },
-        {
-          title: "蒜蓉粉丝蒸龙利鱼",
-          desc:
-            "秋冬季节正是吃羊肉的大好时节，毕竟羊肉属温性，正好可以滋补身体。用羊肉搭配白萝卜，那更是极品搭配呀！因为民间常有“冬吃萝卜夏吃姜不劳医生开处方”的谚语。秋冬季节，很难找出羊肉和白萝卜之外，还有什么更完美的搭档了。",
-          recipecover:
-            "https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652",
-          recipeauthor: "辛墨墨",
-          taste: "咸味",
-          time: "30分钟",
-          type: "普通",
-        },
-        {
-          title: "蒜蓉粉丝蒸龙利鱼",
-          desc:
-            "秋冬季节正是吃羊肉的大好时节，毕竟羊肉属温性，正好可以滋补身体。用羊肉搭配白萝卜，那更是极品搭配呀！因为民间常有“冬吃萝卜夏吃姜不劳医生开处方”的谚语。秋冬季节，很难找出羊肉和白萝卜之外，还有什么更完美的搭档了。",
-          recipecover:
-            "https://app-file.beitaichufang.com/img/310636AF348FC3F27D7F7C2040807A97/20191119/PiJMxf4TRh.jpg?x-oss-process=image/crop,x_22,y_14,w_3976,h_2652",
-          recipeauthor: "辛墨墨",
-          taste: "咸味",
-          time: "30分钟",
-          type: "普通",
-        },
-      ],
+      recipehot: [],
       // 热门Tag
-      hotTags: ["火锅", "土豆", "川菜", "串", "火锅"],
+      hotTags: [],
       commentcon: "",
     };
   },
@@ -315,43 +262,73 @@ export default {
       this.$router.push("/shop");
     },
     // 热门内容跳转传值
-    jumpanywhere() {},
+    jumpanywhere() {
+      if (
+        this.recipemsg.forEach((h) => {
+          // h.rid=this.$route.query.rid;
+          // this.$router.push(`/recipe`); //recipe+'?rid='+item.rid
+        })
+      )
+        console.log(this.$router.push("/recipe_desc"));
+    },
   },
   watch: {
     "$route.query.rid"() {
-      console.log(this.$route.query.rid);
-      this.recipemsg = this.$route.query.query;
+      // console.log(this.$route.query.rid);
+      this.recipemsg = this.$route.query.rid;
     },
   },
   created() {
-    console.log(this.$route.query.rid);
-    this.codesc.aid = this.$route.query.rid;
+    // console.log(this.$route.query.rid);
+    this.codesc.rid = this.$route.query.rid;
     this.$http
-      .post(`/getAllMenu`)
-      // recipe+'?rid='+item.rid
+      .post("/getAllMenu")
       .then((response) => {
         this.recipemsg = response.data;
+        console.log(this.recipemsg);
         this.recipemsg.forEach((recipe) => {
           if (recipe.rid == this.$route.query.rid) {
             this.codesc = recipe;
+            // 食物配料
+            this.foodlist = this.codesc.foodlist.split(",");
+            // 食物量
+            this.amountlist = this.codesc.amountlist.split(",");
+            // 步骤内容
             this.codesc.steps = recipe.steps;
-            console.log(this.codesc.steps);
-            // let step = recipe.steps.split(",").forEach((step) => {
-            //   console.log(step);
-            //   arr.push({});
-            //   // 步骤几
-            //   let stepnum = step.split(",")[0].slice(0, 3);
-            //   // 步骤内容
-            //   let stepcontent = step.split(",")[0].slice(4);
-            //   this.step.stepnum = stepnum;
-            //   this.step.stepcontent = stepcontent;
-            // });
+            this.codesc.stepsImg = recipe.stepsImg;
+            // console.log(this.codesc.stepsImg);
+            let step = recipe.steps.split(",").forEach((step) => {
+              this.codesc.step = {
+                stepcontent: step,
+                // cover: "",
+              };
+              this.step = this.codesc.step;
+              this.steps.push(this.step);
+            });
+          }
+        });
+        // 根据热门推荐加tag
+        // 热门内容根据综合进行推荐
+        this.recipemsg.forEach((hot) => {
+          if (hot.rid <= 6) {
+            this.recipehot.push(hot);
+            this.hotTags.push(hot.title.slice(0, 2));
           }
         });
       })
       .catch((error) => {
         console.log(error);
       });
+    // 评论
+    // /comment
+    // this.$http
+    // .post("/comment")
+    // .then((response) => {
+    //   console.log(response.data);
+    // })
+    // .catch((error) => {
+    //   console.log(error);
+    // });
   },
 };
 </script>
@@ -450,7 +427,6 @@ li {
         }
       }
       & > .auther_desc {
-        border-bottom: 1px solid #eeeeee;
         padding: 30px 0 30px 0;
         width: 650px;
         height: 156px;
@@ -476,6 +452,8 @@ li {
           font-size: 17px;
           color: #272b2c;
           line-height: 24px;
+          border-bottom: 1px solid #eeeeee;
+          padding-bottom: 15px;
           text-align: justify;
         }
       }
@@ -491,16 +469,19 @@ li {
         }
         & > div > ul {
           width: 100%;
-          @include disflex;
-          flex-wrap: wrap;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           & > .food_many {
-            & > .food {
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+            & > .food,
+            & > .many {
+              & > div {
+                padding-bottom: 5px;
+              }
               width: 100px;
-            }
-            @include disflex;
-            & > div {
-              margin-right: 100px;
-              margin-top: 10px;
             }
           }
         }
@@ -709,6 +690,8 @@ li {
               text-align: center;
               border-radius: 5px;
               height: 30px;
+              white-space: nowrap;
+              text-emphasis: none;
               border: 1px solid rgb(61, 61, 61);
             }
           }

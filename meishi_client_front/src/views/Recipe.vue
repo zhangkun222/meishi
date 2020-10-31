@@ -53,8 +53,8 @@
           </div>
 
           <!-- 翻页 -->
-          <div>
-            <b>分页按钮</b>
+          <div class="page">
+            <div class="btn">分页</div>
             <div class="changePage" @click="changeList">
               <button
                 type="button"
@@ -153,6 +153,24 @@ export default {
 </script>
 
 <style lang="scss">
+.page{
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  &>.btn{
+    padding: 20px;
+  }
+  &>.changePage{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+[v-cloak]{
+  display: none;
+}
 // 公用disflex垂直水平样式
 @mixin disflex {
   display: flex;

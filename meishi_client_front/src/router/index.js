@@ -2,20 +2,24 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import recipeDesc from "@/components/recipe/recipe_desc.vue"
 
+
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   // path: '/',
+  //   // component: Home
+  // },
   {
+    path: '/admin',
+    component: () => import('../views/Admin.vue')
+  },
+   {
     path: '/add',
     name: 'Add',
     component: () => import("@/views/add.vue")
   },
-  // {
-  //   path: '/',
-  //   redirect: "/Recipe/recipe_desc",
-  //   // component: () => import('@/components/recipe/recipe_desc.vue')
-  //   component: recipeDesc,
-  // },
+
   {
     path: '/Recipe/recipe_desc',
     component: () => import('@/components/recipe/recipe_desc.vue')
@@ -51,7 +55,9 @@ const routes = [
     path: '/shop_desc/:Aid',
     name: 'Shop_desc',
     component: () => import("@/components/anime_r_t.vue")
+
   }
+  
 ]
 const router = new VueRouter({
   mode: 'hash',

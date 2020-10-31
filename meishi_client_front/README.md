@@ -1,4 +1,4 @@
-# vuecli
+# foodscli
 
 ## Project setup
 ```
