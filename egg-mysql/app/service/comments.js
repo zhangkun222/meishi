@@ -2,7 +2,7 @@ const Service = require('egg').Service;
 
 class CommentsService extends Service {
 	async comment(data) {
-		var sql = `insert into comment(content，uid，rid) values('${data.comment}',${data.uid},${data.rid}) `
+		var sql = `insert into comment(content，uid，rid,addtimes) values('${data.comment}',${data.uid},${data.rid},Now()) `
 		var result = await this.app.mysql.query(sql);
 		if (result.affectedRows) {
 			result = {
