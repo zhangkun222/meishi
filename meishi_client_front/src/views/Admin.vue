@@ -28,7 +28,7 @@
           <el-avatar
             src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=678610634,1146522750&fm=11&gp=0.jpg"
           ></el-avatar>
-          <span>梁龙春</span>
+          <span>{{username}}</span>
         </div>
       </div>
       <!-- 左侧导航 -->
@@ -98,6 +98,7 @@
 export default {
   data() {
     return {
+      username:localStorage.getItem('nickname'),
       activeIndex2: "1",
       tableData: [
         {

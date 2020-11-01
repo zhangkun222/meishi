@@ -28,8 +28,7 @@
             <el-menu-item index="2" class="nav-link">食谱</el-menu-item>
             <el-menu-item index="3" class="nav-link">动漫</el-menu-item>
             <el-menu-item index="4" class="nav-link">发布菜单</el-menu-item>
-            <el-menu-item index="5" class="nav-link">登录</el-menu-item>
-            <el-menu-item index="6" class="nav-link">注册</el-menu-item>
+            <el-menu-item index="5" class="nav-link" @click="toLogin">登录|注册</el-menu-item>
           </el-menu>
         </div>
       </div>
@@ -49,6 +48,9 @@ export default {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
     },
+    toLogin(){
+      this.$router.push('/login')
+    }
   },
 };
 </script>
@@ -73,16 +75,17 @@ export default {
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
+    margin-left: 240px;
     // background-color: grey;
     position: relative;
     font-size: 14px;
     color: #272b2c;
     // logo图
     & > .indeximg {
-      width: 80px;
-      height: 80px;
-      margin-right: 30px;
-      margin-top: 5px;
+      width: 111px;
+      height: 60px;
+      margin-right: 10px;
+      margin-top: 15px;
       & > img {
         width: 100%;
         height: 80%;
@@ -94,7 +97,7 @@ export default {
       width: 340px;
       // background-color: pink;
       overflow: hidden;
-      margin: 18px 0 14px;
+      margin: 18px 0 14px 40px;
       border-radius: 100px;
       display: flex;
       box-shadow: 0 2px 6px 2px rgba(0,0,0,.06);

@@ -17,5 +17,14 @@ class CommentsService extends Service {
 		}
 		return result;
 	}
+
+	
+	async getComment(rid) {
+		let commentDate = await this.app.mysql.get('comment', { rid });
+		
+		return commentDate;
+	}
+
+
 }
 module.exports = CommentsService;
