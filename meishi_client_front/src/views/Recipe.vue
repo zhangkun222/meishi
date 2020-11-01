@@ -32,12 +32,8 @@
           <div class="menu">
             <ul>
               <!-- 每个 -->
-              <li
-                class="menu-every"
-                v-for="(item, i) in recipemsg"
-                :key="i"
-              >
-                <router-link :to="recipe+'?rid='+item.rid">
+              <li class="menu-every" v-for="(item, i) in recipemsg" :key="i">
+                <router-link :to="recipe + '?rid=' + item.rid">
                   <div class="image">
                     <img :src="item.cover" alt="" />
                   </div>
@@ -104,16 +100,17 @@
 export default {
   data() {
     return {
-      recipe:"/Recipe/recipe_desc",
+      recipe: "/Recipe/recipe_desc",
       activeIndex: "1",
       pagenum: 1,
-      recipemsg: []
+      recipemsg: [],
     };
   },
   methods: {
-    // 点击图片跳转到详情页
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
+      // if (key==2) {
+      // }
     },
     // 分页
     changeList(e) {
@@ -121,29 +118,25 @@ export default {
         case e.target.innerHTML.trim():
           this.pagenum = e.target.innerHTML;
           break;
-        case e.target.innerHTML.trim():
-          this.pagenum = e.target.innerHTML;
-          break;
-        case e.target.innerHTML.trim():
-          this.pagenum = e.target.innerHTML;
-          break;
-        case e.target.innerHTML.trim():
-          this.pagenum = e.target.innerHTML;
-          break;
-        case e.target.innerHTML.trim():
-          this.pagenum = e.target.innerHTML;
-          break;
       }
     },
   },
   created() {
-   
+    // 点击图片跳转到详情页
     this.$http
       .post("/getAllMenu")
-      .then( (response) =>{
-        console.log(response.data)
-        this.recipemsg=response.data
-        
+      .then((response) => {
+        // console.log(response.data);
+        this.recipemsg = response.data;
+
+        switch (this.activeIndex) {
+          case "2":
+            this.recipemsg.sort((m, n) => {
+              return  m.rid-n.rid ;
+            });
+            // console.log(this.recipemsg);
+            break;
+        }
       })
       .catch(function (error) {
         console.log(error);
@@ -153,14 +146,14 @@ export default {
 </script>
 
 <style lang="scss">
-.page{
+.page {
   text-align: center;
   width: 500px;
   margin: 0 auto;
-  &>.btn{
+  & > .btn {
     padding: 20px;
   }
-  &>.changePage{
+  & > .changePage {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -168,7 +161,7 @@ export default {
     align-items: center;
   }
 }
-[v-cloak]{
+[v-cloak] {
   display: none;
 }
 // 公用disflex垂直水平样式

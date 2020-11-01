@@ -2,7 +2,6 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-
 class CommentsController extends Controller {
     async comment() {
         const { ctx } = this;
@@ -10,5 +9,4 @@ class CommentsController extends Controller {
         ctx.body = await this.ctx.service.comments.comment(ctx.request.body.data)
     }
 }
-
 module.exports = CommentsController;

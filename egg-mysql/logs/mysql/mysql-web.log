@@ -4400,3 +4400,581 @@ name: "ER_BAD_FIELD_ERRORError"
 pid: 30124
 hostname: DESKTOP-TI5MI0U
 
+2020-11-01 11:32:47,940 ERROR 13604 [-/::1/-/12ms GET /getAnime?Aid=undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where Aid=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from anime where Aid=undefined"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 11:56:40,810 ERROR 13604 [-/::1/-/4ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 11:56:43,846 ERROR 13604 [-/::1/-/11ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 11:59:11,535 ERROR 13604 [-/::1/-/1ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:01:46,318 ERROR 13604 [-/::1/-/2ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:01:59,266 ERROR 13604 [-/::1/-/15ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:02:35,819 ERROR 13604 [-/::1/-/2ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13604
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:11:16,849 ERROR 19792 [-/::1/-/13ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 19792
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:12:04,588 ERROR 41408 [-/::1/-/8ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 41408
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:13:51,055 ERROR 19136 [-/::1/-/9ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:10:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 19136
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:16:42,695 ERROR 23532 [-/::1/-/9ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,799 ERROR 23532 [-/::1/-/114392ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,829 ERROR 23532 [-/::1/-/2ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,848 ERROR 23532 [-/::1/-/5ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,871 ERROR 23532 [-/::1/-/3ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,890 ERROR 23532 [-/::1/-/4ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,905 ERROR 23532 [-/::1/-/4ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,940 ERROR 23532 [-/::1/-/3ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,958 ERROR 23532 [-/::1/-/5ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:32,976 ERROR 23532 [-/::1/-/5ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:23:42,808 ERROR 23532 [-/::1/-/2ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 12:28:04,623 ERROR 23532 [-/::1/-/6ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 23532
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 17:33:40,901 ERROR 15972 [-/::1/-/4ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15972
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 17:38:40,612 ERROR 15972 [-/::1/-/226ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15972
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 17:40:26,252 ERROR 54348 [-/::1/-/29ms POST /comment] nodejs.TypeError: Cannot read property 'comment' of undefined
+    at CommentsService.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:5:66)
+    at CommentsController.comment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:9:52)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 54348
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:01:17,020 ERROR 44364 [-/::1/-/8ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:01:28,489 ERROR 44364 [-/::1/-/9ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:01:31,721 ERROR 44364 [-/::1/-/6ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:01:48,617 ERROR 44364 [-/::1/-/8ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:03:25,334 ERROR 44364 [-/::1/-/179ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:03:29,841 ERROR 44364 [-/::1/-/11ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:06:17,156 ERROR 44364 [-/::1/-/10ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:06:33,428 ERROR 44364 [-/::1/-/7ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:06:34,953 ERROR 44364 [-/::1/-/6ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:06:38,303 ERROR 44364 [-/::1/-/7ms POST /reg] nodejs.TypeError: Cannot read property 'username' of undefined
+    at RegLoginService.regfindName (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\reglogin.js:6:56)
+    at RegLoginController.reg (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\reglogin.js:15:45)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+
+2020-11-01 19:25:03,788 ERROR 44364 [-/::1/-/12ms GET /getAnime?Aid=undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where Aid=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from anime where Aid=undefined"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 44364
+hostname: DESKTOP-TI5MI0U
+

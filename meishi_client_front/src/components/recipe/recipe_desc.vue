@@ -159,6 +159,7 @@
             <div class="recipe-right">
               <!-- 点击跳转到商城 -->
               <div class="shop-top" @click="jumpShop">
+                <div class="shoplook">去商城康康</div>
                 <img
                   src="https://cp1.douguo.com/upload/caiku/1/c/e/220x220_1c7941876ec01115f4d397fdffff8b2e.jpg"
                   alt=""
@@ -178,6 +179,7 @@
                     <div class="desc">{{ items.pdesc }}</div>
                   </div>
                 </div>
+                <div class="hottag">热门话题</div>
                 <div class="tags">
                   <div class="tag" v-for="(hotitems, i) in hotTags" :key="i">
                     {{ hotitems }}
@@ -236,6 +238,7 @@ export default {
         },
       ],
       sendmsg: {
+        // rid:1,
         commentname: this.$store.state.user.name,
         commentimghead: this.$store.state.user.avatar,
         commentcontent: "",
@@ -245,10 +248,12 @@ export default {
       // 热门Tag
       hotTags: [],
       commentcon: "",
+      username: "",
     };
   },
   methods: {
     sendcomment() {
+      console.log(this.$store);
       this.sendmsg.commentcontent = "11111111111111";
       console.log(this.sendmsg);
       this.user.push(this.sendmsg);
@@ -271,6 +276,21 @@ export default {
       )
         console.log(this.$router.push("/recipe_desc"));
     },
+    // 评论
+    // /comment
+    sendcomment(e) {
+      console.log(e.target);
+      // this.$http
+      //   .get("/getComment", {
+      //     rid: this.sendmsg.rid,
+      //   })
+      //   .then((response) => {
+      //     console.log(response.data);
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //   });
+    },
   },
   watch: {
     "$route.query.rid"() {
@@ -279,6 +299,7 @@ export default {
     },
   },
   created() {
+    console.log(this.$store._mutations.adminLogin);
     // console.log(this.$route.query.rid);
     this.codesc.rid = this.$route.query.rid;
     this.$http
@@ -312,23 +333,24 @@ export default {
         this.recipemsg.forEach((hot) => {
           if (hot.rid <= 6) {
             this.recipehot.push(hot);
-            this.hotTags.push(hot.title.slice(0, 2));
+            this.hotTags.push(hot.title.trim().slice(0, 2));
+            console.log(this.hotTags);
           }
         });
       })
       .catch((error) => {
         console.log(error);
       });
-    // 评论
-    // /comment
-    // this.$http
-    // .post("/comment")
-    // .then((response) => {
-    //   console.log(response.data);
-    // })
-    // .catch((error) => {
-    //   console.log(error);
-    // });
+    //  食谱作者
+    this.codesc.rid = this.$route.query.rid;
+    this.$http
+      .post("/login", { username: this.username })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>
@@ -641,10 +663,10 @@ li {
         }
         & > .pageview_top {
           & > .hot-search {
-            margin-top: 20px;
+            margin-top: 75px;
             font-size: 20px;
             color: #272b2c;
-            margin-bottom: 20px;
+            margin-bottom: -6px;
             font-weight: 800;
           }
           & > div {
@@ -680,7 +702,6 @@ li {
             }
           }
           & > .tags {
-            margin-top: 50px;
             @include disflex;
             flex-wrap: wrap;
             & > .tag {
@@ -705,5 +726,15 @@ li {
 }
 .option-right {
   width: 35%;
+}
+.shoplook,
+.hottag {
+  font-size: 20px;
+  color: #272b2c;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+}
+.hottag{
+  margin-top: 50px;
 }
 </style>

@@ -18,11 +18,8 @@ export default new Vuex.Store({
   mutations: {
     adminLogin(state, data) {
       state.admin = data;
+      console.log(state, data);
     },
-    recipemsg(state, recipemsg) {
-      // state
-    }
-
   },
   // 异步
   actions: {
