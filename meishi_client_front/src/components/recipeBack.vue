@@ -17,12 +17,12 @@
         <el-table-column prop="uid" label="ID" width="60"> </el-table-column>
         <el-table-column prop="nickname" label="昵称" width="115"></el-table-column>
         <el-table-column prop="username" label="登录账号" width="130"></el-table-column>
-        <el-table-column prop="recipe" width="150" label="发布菜谱"> </el-table-column>
+        <el-table-column prop="recipe" width="160" label="发布菜谱"> </el-table-column>
         <!-- <el-table-column prop="ip" width="70" label="IP地址"> </el-table-column> -->
         <el-table-column prop="addtimes" width="145" label="注册时间"> </el-table-column>
         <el-table-column prop="lastimes" width="145" label="最近登录"> </el-table-column>
-        <el-table-column prop="nums"  width="80" label="登录次数"> </el-table-column>
-        <el-table-column fixed="right" label="操作" >
+        <!-- <el-table-column prop="nums"  width="90" label="登录次数"> </el-table-column> -->
+        <el-table-column fixed="right" label="操作">
           <template slot-scope="scope">
         <el-button
           size="mini"
@@ -115,7 +115,7 @@ export default {
 
 <style>
 .con {
-  width: 1090px;
-  margin: -590px 0px 0px 0px;
+  width: 1100px;
+  margin: -590px 0px 0px -3px;
 }
 </style>
