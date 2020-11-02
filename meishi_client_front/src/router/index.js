@@ -11,10 +11,14 @@ const routes = [
   //   // component: Home
   // },
   {
+    path: '/',
+    component: () => import('../views/Home.vue')
+  },
+  {
     path: '/admin',
     component: () => import('../views/Admin.vue')
   },
-   {
+  {
     path: '/add',
     name: 'Add',
     component: () => import("@/views/add.vue")
@@ -41,7 +45,12 @@ const routes = [
   {
     path: '/login',
     component: () => import("@/views/Login.vue")
-  }, {
+  }, 
+  // {
+
+  //   component: () => import("@/views/Login.vue")
+  // },
+  {
     path: '/shop',
     name: 'Shop',
     component: () => import("@/views/shop.vue")
@@ -57,11 +66,11 @@ const routes = [
     component: () => import("@/components/anime_r_t.vue")
 
   }
-  
+
 ]
 const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
-  routes
+  routes,
 })
 export default router

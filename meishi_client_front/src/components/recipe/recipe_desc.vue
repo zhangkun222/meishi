@@ -234,7 +234,7 @@ export default {
           commentimghead:
             "https://app-file.beitaichufang.com/img/EE11CBB19052E40B07AAC0CA060C23EE/20200825/1598355946892_738X738.jpeg",
           commentcontent: "这里萨尔为23456789o78ikyhjmnbgvf哈哈哈",
-          addtime: "20:20:55",
+          addtime: "Fri Oct 30 2020 11:20:09 GMT+0800 (中国标准时间)",
         },
       ],
       sendmsg: {
@@ -249,6 +249,8 @@ export default {
       hotTags: [],
       commentcon: "",
       username: "",
+      rid: "",
+      jump:"/Recipe/recipe_desc"
     };
   },
   methods: {
@@ -268,13 +270,9 @@ export default {
     },
     // 热门内容跳转传值
     jumpanywhere() {
-      if (
-        this.recipemsg.forEach((h) => {
           // h.rid=this.$route.query.rid;
           // this.$router.push(`/recipe`); //recipe+'?rid='+item.rid
-        })
-      )
-        console.log(this.$router.push("/recipe_desc"));
+        // this.$router.push(this.jump+`?rid=`+hotTags[0].rid);
     },
     // 评论
     // /comment
@@ -306,7 +304,6 @@ export default {
       .post("/getAllMenu")
       .then((response) => {
         this.recipemsg = response.data;
-        console.log(this.recipemsg);
         this.recipemsg.forEach((recipe) => {
           if (recipe.rid == this.$route.query.rid) {
             this.codesc = recipe;
@@ -334,23 +331,21 @@ export default {
           if (hot.rid <= 6) {
             this.recipehot.push(hot);
             this.hotTags.push(hot.title.trim().slice(0, 2));
-            console.log(this.hotTags);
           }
         });
       })
       .catch((error) => {
         console.log(error);
       });
-    //  食谱作者
-    this.codesc.rid = this.$route.query.rid;
-    this.$http
-      .post("/login", { username: this.username })
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // 评论
+    // this.$http
+    //   .get("/getComment", { params: { rid: this.rid } })
+    //   .then((response) => {
+    //     console.log(response.data);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   },
 };
 </script>
@@ -734,7 +729,7 @@ li {
   font-weight: 800;
   padding: 0 0 20px 0;
 }
-.hottag{
+.hottag {
   margin-top: 50px;
 }
 </style>

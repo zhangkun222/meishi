@@ -133,6 +133,7 @@
         </div>
       </div>
     </div>
+    <footer-nav></footer-nav>
   </div>
 </template>
 
@@ -278,8 +279,8 @@ export default {
 }
 .indexs {
   width: 100%;
-  height: 3242px;
-  background-color: yellow;
+  height: 3000px;//整个高度
+  background-color: white;
 }
 .slideshow-indexs {
   // background-color: pink;

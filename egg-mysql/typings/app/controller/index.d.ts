@@ -6,6 +6,7 @@ import ExportComments = require('../../../app/controller/comments');
 import ExportFileUpload = require('../../../app/controller/fileUpload');
 import ExportRecipe = require('../../../app/controller/recipe');
 import ExportReglogin = require('../../../app/controller/reglogin');
+import ExportVerifLogin = require('../../../app/controller/verifLogin');
 
 declare module 'egg' {
   interface IController {
@@ -13,5 +14,6 @@ declare module 'egg' {
     fileUpload: ExportFileUpload;
     recipe: ExportRecipe;
     reglogin: ExportReglogin;
+    verifLogin: ExportVerifLogin;
   }
 }

@@ -9,11 +9,13 @@ type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? R
 import ExportComments = require('../../../app/service/comments');
 import ExportRecipe = require('../../../app/service/recipe');
 import ExportReglogin = require('../../../app/service/reglogin');
+import ExportVerifLogin = require('../../../app/service/verifLogin');
 
 declare module 'egg' {
   interface IService {
     comments: AutoInstanceType<typeof ExportComments>;
     recipe: AutoInstanceType<typeof ExportRecipe>;
     reglogin: AutoInstanceType<typeof ExportReglogin>;
+    verifLogin: AutoInstanceType<typeof ExportVerifLogin>;
   }
 }

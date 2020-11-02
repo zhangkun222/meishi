@@ -128,7 +128,6 @@ export default {
       .then((response) => {
         // console.log(response.data);
         this.recipemsg = response.data;
-
         switch (this.activeIndex) {
           case "2":
             this.recipemsg.sort((m, n) => {

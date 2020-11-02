@@ -26,6 +26,7 @@ module.exports = app => {
 
   //添加评论
   router.post("/comment",controller.comments.comment)
+  router.get("/getComment",controller.comments.getComment)
   
   //登录
   router.post("/login",controller.reglogin.userlogin)
@@ -35,6 +36,8 @@ module.exports = app => {
   
 	router.post('/uploadimg', controller.fileUpload.uploadImg);
   
+ // router.post('/smsverif', controller.verifLogin.smsVerif); 
+//  router.post('/verifLogin', controller.verifLogin.verifLogin);
 	// router.post("/delpro",controller.tbshopgoods.delproduct)
 	
 	// router.post("/uppro",controller.tbshopgoods.upproduct)
