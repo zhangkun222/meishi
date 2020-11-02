@@ -195,7 +195,7 @@
       }
     },
     "cors": {
-      "origin": "*",
+      "origin": "http://localhost:8080",
       "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH",
       "credentials": true
     },
@@ -218,6 +218,7 @@
         "declarations": true
       },
       "dependencies": {
+        "@alicloud/pop-core": "^1.7.10",
         "egg": "^2.15.1",
         "egg-cors": "^2.2.3",
         "egg-mysql": "^3.0.0",
@@ -353,7 +354,7 @@
       "listen": {
         "path": "",
         "port": 8000,
-        "hostname": ""
+        "hostname": "localhost"
       }
     },
     "clusterClient": {

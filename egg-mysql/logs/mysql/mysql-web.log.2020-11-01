@@ -338,6 +338,7 @@ headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"
 pid: 16328
 hostname: USER-20170826XD
 
+<<<<<<< HEAD
 2020-10-30 13:03:03,120 ERROR 8536 [-/::1/-/5ms POST /updateMenu] nodejs.TypeError: Cannot read property 'title' of undefined
     at RecipeService.updateMenu (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\recipe.js:77:46)
     at RecipeController.updateMenu (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\recipe.js:32:50)
@@ -2267,4 +2268,20 @@ hostname: DESKTOP-TI5MI0U
 headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
 pid: 21628
 hostname: DESKTOP-TI5MI0U
+=======
+2020-11-01 21:14:50,935 ERROR 2980 [-/::1/-/282ms POST /smsverif] nodejs.TypeError: Cannot read property 'smsVerif' of undefined
+    at VerifLoginController.smsVerif (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\verifLogin.js:8:36)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 2980
+hostname: USER-20170826XD
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
 

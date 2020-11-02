@@ -72,9 +72,15 @@
   },
   "cluster": {
     "listen": {
+<<<<<<< HEAD
       "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
       "port": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
       "hostname": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+=======
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "hostname": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "port": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
     }
   },
   "cors": {
@@ -191,10 +197,18 @@
       "declarations": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
     },
     "dependencies": {
+<<<<<<< HEAD
       "egg": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg-cors": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg-mysql": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg-scripts": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+=======
+      "@alicloud/pop-core": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-scripts": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
     },
     "devDependencies": {
       "autod": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",

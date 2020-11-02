@@ -502,6 +502,7 @@ name: "unhandledExceptionError"
 pid: 25000
 hostname: USER-20170826XD
 
+<<<<<<< HEAD
 2020-10-30 13:03:03,115 ERROR 8536 [-/::1/-/5ms POST /updateMenu] nodejs.TypeError: Cannot read property 'title' of undefined
     at RecipeService.updateMenu (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\recipe.js:77:46)
     at RecipeController.updateMenu (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\recipe.js:32:50)
@@ -2253,11 +2254,31 @@ pid: 54348
 hostname: DESKTOP-TI5MI0U
 
 2020-11-01 18:51:02,380 ERROR 21620 nodejs.unhandledExceptionError: read ECONNRESET
+=======
+2020-11-01 16:52:28,574 ERROR 10092 nodejs.ClusterClientNoResponseError: client no response in 1207697ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 10092
+hostname: USER-20170826XD
+
+2020-11-01 18:44:09,171 ERROR 10092 nodejs.ClusterClientNoResponseError: client no response in 2117711ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 10092
+hostname: USER-20170826XD
+
+2020-11-01 20:13:44,057 ERROR 10092 nodejs.unhandledExceptionError: read ECONNRESET
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
     at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
 errno: "ECONNRESET"
 code: "ECONNRESET"
 syscall: "read"
 name: "unhandledExceptionError"
+<<<<<<< HEAD
 pid: 21620
 hostname: DESKTOP-TI5MI0U
 
@@ -2512,4 +2533,41 @@ hostname: DESKTOP-TI5MI0U
 headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
 pid: 21628
 hostname: DESKTOP-TI5MI0U
+=======
+pid: 10092
+hostname: USER-20170826XD
+
+2020-11-01 21:14:50,932 ERROR 2980 [-/::1/-/282ms POST /smsverif] nodejs.TypeError: Cannot read property 'smsVerif' of undefined
+    at VerifLoginController.smsVerif (C:\Users\Administrator\Desktop\meishi\egg-mysql\app\controller\verifLogin.js:8:36)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_egg-core@4.20.0@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\meishi\egg-mysql\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 2980
+hostname: USER-20170826XD
+
+2020-11-01 21:28:42,920 ERROR 10092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10092
+hostname: USER-20170826XD
+
+2020-11-01 23:47:18,465 ERROR 10092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10092
+hostname: USER-20170826XD
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
 

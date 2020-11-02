@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-11-02 00:21:39,461 ERROR 21628 [-/::1/-/54ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
     at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
@@ -138,11 +139,15 @@ pid: 40588
 hostname: DESKTOP-TI5MI0U
 
 2020-11-02 00:34:14,121 ERROR 3276 nodejs.unhandledExceptionError: read ECONNRESET
+=======
+2020-11-02 00:47:21,154 ERROR 10092 nodejs.unhandledExceptionError: read ECONNRESET
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
     at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
 errno: "ECONNRESET"
 code: "ECONNRESET"
 syscall: "read"
 name: "unhandledExceptionError"
+<<<<<<< HEAD
 pid: 3276
 hostname: DESKTOP-TI5MI0U
 
@@ -659,4 +664,17 @@ hostname: DESKTOP-TI5MI0U
 headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
 pid: 8380
 hostname: DESKTOP-TI5MI0U
+=======
+pid: 10092
+hostname: USER-20170826XD
+
+2020-11-02 01:47:28,977 ERROR 10092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10092
+hostname: USER-20170826XD
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
 

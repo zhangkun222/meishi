@@ -1583,6 +1583,7 @@ pid: 22744
 hostname: USER-20170826XD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2020-07-23 16:36:03,252 WARN 23212 [ClusterClient:Watcher] follower closed, and try to init it again
 2020-07-23 16:36:04,390 INFO 14408 [egg:logger] init all loggers with options: {"dir":"E:\\桌面\\H2002\\nodejs-egg\\03-classCode-nodejs-egg\\day09\\01-server\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
 2020-07-23 16:36:04,417 INFO 14408 [egg-multipart] file mode enable
@@ -6135,6 +6136,8 @@ hostname: DESKTOP-TI5MI0U
 2020-11-01 19:15:18,172 WARN 44364 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
 2020-11-01 19:15:18,187 WARN 44364 [ClusterClient:Watcher] follower closed, and try to init it again
 =======
+=======
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
 2020-11-01 13:39:00,427 WARN 22744 [ClusterClient:Watcher] follower closed, and try to init it again
 2020-11-01 13:39:03,477 INFO 1356 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
 2020-11-01 13:39:03,527 INFO 1356 [egg-multipart] file mode enable
@@ -6728,6 +6731,7 @@ hostname: DESKTOP-TI5MI0U
 2020-11-01 14:22:38,591 INFO 24664 [egg-watcher:application] watcher start success
 2020-11-01 14:22:38,615 INFO 24664 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 14:22:38 GMT+0800 (GMT+08:00)
 2020-11-01 14:22:38,626 INFO 24664 [egg:core] dump config after ready, 8ms
+<<<<<<< HEAD
 >>>>>>> b2913e4c0b24c02c4a93e6e73c8a621757e01c77
 2020-11-01 22:20:30,776 INFO 21628 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
 2020-11-01 22:20:30,835 INFO 21628 [egg-multipart] file mode enable
@@ -6748,3 +6752,746 @@ hostname: DESKTOP-TI5MI0U
 2020-11-02 00:00:00,071 INFO 21628 [egg-logrotator] clean all log before 31 days
 2020-11-02 00:00:01,024 INFO 21628 [egg-logrotator] broadcast log-reload
 2020-11-02 00:00:01,025 INFO 21628 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\common-error.log -> C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\common-error.log.2020-11-01","C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\mysql-web.log -> C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\mysql-web.log.2020-11-01","C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-web.log -> C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-web.log.2020-11-01","C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-schedule.log -> C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-schedule.log.2020-11-01","C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-agent.log -> C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-agent.log.2020-11-01"]
+=======
+2020-11-01 15:36:10,361 INFO 12744 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 15:36:10,440 INFO 12744 [egg-multipart] file mode enable
+2020-11-01 15:36:10,440 INFO 12744 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 15:36:10,441 INFO 12744 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 15:36:11,288 INFO 12744 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 15:36:11,296 INFO 12744 [egg-security] use methodnoallow middleware
+2020-11-01 15:36:11,298 INFO 12744 [egg-security] use noopen middleware
+2020-11-01 15:36:11,302 INFO 12744 [egg-security] use nosniff middleware
+2020-11-01 15:36:11,304 INFO 12744 [egg-security] use xssProtection middleware
+2020-11-01 15:36:11,305 INFO 12744 [egg-security] use xframe middleware
+2020-11-01 15:36:11,308 INFO 12744 [egg-security] use dta middleware
+2020-11-01 15:36:11,308 INFO 12744 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 15:36:11,335 INFO 12744 [egg:core] dump config after load, 6ms
+2020-11-01 15:36:11,473 INFO 12744 [egg-watcher:application] watcher start success
+2020-11-01 15:36:11,482 INFO 12744 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 15:36:11 GMT+0800 (GMT+08:00)
+2020-11-01 15:36:11,492 INFO 12744 [egg:core] dump config after ready, 8ms
+2020-11-01 15:36:14,867 INFO 7056 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 15:36:14,915 INFO 7056 [egg-multipart] file mode enable
+2020-11-01 15:36:14,915 INFO 7056 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 15:36:14,915 INFO 7056 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 15:36:15,355 INFO 7056 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 15:36:15,361 INFO 7056 [egg-security] use methodnoallow middleware
+2020-11-01 15:36:15,363 INFO 7056 [egg-security] use noopen middleware
+2020-11-01 15:36:15,366 INFO 7056 [egg-security] use nosniff middleware
+2020-11-01 15:36:15,367 INFO 7056 [egg-security] use xssProtection middleware
+2020-11-01 15:36:15,369 INFO 7056 [egg-security] use xframe middleware
+2020-11-01 15:36:15,370 INFO 7056 [egg-security] use dta middleware
+2020-11-01 15:36:15,370 INFO 7056 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 15:36:15,403 INFO 7056 [egg:core] dump config after load, 11ms
+2020-11-01 15:36:15,464 INFO 7056 [egg-watcher:application] watcher start success
+2020-11-01 15:36:15,490 INFO 7056 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 15:36:15 GMT+0800 (GMT+08:00)
+2020-11-01 15:36:15,501 INFO 7056 [egg:core] dump config after ready, 8ms
+2020-11-01 15:36:19,098 INFO 23028 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 15:36:19,150 INFO 23028 [egg-multipart] file mode enable
+2020-11-01 15:36:19,150 INFO 23028 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 15:36:19,151 INFO 23028 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 15:36:19,546 INFO 23028 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 15:36:19,552 INFO 23028 [egg-security] use methodnoallow middleware
+2020-11-01 15:36:19,553 INFO 23028 [egg-security] use noopen middleware
+2020-11-01 15:36:19,557 INFO 23028 [egg-security] use nosniff middleware
+2020-11-01 15:36:19,560 INFO 23028 [egg-security] use xssProtection middleware
+2020-11-01 15:36:19,561 INFO 23028 [egg-security] use xframe middleware
+2020-11-01 15:36:19,562 INFO 23028 [egg-security] use dta middleware
+2020-11-01 15:36:19,562 INFO 23028 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 15:36:19,581 INFO 23028 [egg:core] dump config after load, 7ms
+2020-11-01 15:36:19,611 INFO 23028 [egg-watcher:application] watcher start success
+2020-11-01 15:36:19,615 INFO 23028 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 15:36:19 GMT+0800 (GMT+08:00)
+2020-11-01 15:36:19,630 INFO 23028 [egg:core] dump config after ready, 8ms
+2020-11-01 15:50:57,348 INFO 25184 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 15:50:57,405 INFO 25184 [egg-multipart] file mode enable
+2020-11-01 15:50:57,405 INFO 25184 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 15:50:57,405 INFO 25184 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 15:50:58,024 INFO 25184 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 15:50:58,034 INFO 25184 [egg-security] use methodnoallow middleware
+2020-11-01 15:50:58,037 INFO 25184 [egg-security] use noopen middleware
+2020-11-01 15:50:58,042 INFO 25184 [egg-security] use nosniff middleware
+2020-11-01 15:50:58,044 INFO 25184 [egg-security] use xssProtection middleware
+2020-11-01 15:50:58,046 INFO 25184 [egg-security] use xframe middleware
+2020-11-01 15:50:58,048 INFO 25184 [egg-security] use dta middleware
+2020-11-01 15:50:58,048 INFO 25184 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 15:50:58,073 INFO 25184 [egg:core] dump config after load, 7ms
+2020-11-01 15:50:58,112 INFO 25184 [egg-watcher:application] watcher start success
+2020-11-01 15:50:58,124 INFO 25184 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 15:50:58 GMT+0800 (GMT+08:00)
+2020-11-01 15:50:58,138 INFO 25184 [egg:core] dump config after ready, 11ms
+2020-11-01 16:52:28,173 WARN 25184 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-01 18:44:09,081 WARN 25184 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-11-01 19:13:29,872 INFO 14664 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 19:13:30,022 INFO 14664 [egg-multipart] file mode enable
+2020-11-01 19:13:30,022 INFO 14664 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 19:13:30,023 INFO 14664 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 19:13:31,106 INFO 14664 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 19:13:31,120 INFO 14664 [egg-security] use methodnoallow middleware
+2020-11-01 19:13:31,122 INFO 14664 [egg-security] use noopen middleware
+2020-11-01 19:13:31,128 INFO 14664 [egg-security] use nosniff middleware
+2020-11-01 19:13:31,130 INFO 14664 [egg-security] use xssProtection middleware
+2020-11-01 19:13:31,134 INFO 14664 [egg-security] use xframe middleware
+2020-11-01 19:13:31,136 INFO 14664 [egg-security] use dta middleware
+2020-11-01 19:13:31,137 INFO 14664 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 19:13:31,235 INFO 14664 [egg:core] dump config after load, 70ms
+2020-11-01 19:13:31,381 INFO 14664 [egg-watcher:application] watcher start success
+2020-11-01 19:13:31,532 INFO 14664 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 19:13:31 GMT+0800 (GMT+08:00)
+2020-11-01 19:13:31,565 INFO 14664 [egg:core] dump config after ready, 15ms
+2020-11-01 19:13:36,743 INFO 7380 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 19:13:36,820 INFO 7380 [egg-multipart] file mode enable
+2020-11-01 19:13:36,820 INFO 7380 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 19:13:36,820 INFO 7380 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 19:13:37,489 INFO 7380 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 19:13:37,497 INFO 7380 [egg-security] use methodnoallow middleware
+2020-11-01 19:13:37,501 INFO 7380 [egg-security] use noopen middleware
+2020-11-01 19:13:37,507 INFO 7380 [egg-security] use nosniff middleware
+2020-11-01 19:13:37,510 INFO 7380 [egg-security] use xssProtection middleware
+2020-11-01 19:13:37,512 INFO 7380 [egg-security] use xframe middleware
+2020-11-01 19:13:37,515 INFO 7380 [egg-security] use dta middleware
+2020-11-01 19:13:37,516 INFO 7380 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 19:13:37,549 INFO 7380 [egg:core] dump config after load, 12ms
+2020-11-01 19:13:37,569 INFO 7380 [egg-watcher:application] watcher start success
+2020-11-01 19:13:37,596 INFO 7380 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 19:13:37 GMT+0800 (GMT+08:00)
+2020-11-01 19:13:37,611 INFO 7380 [egg:core] dump config after ready, 11ms
+2020-11-01 20:13:38,495 INFO 1568 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 20:13:38,557 INFO 1568 [egg-multipart] file mode enable
+2020-11-01 20:13:38,557 INFO 1568 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 20:13:38,558 INFO 1568 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 20:13:39,781 INFO 1568 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 20:13:39,790 INFO 1568 [egg-security] use methodnoallow middleware
+2020-11-01 20:13:39,793 INFO 1568 [egg-security] use noopen middleware
+2020-11-01 20:13:39,797 INFO 1568 [egg-security] use nosniff middleware
+2020-11-01 20:13:39,799 INFO 1568 [egg-security] use xssProtection middleware
+2020-11-01 20:13:39,801 INFO 1568 [egg-security] use xframe middleware
+2020-11-01 20:13:39,802 INFO 1568 [egg-security] use dta middleware
+2020-11-01 20:13:39,802 INFO 1568 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 20:13:39,830 INFO 1568 [egg:core] dump config after load, 8ms
+2020-11-01 20:13:39,890 INFO 1568 [egg-watcher:application] watcher start success
+2020-11-01 20:13:40,021 INFO 1568 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 20:13:40 GMT+0800 (GMT+08:00)
+2020-11-01 20:13:40,032 INFO 1568 [egg:core] dump config after ready, 8ms
+2020-11-01 20:13:43,422 INFO 23956 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 20:13:43,469 INFO 23956 [egg-multipart] file mode enable
+2020-11-01 20:13:43,469 INFO 23956 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 20:13:43,470 INFO 23956 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 20:13:43,924 INFO 23956 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 20:13:43,931 INFO 23956 [egg-security] use methodnoallow middleware
+2020-11-01 20:13:43,933 INFO 23956 [egg-security] use noopen middleware
+2020-11-01 20:13:43,942 INFO 23956 [egg-security] use nosniff middleware
+2020-11-01 20:13:43,943 INFO 23956 [egg-security] use xssProtection middleware
+2020-11-01 20:13:43,945 INFO 23956 [egg-security] use xframe middleware
+2020-11-01 20:13:43,948 INFO 23956 [egg-security] use dta middleware
+2020-11-01 20:13:43,948 INFO 23956 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 20:13:43,976 INFO 23956 [egg:core] dump config after load, 11ms
+2020-11-01 20:13:44,077 INFO 23956 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 20:13:44 GMT+0800 (GMT+08:00)
+2020-11-01 20:13:44,108 INFO 23956 [egg-watcher:application] watcher start success
+2020-11-01 20:13:44,141 INFO 23956 [egg:core] dump config after ready, 31ms
+2020-11-01 20:36:15,165 INFO 16292 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 20:36:15,230 INFO 16292 [egg-multipart] file mode enable
+2020-11-01 20:36:15,230 INFO 16292 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 20:36:15,230 INFO 16292 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 20:36:15,882 INFO 16292 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 20:36:15,892 INFO 16292 [egg-security] use methodnoallow middleware
+2020-11-01 20:36:15,894 INFO 16292 [egg-security] use noopen middleware
+2020-11-01 20:36:15,900 INFO 16292 [egg-security] use nosniff middleware
+2020-11-01 20:36:15,904 INFO 16292 [egg-security] use xssProtection middleware
+2020-11-01 20:36:15,907 INFO 16292 [egg-security] use xframe middleware
+2020-11-01 20:36:15,908 INFO 16292 [egg-security] use dta middleware
+2020-11-01 20:36:15,908 INFO 16292 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 20:36:15,937 INFO 16292 [egg:core] dump config after load, 9ms
+2020-11-01 20:36:15,956 INFO 16292 [egg-watcher:application] watcher start success
+2020-11-01 20:36:16,308 INFO 16292 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 20:36:16 GMT+0800 (GMT+08:00)
+2020-11-01 20:36:16,331 INFO 16292 [egg:core] dump config after ready, 21ms
+2020-11-01 21:11:10,448 INFO 14608 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:11:10,508 INFO 14608 [egg-multipart] file mode enable
+2020-11-01 21:11:10,508 INFO 14608 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:11:10,509 INFO 14608 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:11:11,273 INFO 14608 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:11:11,279 INFO 14608 [egg-security] use methodnoallow middleware
+2020-11-01 21:11:11,281 INFO 14608 [egg-security] use noopen middleware
+2020-11-01 21:11:11,285 INFO 14608 [egg-security] use nosniff middleware
+2020-11-01 21:11:11,286 INFO 14608 [egg-security] use xssProtection middleware
+2020-11-01 21:11:11,288 INFO 14608 [egg-security] use xframe middleware
+2020-11-01 21:11:11,293 INFO 14608 [egg-security] use dta middleware
+2020-11-01 21:11:11,293 INFO 14608 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:11:11,324 INFO 14608 [egg:core] dump config after load, 8ms
+2020-11-01 21:11:11,373 INFO 14608 [egg-watcher:application] watcher start success
+2020-11-01 21:11:11,494 INFO 14608 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:11:11 GMT+0800 (GMT+08:00)
+2020-11-01 21:11:11,505 INFO 14608 [egg:core] dump config after ready, 9ms
+2020-11-01 21:11:16,346 INFO 2980 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:11:16,481 INFO 2980 [egg-multipart] file mode enable
+2020-11-01 21:11:16,481 INFO 2980 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:11:16,482 INFO 2980 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:11:17,560 INFO 2980 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:11:17,566 INFO 2980 [egg-security] use methodnoallow middleware
+2020-11-01 21:11:17,567 INFO 2980 [egg-security] use noopen middleware
+2020-11-01 21:11:17,572 INFO 2980 [egg-security] use nosniff middleware
+2020-11-01 21:11:17,574 INFO 2980 [egg-security] use xssProtection middleware
+2020-11-01 21:11:17,576 INFO 2980 [egg-security] use xframe middleware
+2020-11-01 21:11:17,577 INFO 2980 [egg-security] use dta middleware
+2020-11-01 21:11:17,577 INFO 2980 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:11:17,619 INFO 2980 [egg:core] dump config after load, 7ms
+2020-11-01 21:11:17,655 INFO 2980 [egg-watcher:application] watcher start success
+2020-11-01 21:11:17,680 INFO 2980 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:11:17 GMT+0800 (GMT+08:00)
+2020-11-01 21:11:17,691 INFO 2980 [egg:core] dump config after ready, 8ms
+2020-11-01 21:15:25,241 INFO 17196 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:15:25,355 INFO 17196 [egg-multipart] file mode enable
+2020-11-01 21:15:25,355 INFO 17196 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:15:25,355 INFO 17196 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:15:26,358 INFO 17196 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:15:26,366 INFO 17196 [egg-security] use methodnoallow middleware
+2020-11-01 21:15:26,369 INFO 17196 [egg-security] use noopen middleware
+2020-11-01 21:15:26,373 INFO 17196 [egg-security] use nosniff middleware
+2020-11-01 21:15:26,376 INFO 17196 [egg-security] use xssProtection middleware
+2020-11-01 21:15:26,378 INFO 17196 [egg-security] use xframe middleware
+2020-11-01 21:15:26,379 INFO 17196 [egg-security] use dta middleware
+2020-11-01 21:15:26,379 INFO 17196 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:15:26,407 INFO 17196 [egg:core] dump config after load, 6ms
+2020-11-01 21:15:26,473 INFO 17196 [egg-watcher:application] watcher start success
+2020-11-01 21:15:26,641 INFO 17196 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:15:26 GMT+0800 (GMT+08:00)
+2020-11-01 21:15:26,653 INFO 17196 [egg:core] dump config after ready, 9ms
+2020-11-01 21:15:31,733 INFO 25220 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:15:31,799 INFO 25220 [egg-multipart] file mode enable
+2020-11-01 21:15:31,799 INFO 25220 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:15:31,800 INFO 25220 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:15:32,467 INFO 25220 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:15:32,473 INFO 25220 [egg-security] use methodnoallow middleware
+2020-11-01 21:15:32,475 INFO 25220 [egg-security] use noopen middleware
+2020-11-01 21:15:32,480 INFO 25220 [egg-security] use nosniff middleware
+2020-11-01 21:15:32,482 INFO 25220 [egg-security] use xssProtection middleware
+2020-11-01 21:15:32,483 INFO 25220 [egg-security] use xframe middleware
+2020-11-01 21:15:32,484 INFO 25220 [egg-security] use dta middleware
+2020-11-01 21:15:32,484 INFO 25220 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:15:32,508 INFO 25220 [egg:core] dump config after load, 7ms
+2020-11-01 21:15:32,533 INFO 25220 [egg-watcher:application] watcher start success
+2020-11-01 21:15:32,552 INFO 25220 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:15:32 GMT+0800 (GMT+08:00)
+2020-11-01 21:15:32,565 INFO 25220 [egg:core] dump config after ready, 11ms
+2020-11-01 21:15:38,303 INFO 21628 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:15:38,358 INFO 21628 [egg-multipart] file mode enable
+2020-11-01 21:15:38,358 INFO 21628 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:15:38,359 INFO 21628 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:15:39,201 INFO 21628 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:15:39,216 INFO 21628 [egg-security] use methodnoallow middleware
+2020-11-01 21:15:39,219 INFO 21628 [egg-security] use noopen middleware
+2020-11-01 21:15:39,232 INFO 21628 [egg-security] use nosniff middleware
+2020-11-01 21:15:39,234 INFO 21628 [egg-security] use xssProtection middleware
+2020-11-01 21:15:39,236 INFO 21628 [egg-security] use xframe middleware
+2020-11-01 21:15:39,237 INFO 21628 [egg-security] use dta middleware
+2020-11-01 21:15:39,237 INFO 21628 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:15:39,288 INFO 21628 [egg:core] dump config after load, 18ms
+2020-11-01 21:15:39,339 INFO 21628 [egg-watcher:application] watcher start success
+2020-11-01 21:15:39,344 INFO 21628 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:15:39 GMT+0800 (GMT+08:00)
+2020-11-01 21:15:39,362 INFO 21628 [egg:core] dump config after ready, 10ms
+2020-11-01 21:16:03,612 INFO 13396 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:16:03,667 INFO 13396 [egg-multipart] file mode enable
+2020-11-01 21:16:03,667 INFO 13396 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:16:03,668 INFO 13396 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:16:05,008 INFO 13396 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:16:05,018 INFO 13396 [egg-security] use methodnoallow middleware
+2020-11-01 21:16:05,027 INFO 13396 [egg-security] use noopen middleware
+2020-11-01 21:16:05,032 INFO 13396 [egg-security] use nosniff middleware
+2020-11-01 21:16:05,033 INFO 13396 [egg-security] use xssProtection middleware
+2020-11-01 21:16:05,035 INFO 13396 [egg-security] use xframe middleware
+2020-11-01 21:16:05,038 INFO 13396 [egg-security] use dta middleware
+2020-11-01 21:16:05,038 INFO 13396 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:16:05,079 INFO 13396 [egg:core] dump config after load, 18ms
+2020-11-01 21:16:05,165 INFO 13396 [egg-watcher:application] watcher start success
+2020-11-01 21:16:05,174 INFO 13396 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:16:05 GMT+0800 (GMT+08:00)
+2020-11-01 21:16:05,198 INFO 13396 [egg:core] dump config after ready, 21ms
+2020-11-01 21:16:09,799 INFO 15832 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:16:09,849 INFO 15832 [egg-multipart] file mode enable
+2020-11-01 21:16:09,849 INFO 15832 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:16:09,849 INFO 15832 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:16:10,490 INFO 15832 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:16:10,497 INFO 15832 [egg-security] use methodnoallow middleware
+2020-11-01 21:16:10,498 INFO 15832 [egg-security] use noopen middleware
+2020-11-01 21:16:10,502 INFO 15832 [egg-security] use nosniff middleware
+2020-11-01 21:16:10,504 INFO 15832 [egg-security] use xssProtection middleware
+2020-11-01 21:16:10,506 INFO 15832 [egg-security] use xframe middleware
+2020-11-01 21:16:10,508 INFO 15832 [egg-security] use dta middleware
+2020-11-01 21:16:10,508 INFO 15832 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:16:10,534 INFO 15832 [egg:core] dump config after load, 11ms
+2020-11-01 21:16:10,556 INFO 15832 [egg-watcher:application] watcher start success
+2020-11-01 21:16:10,577 INFO 15832 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:16:10 GMT+0800 (GMT+08:00)
+2020-11-01 21:16:10,597 INFO 15832 [egg:core] dump config after ready, 18ms
+2020-11-01 21:17:44,798 INFO 4788 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:17:44,864 INFO 4788 [egg-multipart] file mode enable
+2020-11-01 21:17:44,864 INFO 4788 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:17:44,865 INFO 4788 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:17:45,725 INFO 4788 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:17:45,739 INFO 4788 [egg-security] use methodnoallow middleware
+2020-11-01 21:17:45,749 INFO 4788 [egg-security] use noopen middleware
+2020-11-01 21:17:45,764 INFO 4788 [egg-security] use nosniff middleware
+2020-11-01 21:17:45,774 INFO 4788 [egg-security] use xssProtection middleware
+2020-11-01 21:17:45,791 INFO 4788 [egg-security] use xframe middleware
+2020-11-01 21:17:45,793 INFO 4788 [egg-security] use dta middleware
+2020-11-01 21:17:45,794 INFO 4788 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:17:45,861 INFO 4788 [egg:core] dump config after load, 37ms
+2020-11-01 21:17:45,893 INFO 4788 [egg-watcher:application] watcher start success
+2020-11-01 21:17:45,928 INFO 4788 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:17:45 GMT+0800 (GMT+08:00)
+2020-11-01 21:17:45,952 INFO 4788 [egg:core] dump config after ready, 15ms
+2020-11-01 21:17:50,400 INFO 23828 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:17:50,449 INFO 23828 [egg-multipart] file mode enable
+2020-11-01 21:17:50,449 INFO 23828 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:17:50,450 INFO 23828 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:17:51,008 INFO 23828 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:17:51,014 INFO 23828 [egg-security] use methodnoallow middleware
+2020-11-01 21:17:51,016 INFO 23828 [egg-security] use noopen middleware
+2020-11-01 21:17:51,021 INFO 23828 [egg-security] use nosniff middleware
+2020-11-01 21:17:51,022 INFO 23828 [egg-security] use xssProtection middleware
+2020-11-01 21:17:51,023 INFO 23828 [egg-security] use xframe middleware
+2020-11-01 21:17:51,025 INFO 23828 [egg-security] use dta middleware
+2020-11-01 21:17:51,026 INFO 23828 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:17:51,048 INFO 23828 [egg:core] dump config after load, 9ms
+2020-11-01 21:17:51,069 INFO 23828 [egg-watcher:application] watcher start success
+2020-11-01 21:17:51,081 INFO 23828 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:17:51 GMT+0800 (GMT+08:00)
+2020-11-01 21:17:51,092 INFO 23828 [egg:core] dump config after ready, 9ms
+2020-11-01 21:18:21,700 INFO 27292 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:18:21,750 INFO 27292 [egg-multipart] file mode enable
+2020-11-01 21:18:21,750 INFO 27292 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:18:21,751 INFO 27292 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:18:22,414 INFO 27292 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:18:22,421 INFO 27292 [egg-security] use methodnoallow middleware
+2020-11-01 21:18:22,423 INFO 27292 [egg-security] use noopen middleware
+2020-11-01 21:18:22,427 INFO 27292 [egg-security] use nosniff middleware
+2020-11-01 21:18:22,429 INFO 27292 [egg-security] use xssProtection middleware
+2020-11-01 21:18:22,432 INFO 27292 [egg-security] use xframe middleware
+2020-11-01 21:18:22,433 INFO 27292 [egg-security] use dta middleware
+2020-11-01 21:18:22,433 INFO 27292 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:18:22,489 INFO 27292 [egg:core] dump config after load, 8ms
+2020-11-01 21:18:22,509 INFO 27292 [egg-watcher:application] watcher start success
+2020-11-01 21:18:22,533 INFO 27292 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:18:22 GMT+0800 (GMT+08:00)
+2020-11-01 21:18:22,546 INFO 27292 [egg:core] dump config after ready, 11ms
+2020-11-01 21:18:26,130 INFO 14172 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:18:26,176 INFO 14172 [egg-multipart] file mode enable
+2020-11-01 21:18:26,177 INFO 14172 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:18:26,177 INFO 14172 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:18:26,705 INFO 14172 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:18:26,714 INFO 14172 [egg-security] use methodnoallow middleware
+2020-11-01 21:18:26,716 INFO 14172 [egg-security] use noopen middleware
+2020-11-01 21:18:26,720 INFO 14172 [egg-security] use nosniff middleware
+2020-11-01 21:18:26,721 INFO 14172 [egg-security] use xssProtection middleware
+2020-11-01 21:18:26,722 INFO 14172 [egg-security] use xframe middleware
+2020-11-01 21:18:26,723 INFO 14172 [egg-security] use dta middleware
+2020-11-01 21:18:26,724 INFO 14172 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:18:26,747 INFO 14172 [egg:core] dump config after load, 9ms
+2020-11-01 21:18:26,764 INFO 14172 [egg-watcher:application] watcher start success
+2020-11-01 21:18:26,775 INFO 14172 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:18:26 GMT+0800 (GMT+08:00)
+2020-11-01 21:18:26,792 INFO 14172 [egg:core] dump config after ready, 13ms
+2020-11-01 21:20:47,584 INFO 25180 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:20:47,670 INFO 25180 [egg-multipart] file mode enable
+2020-11-01 21:20:47,670 INFO 25180 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:20:47,671 INFO 25180 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:20:48,452 INFO 25180 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:20:48,458 INFO 25180 [egg-security] use methodnoallow middleware
+2020-11-01 21:20:48,459 INFO 25180 [egg-security] use noopen middleware
+2020-11-01 21:20:48,463 INFO 25180 [egg-security] use nosniff middleware
+2020-11-01 21:20:48,464 INFO 25180 [egg-security] use xssProtection middleware
+2020-11-01 21:20:48,466 INFO 25180 [egg-security] use xframe middleware
+2020-11-01 21:20:48,468 INFO 25180 [egg-security] use dta middleware
+2020-11-01 21:20:48,468 INFO 25180 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:20:48,522 INFO 25180 [egg:core] dump config after load, 7ms
+2020-11-01 21:20:48,540 INFO 25180 [egg-watcher:application] watcher start success
+2020-11-01 21:20:48,588 INFO 25180 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:20:48 GMT+0800 (GMT+08:00)
+2020-11-01 21:20:48,613 INFO 25180 [egg:core] dump config after ready, 21ms
+2020-11-01 21:20:52,255 INFO 20548 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:20:52,310 INFO 20548 [egg-multipart] file mode enable
+2020-11-01 21:20:52,310 INFO 20548 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:20:52,311 INFO 20548 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:20:52,912 INFO 20548 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:20:52,920 INFO 20548 [egg-security] use methodnoallow middleware
+2020-11-01 21:20:52,921 INFO 20548 [egg-security] use noopen middleware
+2020-11-01 21:20:52,925 INFO 20548 [egg-security] use nosniff middleware
+2020-11-01 21:20:52,926 INFO 20548 [egg-security] use xssProtection middleware
+2020-11-01 21:20:52,928 INFO 20548 [egg-security] use xframe middleware
+2020-11-01 21:20:52,929 INFO 20548 [egg-security] use dta middleware
+2020-11-01 21:20:52,929 INFO 20548 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:20:52,954 INFO 20548 [egg:core] dump config after load, 9ms
+2020-11-01 21:20:52,979 INFO 20548 [egg-watcher:application] watcher start success
+2020-11-01 21:20:52,999 INFO 20548 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:20:52 GMT+0800 (GMT+08:00)
+2020-11-01 21:20:53,010 INFO 20548 [egg:core] dump config after ready, 9ms
+2020-11-01 21:21:44,714 INFO 16976 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:21:44,765 INFO 16976 [egg-multipart] file mode enable
+2020-11-01 21:21:44,765 INFO 16976 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:21:44,765 INFO 16976 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:21:45,413 INFO 16976 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:21:45,422 INFO 16976 [egg-security] use methodnoallow middleware
+2020-11-01 21:21:45,424 INFO 16976 [egg-security] use noopen middleware
+2020-11-01 21:21:45,427 INFO 16976 [egg-security] use nosniff middleware
+2020-11-01 21:21:45,428 INFO 16976 [egg-security] use xssProtection middleware
+2020-11-01 21:21:45,429 INFO 16976 [egg-security] use xframe middleware
+2020-11-01 21:21:45,431 INFO 16976 [egg-security] use dta middleware
+2020-11-01 21:21:45,431 INFO 16976 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:21:45,456 INFO 16976 [egg:core] dump config after load, 9ms
+2020-11-01 21:21:45,500 INFO 16976 [egg-watcher:application] watcher start success
+2020-11-01 21:21:45,504 INFO 16976 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:21:45 GMT+0800 (GMT+08:00)
+2020-11-01 21:21:45,521 INFO 16976 [egg:core] dump config after ready, 13ms
+2020-11-01 21:21:48,904 INFO 15560 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:21:48,957 INFO 15560 [egg-multipart] file mode enable
+2020-11-01 21:21:48,957 INFO 15560 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:21:48,958 INFO 15560 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:21:49,559 INFO 15560 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:21:49,564 INFO 15560 [egg-security] use methodnoallow middleware
+2020-11-01 21:21:49,565 INFO 15560 [egg-security] use noopen middleware
+2020-11-01 21:21:49,569 INFO 15560 [egg-security] use nosniff middleware
+2020-11-01 21:21:49,571 INFO 15560 [egg-security] use xssProtection middleware
+2020-11-01 21:21:49,573 INFO 15560 [egg-security] use xframe middleware
+2020-11-01 21:21:49,574 INFO 15560 [egg-security] use dta middleware
+2020-11-01 21:21:49,574 INFO 15560 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:21:49,595 INFO 15560 [egg:core] dump config after load, 8ms
+2020-11-01 21:21:49,632 INFO 15560 [egg-watcher:application] watcher start success
+2020-11-01 21:21:49,636 INFO 15560 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:21:49 GMT+0800 (GMT+08:00)
+2020-11-01 21:21:49,649 INFO 15560 [egg:core] dump config after ready, 11ms
+2020-11-01 21:22:40,115 INFO 26840 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:22:40,168 INFO 26840 [egg-multipart] file mode enable
+2020-11-01 21:22:40,169 INFO 26840 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:22:40,169 INFO 26840 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:22:40,815 INFO 26840 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:22:40,822 INFO 26840 [egg-security] use methodnoallow middleware
+2020-11-01 21:22:40,824 INFO 26840 [egg-security] use noopen middleware
+2020-11-01 21:22:40,828 INFO 26840 [egg-security] use nosniff middleware
+2020-11-01 21:22:40,829 INFO 26840 [egg-security] use xssProtection middleware
+2020-11-01 21:22:40,830 INFO 26840 [egg-security] use xframe middleware
+2020-11-01 21:22:40,832 INFO 26840 [egg-security] use dta middleware
+2020-11-01 21:22:40,832 INFO 26840 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:22:40,857 INFO 26840 [egg:core] dump config after load, 8ms
+2020-11-01 21:22:40,874 INFO 26840 [egg-watcher:application] watcher start success
+2020-11-01 21:22:40,898 INFO 26840 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:22:40 GMT+0800 (GMT+08:00)
+2020-11-01 21:22:40,909 INFO 26840 [egg:core] dump config after ready, 8ms
+2020-11-01 21:22:44,035 INFO 19324 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:22:44,085 INFO 19324 [egg-multipart] file mode enable
+2020-11-01 21:22:44,085 INFO 19324 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:22:44,085 INFO 19324 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:22:44,638 INFO 19324 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:22:44,644 INFO 19324 [egg-security] use methodnoallow middleware
+2020-11-01 21:22:44,646 INFO 19324 [egg-security] use noopen middleware
+2020-11-01 21:22:44,650 INFO 19324 [egg-security] use nosniff middleware
+2020-11-01 21:22:44,651 INFO 19324 [egg-security] use xssProtection middleware
+2020-11-01 21:22:44,652 INFO 19324 [egg-security] use xframe middleware
+2020-11-01 21:22:44,653 INFO 19324 [egg-security] use dta middleware
+2020-11-01 21:22:44,653 INFO 19324 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:22:44,678 INFO 19324 [egg:core] dump config after load, 9ms
+2020-11-01 21:22:44,701 INFO 19324 [egg-watcher:application] watcher start success
+2020-11-01 21:22:44,722 INFO 19324 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:22:44 GMT+0800 (GMT+08:00)
+2020-11-01 21:22:44,734 INFO 19324 [egg:core] dump config after ready, 10ms
+2020-11-01 21:23:54,686 INFO 25376 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:23:54,759 INFO 25376 [egg-multipart] file mode enable
+2020-11-01 21:23:54,759 INFO 25376 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:23:54,760 INFO 25376 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:23:55,784 INFO 25376 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:23:55,791 INFO 25376 [egg-security] use methodnoallow middleware
+2020-11-01 21:23:55,800 INFO 25376 [egg-security] use noopen middleware
+2020-11-01 21:23:55,806 INFO 25376 [egg-security] use nosniff middleware
+2020-11-01 21:23:55,808 INFO 25376 [egg-security] use xssProtection middleware
+2020-11-01 21:23:55,816 INFO 25376 [egg-security] use xframe middleware
+2020-11-01 21:23:55,818 INFO 25376 [egg-security] use dta middleware
+2020-11-01 21:23:55,819 INFO 25376 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:23:55,862 INFO 25376 [egg:core] dump config after load, 13ms
+2020-11-01 21:23:55,924 INFO 25376 [egg-watcher:application] watcher start success
+2020-11-01 21:23:55,936 INFO 25376 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:23:55 GMT+0800 (GMT+08:00)
+2020-11-01 21:23:55,971 INFO 25376 [egg:core] dump config after ready, 19ms
+2020-11-01 21:23:59,682 INFO 2580 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:23:59,740 INFO 2580 [egg-multipart] file mode enable
+2020-11-01 21:23:59,740 INFO 2580 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:23:59,741 INFO 2580 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:24:00,300 INFO 2580 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:24:00,305 INFO 2580 [egg-security] use methodnoallow middleware
+2020-11-01 21:24:00,306 INFO 2580 [egg-security] use noopen middleware
+2020-11-01 21:24:00,310 INFO 2580 [egg-security] use nosniff middleware
+2020-11-01 21:24:00,311 INFO 2580 [egg-security] use xssProtection middleware
+2020-11-01 21:24:00,313 INFO 2580 [egg-security] use xframe middleware
+2020-11-01 21:24:00,314 INFO 2580 [egg-security] use dta middleware
+2020-11-01 21:24:00,314 INFO 2580 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:24:00,335 INFO 2580 [egg:core] dump config after load, 8ms
+2020-11-01 21:24:00,353 INFO 2580 [egg-watcher:application] watcher start success
+2020-11-01 21:24:00,369 INFO 2580 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:24:00 GMT+0800 (GMT+08:00)
+2020-11-01 21:24:00,381 INFO 2580 [egg:core] dump config after ready, 10ms
+2020-11-01 21:24:51,848 INFO 13492 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:24:51,902 INFO 13492 [egg-multipart] file mode enable
+2020-11-01 21:24:51,902 INFO 13492 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:24:51,903 INFO 13492 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:24:52,469 INFO 13492 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:24:52,474 INFO 13492 [egg-security] use methodnoallow middleware
+2020-11-01 21:24:52,476 INFO 13492 [egg-security] use noopen middleware
+2020-11-01 21:24:52,480 INFO 13492 [egg-security] use nosniff middleware
+2020-11-01 21:24:52,482 INFO 13492 [egg-security] use xssProtection middleware
+2020-11-01 21:24:52,484 INFO 13492 [egg-security] use xframe middleware
+2020-11-01 21:24:52,485 INFO 13492 [egg-security] use dta middleware
+2020-11-01 21:24:52,485 INFO 13492 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:24:52,509 INFO 13492 [egg:core] dump config after load, 9ms
+2020-11-01 21:24:52,535 INFO 13492 [egg-watcher:application] watcher start success
+2020-11-01 21:24:52,543 INFO 13492 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:24:52 GMT+0800 (GMT+08:00)
+2020-11-01 21:24:52,560 INFO 13492 [egg:core] dump config after ready, 10ms
+2020-11-01 21:28:34,921 INFO 10864 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:28:35,014 INFO 10864 [egg-multipart] file mode enable
+2020-11-01 21:28:35,014 INFO 10864 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:28:35,014 INFO 10864 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:28:35,983 INFO 10864 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:28:35,990 INFO 10864 [egg-security] use methodnoallow middleware
+2020-11-01 21:28:35,993 INFO 10864 [egg-security] use noopen middleware
+2020-11-01 21:28:36,003 INFO 10864 [egg-security] use nosniff middleware
+2020-11-01 21:28:36,005 INFO 10864 [egg-security] use xssProtection middleware
+2020-11-01 21:28:36,007 INFO 10864 [egg-security] use xframe middleware
+2020-11-01 21:28:36,010 INFO 10864 [egg-security] use dta middleware
+2020-11-01 21:28:36,044 INFO 10864 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:28:36,259 INFO 10864 [egg:core] dump config after load, 197ms
+2020-11-01 21:28:36,470 INFO 10864 [egg-watcher:application] watcher start success
+2020-11-01 21:28:36,599 INFO 10864 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:28:36 GMT+0800 (GMT+08:00)
+2020-11-01 21:28:36,649 INFO 10864 [egg:core] dump config after ready, 43ms
+2020-11-01 21:28:43,430 INFO 26136 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:28:43,486 INFO 26136 [egg-multipart] file mode enable
+2020-11-01 21:28:43,486 INFO 26136 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:28:43,487 INFO 26136 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:28:44,050 INFO 26136 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:28:44,058 INFO 26136 [egg-security] use methodnoallow middleware
+2020-11-01 21:28:44,059 INFO 26136 [egg-security] use noopen middleware
+2020-11-01 21:28:44,062 INFO 26136 [egg-security] use nosniff middleware
+2020-11-01 21:28:44,064 INFO 26136 [egg-security] use xssProtection middleware
+2020-11-01 21:28:44,065 INFO 26136 [egg-security] use xframe middleware
+2020-11-01 21:28:44,066 INFO 26136 [egg-security] use dta middleware
+2020-11-01 21:28:44,066 INFO 26136 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:28:44,088 INFO 26136 [egg:core] dump config after load, 7ms
+2020-11-01 21:28:44,126 INFO 26136 [egg-watcher:application] watcher start success
+2020-11-01 21:28:44,129 INFO 26136 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:28:44 GMT+0800 (GMT+08:00)
+2020-11-01 21:28:44,143 INFO 26136 [egg:core] dump config after ready, 11ms
+2020-11-01 21:31:04,216 INFO 896 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:31:04,320 INFO 896 [egg-multipart] file mode enable
+2020-11-01 21:31:04,320 INFO 896 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:31:04,320 INFO 896 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:31:05,393 INFO 896 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:31:05,400 INFO 896 [egg-security] use methodnoallow middleware
+2020-11-01 21:31:05,403 INFO 896 [egg-security] use noopen middleware
+2020-11-01 21:31:05,407 INFO 896 [egg-security] use nosniff middleware
+2020-11-01 21:31:05,409 INFO 896 [egg-security] use xssProtection middleware
+2020-11-01 21:31:05,411 INFO 896 [egg-security] use xframe middleware
+2020-11-01 21:31:05,412 INFO 896 [egg-security] use dta middleware
+2020-11-01 21:31:05,413 INFO 896 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:31:05,451 INFO 896 [egg:core] dump config after load, 19ms
+2020-11-01 21:31:05,585 INFO 896 [egg-watcher:application] watcher start success
+2020-11-01 21:31:06,181 INFO 896 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:31:05 GMT+0800 (GMT+08:00)
+2020-11-01 21:31:06,320 INFO 896 [egg:core] dump config after ready, 38ms
+2020-11-01 21:31:49,642 INFO 7208 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:31:49,739 INFO 7208 [egg-multipart] file mode enable
+2020-11-01 21:31:49,739 INFO 7208 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:31:49,739 INFO 7208 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:31:50,674 INFO 7208 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:31:50,682 INFO 7208 [egg-security] use methodnoallow middleware
+2020-11-01 21:31:50,684 INFO 7208 [egg-security] use noopen middleware
+2020-11-01 21:31:50,689 INFO 7208 [egg-security] use nosniff middleware
+2020-11-01 21:31:50,691 INFO 7208 [egg-security] use xssProtection middleware
+2020-11-01 21:31:50,693 INFO 7208 [egg-security] use xframe middleware
+2020-11-01 21:31:50,695 INFO 7208 [egg-security] use dta middleware
+2020-11-01 21:31:50,695 INFO 7208 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:31:50,727 INFO 7208 [egg:core] dump config after load, 8ms
+2020-11-01 21:31:50,839 INFO 7208 [egg-watcher:application] watcher start success
+2020-11-01 21:31:51,071 INFO 7208 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:31:50 GMT+0800 (GMT+08:00)
+2020-11-01 21:31:51,093 INFO 7208 [egg:core] dump config after ready, 17ms
+2020-11-01 21:31:55,040 INFO 15256 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:31:55,087 INFO 15256 [egg-multipart] file mode enable
+2020-11-01 21:31:55,087 INFO 15256 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:31:55,088 INFO 15256 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:31:55,770 INFO 15256 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:31:55,777 INFO 15256 [egg-security] use methodnoallow middleware
+2020-11-01 21:31:55,778 INFO 15256 [egg-security] use noopen middleware
+2020-11-01 21:31:55,782 INFO 15256 [egg-security] use nosniff middleware
+2020-11-01 21:31:55,784 INFO 15256 [egg-security] use xssProtection middleware
+2020-11-01 21:31:55,786 INFO 15256 [egg-security] use xframe middleware
+2020-11-01 21:31:55,788 INFO 15256 [egg-security] use dta middleware
+2020-11-01 21:31:55,788 INFO 15256 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:31:55,814 INFO 15256 [egg:core] dump config after load, 9ms
+2020-11-01 21:31:55,840 INFO 15256 [egg-watcher:application] watcher start success
+2020-11-01 21:31:55,855 INFO 15256 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:31:55 GMT+0800 (GMT+08:00)
+2020-11-01 21:31:55,890 INFO 15256 [egg:core] dump config after ready, 32ms
+2020-11-01 21:32:19,158 INFO 24720 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:32:19,219 INFO 24720 [egg-multipart] file mode enable
+2020-11-01 21:32:19,219 INFO 24720 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:32:19,220 INFO 24720 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:32:19,880 INFO 24720 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:32:19,886 INFO 24720 [egg-security] use methodnoallow middleware
+2020-11-01 21:32:19,888 INFO 24720 [egg-security] use noopen middleware
+2020-11-01 21:32:19,891 INFO 24720 [egg-security] use nosniff middleware
+2020-11-01 21:32:19,892 INFO 24720 [egg-security] use xssProtection middleware
+2020-11-01 21:32:19,894 INFO 24720 [egg-security] use xframe middleware
+2020-11-01 21:32:19,895 INFO 24720 [egg-security] use dta middleware
+2020-11-01 21:32:19,895 INFO 24720 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:32:19,918 INFO 24720 [egg:core] dump config after load, 9ms
+2020-11-01 21:32:19,963 INFO 24720 [egg-watcher:application] watcher start success
+2020-11-01 21:32:19,967 INFO 24720 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:32:19 GMT+0800 (GMT+08:00)
+2020-11-01 21:32:19,981 INFO 24720 [egg:core] dump config after ready, 11ms
+2020-11-01 21:32:23,760 INFO 25080 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:32:23,809 INFO 25080 [egg-multipart] file mode enable
+2020-11-01 21:32:23,809 INFO 25080 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:32:23,810 INFO 25080 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:32:24,432 INFO 25080 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:32:24,438 INFO 25080 [egg-security] use methodnoallow middleware
+2020-11-01 21:32:24,440 INFO 25080 [egg-security] use noopen middleware
+2020-11-01 21:32:24,444 INFO 25080 [egg-security] use nosniff middleware
+2020-11-01 21:32:24,446 INFO 25080 [egg-security] use xssProtection middleware
+2020-11-01 21:32:24,448 INFO 25080 [egg-security] use xframe middleware
+2020-11-01 21:32:24,450 INFO 25080 [egg-security] use dta middleware
+2020-11-01 21:32:24,450 INFO 25080 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:32:24,475 INFO 25080 [egg:core] dump config after load, 9ms
+2020-11-01 21:32:24,551 INFO 25080 [egg-watcher:application] watcher start success
+2020-11-01 21:32:24,555 INFO 25080 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:32:24 GMT+0800 (GMT+08:00)
+2020-11-01 21:32:24,572 INFO 25080 [egg:core] dump config after ready, 13ms
+2020-11-01 21:32:32,042 INFO 14160 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:32:32,170 INFO 14160 [egg-multipart] file mode enable
+2020-11-01 21:32:32,170 INFO 14160 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:32:32,171 INFO 14160 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:32:33,321 INFO 14160 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:32:33,329 INFO 14160 [egg-security] use methodnoallow middleware
+2020-11-01 21:32:33,331 INFO 14160 [egg-security] use noopen middleware
+2020-11-01 21:32:33,336 INFO 14160 [egg-security] use nosniff middleware
+2020-11-01 21:32:33,363 INFO 14160 [egg-security] use xssProtection middleware
+2020-11-01 21:32:33,364 INFO 14160 [egg-security] use xframe middleware
+2020-11-01 21:32:33,367 INFO 14160 [egg-security] use dta middleware
+2020-11-01 21:32:33,367 INFO 14160 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:32:33,421 INFO 14160 [egg:core] dump config after load, 18ms
+2020-11-01 21:32:33,520 INFO 14160 [egg-watcher:application] watcher start success
+2020-11-01 21:32:33,525 INFO 14160 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:32:33 GMT+0800 (GMT+08:00)
+2020-11-01 21:32:33,552 INFO 14160 [egg:core] dump config after ready, 23ms
+2020-11-01 21:32:38,138 INFO 23096 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:32:38,191 INFO 23096 [egg-multipart] file mode enable
+2020-11-01 21:32:38,191 INFO 23096 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:32:38,192 INFO 23096 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:32:38,804 INFO 23096 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:32:38,812 INFO 23096 [egg-security] use methodnoallow middleware
+2020-11-01 21:32:38,817 INFO 23096 [egg-security] use noopen middleware
+2020-11-01 21:32:38,820 INFO 23096 [egg-security] use nosniff middleware
+2020-11-01 21:32:38,823 INFO 23096 [egg-security] use xssProtection middleware
+2020-11-01 21:32:38,824 INFO 23096 [egg-security] use xframe middleware
+2020-11-01 21:32:38,831 INFO 23096 [egg-security] use dta middleware
+2020-11-01 21:32:38,831 INFO 23096 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:32:38,864 INFO 23096 [egg:core] dump config after load, 12ms
+2020-11-01 21:32:38,889 INFO 23096 [egg-watcher:application] watcher start success
+2020-11-01 21:32:38,907 INFO 23096 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:32:38 GMT+0800 (GMT+08:00)
+2020-11-01 21:32:38,922 INFO 23096 [egg:core] dump config after ready, 11ms
+2020-11-01 21:32:51,427 INFO 10280 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:32:51,484 INFO 10280 [egg-multipart] file mode enable
+2020-11-01 21:32:51,484 INFO 10280 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:32:51,484 INFO 10280 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:32:52,148 INFO 10280 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:32:52,154 INFO 10280 [egg-security] use methodnoallow middleware
+2020-11-01 21:32:52,155 INFO 10280 [egg-security] use noopen middleware
+2020-11-01 21:32:52,159 INFO 10280 [egg-security] use nosniff middleware
+2020-11-01 21:32:52,160 INFO 10280 [egg-security] use xssProtection middleware
+2020-11-01 21:32:52,161 INFO 10280 [egg-security] use xframe middleware
+2020-11-01 21:32:52,163 INFO 10280 [egg-security] use dta middleware
+2020-11-01 21:32:52,163 INFO 10280 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:32:52,189 INFO 10280 [egg:core] dump config after load, 8ms
+2020-11-01 21:32:52,230 INFO 10280 [egg-watcher:application] watcher start success
+2020-11-01 21:32:52,243 INFO 10280 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:32:52 GMT+0800 (GMT+08:00)
+2020-11-01 21:32:52,254 INFO 10280 [egg:core] dump config after ready, 9ms
+2020-11-01 21:33:00,409 INFO 14812 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:33:00,463 INFO 14812 [egg-multipart] file mode enable
+2020-11-01 21:33:00,463 INFO 14812 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:33:00,464 INFO 14812 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:33:01,098 INFO 14812 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:33:01,105 INFO 14812 [egg-security] use methodnoallow middleware
+2020-11-01 21:33:01,107 INFO 14812 [egg-security] use noopen middleware
+2020-11-01 21:33:01,111 INFO 14812 [egg-security] use nosniff middleware
+2020-11-01 21:33:01,113 INFO 14812 [egg-security] use xssProtection middleware
+2020-11-01 21:33:01,114 INFO 14812 [egg-security] use xframe middleware
+2020-11-01 21:33:01,116 INFO 14812 [egg-security] use dta middleware
+2020-11-01 21:33:01,116 INFO 14812 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:33:01,142 INFO 14812 [egg:core] dump config after load, 8ms
+2020-11-01 21:33:01,158 INFO 14812 [egg-watcher:application] watcher start success
+2020-11-01 21:33:01,175 INFO 14812 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:33:01 GMT+0800 (GMT+08:00)
+2020-11-01 21:33:01,190 INFO 14812 [egg:core] dump config after ready, 13ms
+2020-11-01 21:35:41,552 INFO 14900 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:35:41,758 INFO 14900 [egg-multipart] file mode enable
+2020-11-01 21:35:41,758 INFO 14900 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:35:41,759 INFO 14900 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:35:42,696 INFO 14900 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:35:42,703 INFO 14900 [egg-security] use methodnoallow middleware
+2020-11-01 21:35:42,705 INFO 14900 [egg-security] use noopen middleware
+2020-11-01 21:35:42,710 INFO 14900 [egg-security] use nosniff middleware
+2020-11-01 21:35:42,711 INFO 14900 [egg-security] use xssProtection middleware
+2020-11-01 21:35:42,713 INFO 14900 [egg-security] use xframe middleware
+2020-11-01 21:35:42,715 INFO 14900 [egg-security] use dta middleware
+2020-11-01 21:35:42,715 INFO 14900 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:35:42,804 INFO 14900 [egg:core] dump config after load, 72ms
+2020-11-01 21:35:42,971 INFO 14900 [egg-watcher:application] watcher start success
+2020-11-01 21:35:43,390 INFO 14900 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:35:43 GMT+0800 (GMT+08:00)
+2020-11-01 21:35:43,429 INFO 14900 [egg:core] dump config after ready, 34ms
+2020-11-01 21:35:47,630 INFO 24784 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 21:35:47,683 INFO 24784 [egg-multipart] file mode enable
+2020-11-01 21:35:47,683 INFO 24784 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 21:35:47,683 INFO 24784 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 21:35:48,313 INFO 24784 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 21:35:48,319 INFO 24784 [egg-security] use methodnoallow middleware
+2020-11-01 21:35:48,323 INFO 24784 [egg-security] use noopen middleware
+2020-11-01 21:35:48,327 INFO 24784 [egg-security] use nosniff middleware
+2020-11-01 21:35:48,328 INFO 24784 [egg-security] use xssProtection middleware
+2020-11-01 21:35:48,330 INFO 24784 [egg-security] use xframe middleware
+2020-11-01 21:35:48,331 INFO 24784 [egg-security] use dta middleware
+2020-11-01 21:35:48,331 INFO 24784 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 21:35:48,356 INFO 24784 [egg:core] dump config after load, 10ms
+2020-11-01 21:35:48,378 INFO 24784 [egg-watcher:application] watcher start success
+2020-11-01 21:35:48,391 INFO 24784 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 21:35:48 GMT+0800 (GMT+08:00)
+2020-11-01 21:35:48,404 INFO 24784 [egg:core] dump config after ready, 11ms
+2020-11-01 22:22:23,448 INFO 21548 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 22:22:23,510 INFO 21548 [egg-multipart] file mode enable
+2020-11-01 22:22:23,510 INFO 21548 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 22:22:23,510 INFO 21548 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 22:22:24,346 INFO 21548 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 22:22:24,357 INFO 21548 [egg-security] use methodnoallow middleware
+2020-11-01 22:22:24,361 INFO 21548 [egg-security] use noopen middleware
+2020-11-01 22:22:24,365 INFO 21548 [egg-security] use nosniff middleware
+2020-11-01 22:22:24,367 INFO 21548 [egg-security] use xssProtection middleware
+2020-11-01 22:22:24,370 INFO 21548 [egg-security] use xframe middleware
+2020-11-01 22:22:24,372 INFO 21548 [egg-security] use dta middleware
+2020-11-01 22:22:24,372 INFO 21548 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 22:22:24,406 INFO 21548 [egg:core] dump config after load, 13ms
+2020-11-01 22:22:24,468 INFO 21548 [egg-watcher:application] watcher start success
+2020-11-01 22:22:24,523 INFO 21548 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 22:22:24 GMT+0800 (GMT+08:00)
+2020-11-01 22:22:24,536 INFO 21548 [egg:core] dump config after ready, 10ms
+2020-11-01 22:22:28,117 INFO 17460 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 22:22:28,165 INFO 17460 [egg-multipart] file mode enable
+2020-11-01 22:22:28,165 INFO 17460 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 22:22:28,165 INFO 17460 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 22:22:28,920 INFO 17460 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 22:22:28,934 INFO 17460 [egg-security] use methodnoallow middleware
+2020-11-01 22:22:28,936 INFO 17460 [egg-security] use noopen middleware
+2020-11-01 22:22:28,939 INFO 17460 [egg-security] use nosniff middleware
+2020-11-01 22:22:28,942 INFO 17460 [egg-security] use xssProtection middleware
+2020-11-01 22:22:28,944 INFO 17460 [egg-security] use xframe middleware
+2020-11-01 22:22:28,945 INFO 17460 [egg-security] use dta middleware
+2020-11-01 22:22:28,945 INFO 17460 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 22:22:28,972 INFO 17460 [egg:core] dump config after load, 9ms
+2020-11-01 22:22:28,991 INFO 17460 [egg-watcher:application] watcher start success
+2020-11-01 22:22:29,024 INFO 17460 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 22:22:29 GMT+0800 (GMT+08:00)
+2020-11-01 22:22:29,037 INFO 17460 [egg:core] dump config after ready, 10ms
+2020-11-01 23:47:12,593 INFO 17664 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 23:47:12,648 INFO 17664 [egg-multipart] file mode enable
+2020-11-01 23:47:12,648 INFO 17664 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 23:47:12,648 INFO 17664 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 23:47:13,505 INFO 17664 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 23:47:13,516 INFO 17664 [egg-security] use methodnoallow middleware
+2020-11-01 23:47:13,519 INFO 17664 [egg-security] use noopen middleware
+2020-11-01 23:47:13,523 INFO 17664 [egg-security] use nosniff middleware
+2020-11-01 23:47:13,525 INFO 17664 [egg-security] use xssProtection middleware
+2020-11-01 23:47:13,527 INFO 17664 [egg-security] use xframe middleware
+2020-11-01 23:47:13,529 INFO 17664 [egg-security] use dta middleware
+2020-11-01 23:47:13,529 INFO 17664 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 23:47:13,564 INFO 17664 [egg:core] dump config after load, 16ms
+2020-11-01 23:47:13,632 INFO 17664 [egg-watcher:application] watcher start success
+2020-11-01 23:47:13,661 INFO 17664 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 23:47:13 GMT+0800 (GMT+08:00)
+2020-11-01 23:47:13,704 INFO 17664 [egg:core] dump config after ready, 41ms
+2020-11-01 23:47:17,732 INFO 8712 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-11-01 23:47:17,783 INFO 8712 [egg-multipart] file mode enable
+2020-11-01 23:47:17,783 INFO 8712 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-11-01 23:47:17,784 INFO 8712 [egg-mysql] connecting root@localhost:3306/meals
+2020-11-01 23:47:18,331 INFO 8712 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\meishi\egg-mysql\app\public
+2020-11-01 23:47:18,338 INFO 8712 [egg-security] use methodnoallow middleware
+2020-11-01 23:47:18,340 INFO 8712 [egg-security] use noopen middleware
+2020-11-01 23:47:18,344 INFO 8712 [egg-security] use nosniff middleware
+2020-11-01 23:47:18,345 INFO 8712 [egg-security] use xssProtection middleware
+2020-11-01 23:47:18,347 INFO 8712 [egg-security] use xframe middleware
+2020-11-01 23:47:18,348 INFO 8712 [egg-security] use dta middleware
+2020-11-01 23:47:18,348 INFO 8712 [egg-security] compose 6 middlewares into one security middleware
+2020-11-01 23:47:18,370 INFO 8712 [egg:core] dump config after load, 8ms
+2020-11-01 23:47:18,386 INFO 8712 [egg-watcher:application] watcher start success
+2020-11-01 23:47:18,415 INFO 8712 [egg-mysql] instance[0] status OK, rds currentTime: Sun Nov 01 2020 23:47:18 GMT+0800 (GMT+08:00)
+2020-11-01 23:47:18,431 INFO 8712 [egg:core] dump config after ready, 11ms
+2020-11-02 00:00:00,479 INFO 8712 [egg-logrotator] clean all log before 31 days
+2020-11-02 00:00:01,065 INFO 8712 [egg-logrotator] broadcast log-reload
+2020-11-02 00:00:01,066 INFO 8712 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\common-error.log -> C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\common-error.log.2020-11-01","C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\mysql-web.log -> C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\mysql-web.log.2020-11-01","C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-web.log -> C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-web.log.2020-11-01","C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-schedule.log -> C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-schedule.log.2020-11-01","C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-agent.log -> C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql\\egg-agent.log.2020-11-01"]
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3

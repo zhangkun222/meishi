@@ -36,8 +36,8 @@ module.exports = app => {
   
 	router.post('/uploadimg', controller.fileUpload.uploadImg);
   
- // router.post('/smsverif', controller.verifLogin.smsVerif); 
-//  router.post('/verifLogin', controller.verifLogin.verifLogin);
+ router.post('/smsverif', controller.verifLogin.smsVerif); 
+ router.post('/verifLogin', controller.verifLogin.verifLogin);
 	// router.post("/delpro",controller.tbshopgoods.delproduct)
 	
 	// router.post("/uppro",controller.tbshopgoods.upproduct)
