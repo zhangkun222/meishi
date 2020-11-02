@@ -26,7 +26,7 @@ module.exports = app => {
 
   //添加评论
   router.post("/comment",controller.comments.comment)
-  router.get("/getComment",controller.comments.getComment)
+  router.post("/getComment",controller.comments.getComment)
   
   //登录
   router.post("/login",controller.reglogin.userlogin)

@@ -338,14 +338,15 @@ export default {
         console.log(error);
       });
     // 评论
-    // this.$http
-    //   .get("/getComment", { params: { rid: this.rid } })
-    //   .then((response) => {
-    //     console.log(response.data);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    this.$http
+      .post("/getComment",  { rid: this.rid } )
+      .then((response) => {
+        console.log(111);
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>

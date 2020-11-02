@@ -11,7 +11,8 @@ class CommentsController extends Controller {
 
     async getComment() {
         const { ctx } = this;
-        ctx.body = await this.ctx.service.comments.getComment(ctx.request.body.rid)
+        let rid = ctx.request.body.rid;
+        ctx.body = await this.ctx.service.comments.getComment(rid)
     }
 }
 module.exports = CommentsController;

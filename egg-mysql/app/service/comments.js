@@ -2,9 +2,8 @@ const Service = require('egg').Service;
 
 class CommentsService extends Service {
 	async comment(data) {
-		var sql = `INSERT INIO comment(comment,uid,rid) values('${data.comment}',${data.uid},${data.rid}) `
-		var sql = `insert into comment(content，uid，rid,addtimes) values('${data.comment}',${data.uid},${data.rid},Now()) `
-		var result = await this.app.mysql.query(sql);
+		let sql = `insert into comment(content，uid，rid,addtimes) values('${data.comment}',${data.uid},${data.rid},Now()) `
+		let result = await this.app.mysql.query(sql);
 		if (result.affectedRows) {
 			result = {
 				code: 1,
@@ -20,10 +19,20 @@ class CommentsService extends Service {
 	}
 
 	async getComment(rid) {
-		let commentDate = await this.app.mysql.get('comment', { rid });
-		let sql = `select * from user  where uid='${commentDate.uid}' and status=1`
-		let result = await this.app.mysql.query(sql);
-		let data = { cid: commentDate.cid, uid: commentDate.uid, nickname: result.nickname, content: commentDate.content, times: commentDate.addtimes }
+		let data=[];
+		let result;
+		let sql1;
+		let sql=`select * from comment where rid=${rid} and status=1`;
+		let commentDate = await this.app.mysql.query(sql);
+		if(commentDate.length==0){
+			return {code:-1,msg:'该菜谱暂时还没有评论'}
+		}else{
+			for (let i = 0; i < commentDate.length; i++) {
+				sql1 = `select * from user  where uid='${commentDate[i].uid}' and status=1`
+				result = await this.app.mysql.query(sql1);
+				data.push({ cid: commentDate[i].cid, uid: commentDate[i].uid, nickname: result.nickname, content: commentDate[i].content, times: commentDate[i].addtimes });
+			}
+		}
 		return data;
 	}
 }
