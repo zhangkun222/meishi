@@ -6,8 +6,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/test",
-    "regexp": "/^\\/test(?:\\/(?=$))?$/",
+    "path": "/getAnime",
+    "regexp": "/^\\/getAnime(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -19,8 +19,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/getAnime",
-    "regexp": "/^\\/getAnime(?:\\/(?=$))?$/",
+    "path": "/getShopping",
+    "regexp": "/^\\/getShopping(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -33,6 +33,18 @@
     "paramNames": [],
     "path": "/publishMenu",
     "regexp": "/^\\/publishMenu(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/publishshopping",
+    "regexp": "/^\\/publishshopping(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

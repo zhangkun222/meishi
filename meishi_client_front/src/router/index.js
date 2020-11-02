@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'Index',
+    component: () => import("@/views/Home.vue")
+  },
+  {
     path: '/add',
     name: 'Add',
     component: () => import("@/views/add.vue")
@@ -20,6 +25,11 @@ const routes = [
     component: () => import("@/views/anime_recipe.vue"),
   },
   {
+    path: '/addshopping',
+    name: 'Addshopping',
+    component: () => import("@/views/addshopping.vue"),
+  },
+  {
     path: '/shop',
     name: 'Shop',
     component: () => import("@/views/shop.vue")
@@ -30,17 +40,27 @@ const routes = [
     component: () => import("@/components/anime_r_t.vue")
   },
   {
-    path: '/shop_desc/:Aid',
+    path: '/shop_desc/:pid',
     name: 'Shop_desc',
-    component: () => import("@/components/anime_r_t.vue")
+    component: () => import("@/components/shop_desc.vue")
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import("@/views/Login.vue")
   },
 
-
-
+  {
+    path: '/fwb',
+    name: 'fwb',
+    component: () => import("@/views/fwb.vue")
+  },
+ 
+  
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

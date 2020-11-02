@@ -12,7 +12,17 @@ class TbShopGoodsService extends Service {
 		var goods = await this.app.mysql.query(sql);
 		return goods;
 	}
+	//获取商品
+	async getshopping(a) {
 
+
+		var sql = "select * from product where status=1"
+		if (a.pid) {
+			sql = `select * from product where pid=${a.pid}`
+		}
+		var goods = await this.app.mysql.query(sql);
+		return goods;
+	}
 	async login(username) {
 		//   是可以直接执行SQL语句的
 		const userData = await this.app.mysql.get('user', { username });
@@ -23,12 +33,7 @@ class TbShopGoodsService extends Service {
 		app.mysql.query('UPDATE user SET ip = ?, lasttimes = NOW(), nums = nums +1 WHERE uid = ?', [ctx.request.ip, uid]);
 	}
 
-	//获取动漫菜谱
-	async getproduct() {
-		var sql = "select * from anime where status=1"
-		var goods = await this.app.mysql.query(sql);
-		return goods;
-	}
+
 	//添加菜谱
 	async addproduct(product) {
 		console.log(product)
@@ -55,6 +60,26 @@ class TbShopGoodsService extends Service {
 	async publishAnime(product) {
 		console.log(product)
 		var sql = `INSERT INTO anime(aname,cover,mid) VALUES('${product.aname}','${product.cover}',${product.mid})`
+		console.log(sql)
+		var result = await this.app.mysql.query(sql);
+		if (result.affectedRows) {
+			result = {
+				code: 1,
+				msg: "提交成功",
+				id: result.insertId
+			}
+		} else {
+			result = {
+				code: 0,
+				msg: "提交失败"
+			}
+		}
+		return result;
+	}
+	//添加商品
+	async publishshopping(product) {
+		console.log(product)
+		var sql = `INSERT INTO product(pname,cover,pdesc,price,discount,sales,address,datails,pmid) VALUES('${product.pname}','${product.cover}','${product.pdesc}','${product.price}','${product.discount}','${product.sales}','${product.address}','${product.datails}',${product.pmid})`
 		console.log(sql)
 		var result = await this.app.mysql.query(sql);
 		if (result.affectedRows) {

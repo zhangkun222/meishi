@@ -6,15 +6,19 @@
 module.exports = app => {
   const { router, controller } = app;
   
-
-  router.get('/test', controller.test.index);
-  
   
  //获取漫画食谱
-  router.get("/getAnime",controller.tbshopgoods.getproduct);
+  router.get("/getAnime",controller.tbshopgoods.getproduct)
+  
+  
+  //获取商品
+  router.get("/getShopping",controller.tbshopgoods.getshopping);;
 
  //添加食谱
   router.post("/publishMenu",controller.tbshopgoods.addproduct);
+
+   //添加商品
+   router.post("/publishshopping",controller.tbshopgoods.publishshopping);
 
  //添加漫画食谱
   router.post("/publishAnime",controller.tbshopgoods.publishAnime)
@@ -34,7 +38,8 @@ module.exports = app => {
 
 	router.post("/delpro",controller.tbshopgoods.delproduct)
 	
-	router.post("/uppro",controller.tbshopgoods.upproduct)
+  router.post("/uppro",controller.tbshopgoods.upproduct)
+  
 
 	router.post('/uploadimg', controller.fileUpload.uploadImg);
 

@@ -28,6 +28,13 @@ class TbShopGoodsController extends Controller {
     const { ctx } = this;
     ctx.body = await this.ctx.service.tbshopgoods.getproduct(ctx.request.query)
   }
+
+
+  async getshopping(data) {
+    const { ctx } = this;
+    ctx.body = await this.ctx.service.tbshopgoods.getshopping(ctx.request.query)
+  }
+
   async addproduct() {
     const { ctx } = this;
     console.log(ctx.request.body.data)
@@ -38,6 +45,12 @@ class TbShopGoodsController extends Controller {
     const { ctx } = this;
     console.log(ctx.request.body.data)
     ctx.body = await this.ctx.service.tbshopgoods.publishAnime(ctx.request.body.data)
+  }
+
+  async publishshopping() {
+    const { ctx } = this;
+    console.log(ctx.request.body.data)
+    ctx.body = await this.ctx.service.tbshopgoods.publishshopping(ctx.request.body.data)
   }
 
 

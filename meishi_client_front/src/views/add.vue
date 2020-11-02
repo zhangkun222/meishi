@@ -1,5 +1,8 @@
 <template>
-  <div class="created" style="background-image: url('http://localhost:8000/public/bg/hehua.jpg')">
+  <div
+    class="created"
+    :style="{ backgroundImage: 'url(' + backimg + ') no-repeat' }"
+  >
     <div class="centent">
       <!-- 添加菜谱成品图 -->
       <div class="finished_img">
@@ -17,13 +20,37 @@
             style="width: 100%; height: 100%"
           />
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-          <p>添加菜谱成品图</p>
+          <p>添加菜谱成品图(必填)</p>
           <p>
             （建议尺寸1280*1024，支持上传图片格式有jpg、jpeg、png、gif、webp）
           </p>
         </el-upload>
       </div>
       <br />
+        <!-- 添加菜谱轮播图图 -->
+      <div class="finished_img">
+        <el-upload
+          class="avatar-uploader"
+          action="http://localhost:8000/uploadimg"
+          :show-file-list="false"
+          :on-success="handleAvatarSuccessbgc"
+          :before-upload="beforeAvatarUpload"
+        >
+          <img
+            v-if="data.bgcImg"
+            :src="data.bgcImg"
+            class="avatar"
+            style="width: 100%; height: 100%"
+          />
+          <i  v-else class="el-icon-plus avatar-uploader-icon"></i>
+          <p>添加菜谱轮播图(选填)</p>
+          <p>
+            （建议尺寸1280*1024，支持上传图片格式有jpg、jpeg、png、gif、webp）
+          </p>
+        </el-upload>
+      </div>
+      <br />
+
       <!-- 添加菜谱名称 -->
       <input
         type="text"
@@ -32,6 +59,15 @@
         v-model.trim="data.title"
       />
       <br />
+
+      <!-- 添加口味名称 -->
+      <input
+        type="text"
+        id="cname"
+        v-model.trim="data.taste"
+      />
+      <br />
+
       <div class="public">
         <!-- 烹饪难度 -->
         <el-select v-model="data.degree" placeholder="请选择">
@@ -76,13 +112,13 @@
               type="text"
               value="如:五花肉"
               class="food_m"
-              v-model="data.foodlist"
+              v-model="data.foodlist[j]"
             />
             <input
               type="text"
               value="如:500g"
               class="dosage"
-              v-model="data.amountlist"
+              v-model="data.amountlist[j]"
             />
             <br />
           </div>
@@ -113,8 +149,8 @@
                 :before-upload="beforeAvatarUpload"
               >
                 <img
-                  v-if="data.stepsImg"
-                  :src="data.stepsImg"
+                  v-if="data.stepsImg[j]"
+                  :src="data.stepsImg[j]"
                   class="avatar"
                   style="width: 224px; height: 224px"
                 />
@@ -125,14 +161,13 @@
               name=""
               id=""
               class="bz_desc"
-              v-model.trim="data.steps"
-              @click="add"
+              v-model.trim="data.steps[j]"
             ></textarea>
           </div>
           <br />
         </div>
-          <div class="public" style="margin: 0 10px" @click="add">增加一栏</div>
-          <br />
+        <div class="public" style="margin: 0 10px" @click="add">增加一栏</div>
+        <br />
       </div>
 
       <!-- 小贴士 -->
@@ -147,9 +182,12 @@
 </template>
 
 <script>
+import backimg from "../../public/bg/hehua.jpg";
+
 export default {
   data() {
     return {
+      backimg: backimg,
       options: [
         {
           value: "切墩(初级)",
@@ -187,16 +225,38 @@ export default {
       data: {
         uid: "1", //用户
         cover: "", //封面
-        title: "食谱名称", //食谱名称
-        pdesc: "这道菜背后的故事", //故事 可以为空
-        degree: "烹饪难度", //难易程度
-        cooktime: "烹饪时间", // 烹饪时间
-        taste: "", //味道
-        foodlist: "", //食材
-        amountlist: "", //食材用量
-        stepsImg: "", //步骤图片
-        steps: "步骤", //步骤
-        tips: "小贴士", //小贴士 可以为空
+        bgcImg:'', //轮播图
+        title: "食谱名称(必填)", //食谱名称
+        pdesc: "这道菜背后的故事(选填)", //故事 可以为空
+        degree: "烹饪难度(必选)", //难易程度
+        cooktime: "烹饪时间(必选)", // 烹饪时间
+        taste: "味道(选填)", //味道
+        foodlist: [], //食材
+        amountlist: [], //食材用量
+        stepsImg: [], //步骤图片
+        steps: [
+          "步骤1",
+          "步骤2",
+          "步骤3",
+          "步骤4",
+          "步骤5",
+          "步骤6",
+          "步骤7",
+          "步骤8",
+          "步骤9",
+          "步骤10",
+          "步骤11",
+          "步骤12",
+          "步骤13",
+          "步骤14",
+          "步骤15",
+          "步骤16",
+          "步骤17",
+          "步骤18",
+          "步骤19",
+          "步骤20",
+        ], //步骤
+        tips: "小贴士(选填)", //小贴士 可以为空
       },
     };
   },
@@ -212,19 +272,10 @@ export default {
       console.log(this.data.cover);
     },
     handleAvatarSuccess1(res, file) {
-      this.data.stepsImg += file.response.src;
+      this.data.stepsImg.push(file.response.src);
     },
-    handleAvatarSuccess2(res, file) {
-      this.data.stepsImg += file.response.src;
-    },
-    handleAvatarSuccess3(res, file) {
-      this.data.stepsImg += file.response.src;
-    },
-    handleAvatarSuccess4(res, file) {
-      this.data.stepsImg += file.response.src;
-    },
-    handleAvatarSuccess5(res, file) {
-      this.data.stepsImg += file.response.src;
+    handleAvatarSuccessbgc(res, file) {
+      this.data.bgcImg=file.response.src;
     },
     beforeAvatarUpload(file) {
       const isLt2M = file.size / 1024 / 1024 < 5;
@@ -235,12 +286,22 @@ export default {
       return isLt2M;
     },
     submit() {
-      if (this.data.tips == "小贴士") {
+
+      if (this.data.degree == "烹饪难度(必选)"||this.data.cooktime == "烹饪时间(必选)") {
+        alert("请输选择烹饪难度或烹饪时间");
+        return
+      }
+      if (this.data.tips == "小贴士(选填)") {
         this.data.tips = "";
       }
-      if (this.data.pdesc == "这道菜背后的故事") {
+      if (this.data.pdesc == "这道菜背后的故事(选填)") {
         this.data.pdesc = "";
       }
+      if (this.data.taste == "味道(选填)") {
+        this.data.taste = "";
+      }
+      
+      
       console.log(this.data);
       if (
         this.data.uid &&
@@ -250,6 +311,18 @@ export default {
         this.data.amountlist
       ) {
         let data = this.data;
+        data.foodlist=this.data.foodlist.join(",");
+        data.amountlist=this.data.amountlist.join(",");
+
+        data.stepsImg=this.data.stepsImg.join(",");
+        data.steps.forEach((e,i) => {
+            if (e.length<=4) {
+              data.steps[i]=''
+            }
+        });
+        data.steps=this.data.steps.join(",");
+
+        console.log(data);
         this.$http
           .post(`/publishMenu`, {
             data,
@@ -303,7 +376,7 @@ export default {
 }
 
 .created {
- 
+  background: rgb(27, 185, 224);
 
   .centent {
     width: 1000px;

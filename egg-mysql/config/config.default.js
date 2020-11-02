@@ -64,10 +64,16 @@ module.exports = appInfo => {
 	
 	
 	
-	
+	// 配置来设置大小
 	config.multipart = {
 	  mode: 'file'
 	};
+
+
+	config.bodyParser = {
+		jsonLimit: '5mb',
+		formLimit: '6mb',
+	  };
 
 
 

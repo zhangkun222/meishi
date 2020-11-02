@@ -1,5 +1,6 @@
 <template>
   <div class="created">
+    <top-nav></top-nav>
     <div class="centent">
       <!-- 漫画食谱成品展示 -->
       <div class="w690">
@@ -71,7 +72,7 @@ export default {
 .created {
   .centent {
     width: 1000px;
-    margin: 10px auto;
+    margin: 100px auto;
     .right {
       width: 200px;
       height: 150px;
