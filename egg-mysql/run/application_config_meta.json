@@ -73,8 +73,8 @@
   "cluster": {
     "listen": {
       "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
-      "port": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
-      "hostname": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+      "hostname": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "port": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
     }
   },
   "cors": {
@@ -191,6 +191,7 @@
       "declarations": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
     },
     "dependencies": {
+      "@alicloud/pop-core": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg-cors": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
       "egg-mysql": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",

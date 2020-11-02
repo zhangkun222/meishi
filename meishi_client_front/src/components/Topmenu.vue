@@ -42,6 +42,7 @@ export default {
     return {
       // activeIndex: "1",
       activeIndex2: "1",
+      username:localStorage.getItem('username')
     };
   },
   methods: {
@@ -144,4 +145,6 @@ export default {
 .el-menu.el-menu--horizontal {
   border-bottom: none;
 }
+
+
 </style>

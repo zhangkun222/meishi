@@ -268,10 +268,11 @@ export default {
         this.$http
           .post(
             "/verifLogin",
-            { userphone: this.userphone, password: this.password },
+            { userphone: this.userphone,verif:this.verif },
             { withCredentials: true }
           )
           .then(function (res) {
+            console.log(789798798789798);
             if (res.data.code == -1) {
               //手机号未注册
               _this.$message({
@@ -285,13 +286,14 @@ export default {
                 message: res.data.msg,
                 type: "error",
               });
-            } else if (res.data.code == 0) {
+            } else if (res.data.code == 1) {
               _this.$message({
                 showClose: true,
                 message: res.data.msg,
                 type: "success",
               });
-              localStorage.setItem("username", this.ruleForm.name);
+              localStorage.setItem("username", this.userphone);
+              _this.$router.push('/')
             }
           });
       }

@@ -38,7 +38,7 @@ module.exports = appInfo => {
 	config.cluster = {
 		listen: {
 			path: '',
-			// hostname:"localhost",
+			hostname:"localhost",
 			port: 8000
 			// ,
 			// hostname: 'admin.jianmian.com'//默认localhost和ip地址,上线时用0.0.0.0
@@ -49,26 +49,21 @@ module.exports = appInfo => {
 	//plugin.js  里做配置
 	// 跨域的配置
 	config.cors = {
-	//   origin: 'http://localhost',
+	  origin: 'http://localhost:8080',
 	//   ,allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
 	//   // // 允许跨域携带凭证
 	//   ,credentials: true,
 	  
-	  origin: '*',
+	//   origin: '*',
 	  allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
 	  // 允许跨域携带凭证
 	  ,credentials: true
 	};
 	
 	
-	
-	
 	config.multipart = {
 	  mode: 'file'
 	};
-
-
-
 
 	// add your user config here
 	const userConfig = {
