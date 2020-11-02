@@ -66,8 +66,6 @@ export default {
   z-index: 99;
   width: 120%;
   height: 80px;
-  // background-color: red;
-  // background: rgba(180, 71, 194, 0.8);
   background-clip: padding-box;
   border-bottom: 1px solid transparent;
   & > .nav-center {

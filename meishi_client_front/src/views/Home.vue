@@ -133,6 +133,7 @@
         </div>
       </div>
     </div>
+    <footer-nav></footer-nav>
   </div>
 </template>
 

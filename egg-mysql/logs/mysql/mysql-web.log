@@ -1,0 +1,573 @@
+<<<<<<< HEAD
+2020-11-02 00:21:39,475 ERROR 21628 [-/::1/-/54ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 21628
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:21:45,743 ERROR 21628 [-/::1/-/36ms GET /getAnime?Aid=undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    --------------------
+    at Pool.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_mysql@2.18.1@mysql\lib\Pool.js:199:23)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:12:10)
+    at Pool.ret [as query] (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_pify@2.3.0@pify\index.js:56:34)
+    at RDSClient.proto._query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_ali-rds@3.4.0@ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:65:19)
+    at C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_co@4.6.0@co\index.js:54:5
+    sql: select * from anime where Aid=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from anime where Aid=undefined"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 21628
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:21:49,683 ERROR 21628 [-/::1/-/13ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 21628
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:22:59,120 ERROR 40588 [-/::1/-/92ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 40588
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:32:11,073 ERROR 40588 [-/::1/-/39ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 40588
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:32:16,512 ERROR 40588 [-/::1/-/5ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 40588
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:32:22,332 ERROR 40588 [-/::1/-/6ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 40588
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:32:28,419 ERROR 40588 [-/::1/-/6ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 40588
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:37:25,812 ERROR 49136 [-/::1/-/8ms GET /getComment] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 49136
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:45:24,502 ERROR 9488 [-/::1/-/21ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:45:39,519 ERROR 9488 [-/::1/-/5ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:46:00,277 ERROR 9488 [-/::1/-/8ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:46:04,522 ERROR 9488 [-/::1/-/12ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:46:06,044 ERROR 9488 [-/::1/-/9ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:46:12,068 ERROR 9488 [-/::1/-/324ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:46:30,325 ERROR 9488 [-/::1/-/4ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 9488
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:59:22,920 ERROR 43716 [-/::1/-/30ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 43716
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:59:23,055 ERROR 43716 [-/undefined/-/46ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 43716
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:59:23,078 ERROR 43716 [-/undefined/-/48ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 43716
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:59:23,091 ERROR 43716 [-/undefined/-/46ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 43716
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 00:59:23,140 ERROR 43716 [-/::1/-/15ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 43716
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 01:01:14,494 ERROR 28360 [-/::1/-/6ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 28360
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 01:22:59,879 ERROR 28360 [-/::1/-/10ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 28360
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 01:25:54,500 ERROR 28360 [-/::1/-/27ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 28360
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 01:27:01,055 ERROR 22468 [-/::1/-/40ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 22468
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:51:02,415 ERROR 22468 [-/::1/-/7ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:61)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 22468
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,430 ERROR 8380 [-/::1/-/12ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,529 ERROR 8380 [-/undefined/-/32ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,543 ERROR 8380 [-/undefined/-/40ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,565 ERROR 8380 [-/undefined/-/36ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,578 ERROR 8380 [-/undefined/-/62ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,599 ERROR 8380 [-/undefined/-/45ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,640 ERROR 8380 [-/undefined/-/61ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,653 ERROR 8380 [-/undefined/-/40ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,672 ERROR 8380 [-/undefined/-/35ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+headerSent: true
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+2020-11-02 08:59:08,693 ERROR 8380 [-/::1/-/36ms GET /getComment?rid=] nodejs.TypeError: Cannot read property 'uid' of null
+    at CommentsService.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\service\comments.js:24:59)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async CommentsController.getComment (C:\Users\lenovo\Desktop\meishi\egg-mysql\app\controller\comments.js:14:20)
+    at async C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-development@2.7.0@egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_egg-security@2.8.0@egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-session@6.1.0@koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\lenovo\Desktop\meishi\egg-mysql\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:5)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 8380
+hostname: DESKTOP-TI5MI0U
+
+=======
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3

@@ -1,10 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import recipeDesc from "@/components/recipe/recipe_desc.vue"
 
 
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   // path: '/',
+  //   // component: Home
+  // },
   {
     path: '/',
     component: () => import('../views/Home.vue')
@@ -13,10 +18,19 @@ const routes = [
     path: '/admin',
     component: () => import('../views/Admin.vue')
   },
-   {
+  {
     path: '/add',
     name: 'Add',
     component: () => import("@/views/add.vue")
+  },
+
+  {
+    path: '/Recipe/recipe_desc',
+    component: () => import('@/components/recipe/recipe_desc.vue')
+  },
+  {
+    path: '/Recipe',
+    component: () => import('@/views/Recipe.vue')
   },
   {
     path: '/addainme',
@@ -30,9 +44,13 @@ const routes = [
   },
   {
     path: '/login',
-    component: ()=>import("@/views/Login.vue")
-  },
-  { 
+    component: () => import("@/views/Login.vue")
+  }, 
+  // {
+
+  //   component: () => import("@/views/Login.vue")
+  // },
+  {
     path: '/shop',
     name: 'Shop',
     component: () => import("@/views/shop.vue")
@@ -48,11 +66,11 @@ const routes = [
     component: () => import("@/components/anime_r_t.vue")
 
   }
-  
-]
 
+]
 const router = new VueRouter({
+  mode: 'hash',
+  base: process.env.BASE_URL,
   routes,
 })
-
 export default router

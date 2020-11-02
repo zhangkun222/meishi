@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
-        "development": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
+        "default": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
+        "development": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -112,7 +112,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql",
+      "tmpdir": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -136,14 +136,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\app\\public",
+      "dir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\app\\view",
+      "root": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -228,9 +228,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql",
-    "HOME": "C:\\Users\\Administrator",
-    "rundir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\run",
+    "baseDir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql",
+    "HOME": "C:\\Users\\lenovo",
+    "rundir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -262,7 +262,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql",
+      "dir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\logs\\mysql",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -340,8 +340,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -351,8 +351,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session",
       "version": "3.2.0"
     },
     "i18n": {
@@ -362,8 +362,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -373,8 +373,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -386,8 +386,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart",
       "version": "2.10.3"
     },
     "security": {
@@ -399,8 +399,8 @@
         "session"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security",
       "version": "2.8.0"
     },
     "development": {
@@ -414,8 +414,8 @@
       "env": [
         "local"
       ],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -427,8 +427,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -438,8 +438,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -449,8 +449,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -462,8 +462,8 @@
         "security"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -473,8 +473,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view",
       "version": "2.1.2"
     },
     "mysql": {
@@ -484,8 +484,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql",
       "version": "3.0.0"
     },
     "cors": {
@@ -495,8 +495,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors",
+      "from": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors",
       "version": "2.2.3"
     }
   }
