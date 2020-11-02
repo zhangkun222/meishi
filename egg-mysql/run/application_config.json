@@ -87,11 +87,16 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
+<<<<<<< HEAD
       "templatePath": "D:\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+=======
+      "templatePath": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
+<<<<<<< HEAD
         "D:\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\locales",
         "D:\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\locales",
         "D:\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\locales",
@@ -108,6 +113,24 @@
         "D:\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors\\config\\locales",
         "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\locales",
         "D:\\egg-mysql\\config\\locales"
+=======
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\locales"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -118,8 +141,13 @@
     "watcher": {
       "type": "development",
       "eventSources": {
+<<<<<<< HEAD
         "default": "D:\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
         "development": "D:\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
+=======
+        "default": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
+        "development": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       }
     },
     "customLogger": {
@@ -166,14 +194,22 @@
     },
     "static": {
       "prefix": "/public/",
+<<<<<<< HEAD
       "dir": "D:\\egg-mysql\\app\\public",
+=======
+      "dir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\app\\public",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
+<<<<<<< HEAD
       "root": "D:\\egg-mysql\\app\\view",
+=======
+      "root": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\app\\view",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -195,8 +231,9 @@
       }
     },
     "cors": {
-      "origin": "*",
-      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+      "origin": "http://localhost:8080",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH",
+      "credentials": true
     },
     "env": "local",
     "name": "mysql",
@@ -217,6 +254,7 @@
         "declarations": true
       },
       "dependencies": {
+        "@alicloud/pop-core": "^1.7.10",
         "egg": "^2.15.1",
         "egg-cors": "^2.2.3",
         "egg-mysql": "^3.0.0",
@@ -256,9 +294,15 @@
       "author": "",
       "license": "MIT"
     },
+<<<<<<< HEAD
     "baseDir": "D:\\egg-mysql",
     "HOME": "C:\\Users\\Administrator",
     "rundir": "D:\\egg-mysql\\run",
+=======
+    "baseDir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql",
+    "HOME": "C:\\Users\\Administrator",
+    "rundir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\run",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     "dump": {
       "ignore": "<Set>"
     },
@@ -290,7 +334,11 @@
       "returnRawBody": true
     },
     "logger": {
+<<<<<<< HEAD
       "dir": "D:\\egg-mysql\\logs\\mysql",
+=======
+      "dir": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\logs\\mysql",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -352,7 +400,7 @@
       "listen": {
         "path": "",
         "port": 8000,
-        "hostname": ""
+        "hostname": "localhost"
       }
     },
     "clusterClient": {
@@ -387,8 +435,13 @@
         "jsonp"
       ],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.1.0"
     },
     "session": {
@@ -398,8 +451,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "3.2.0"
     },
     "i18n": {
@@ -409,8 +467,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.1.1"
     },
     "watcher": {
@@ -420,8 +483,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "3.1.1"
     },
     "multipart": {
@@ -433,8 +501,13 @@
         "schedule"
       ],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.10.3"
     },
     "security": {
@@ -446,8 +519,13 @@
         "session"
       ],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.8.0"
     },
     "development": {
@@ -461,8 +539,13 @@
       "env": [
         "local"
       ],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.7.0"
     },
     "logrotator": {
@@ -474,8 +557,13 @@
       ],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "3.1.0"
     },
     "schedule": {
@@ -485,8 +573,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "3.6.6"
     },
     "static": {
@@ -496,8 +589,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.2.0"
     },
     "jsonp": {
@@ -509,8 +607,13 @@
         "security"
       ],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.0.0"
     },
     "view": {
@@ -520,8 +623,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.1.2"
     },
     "mysql": {
@@ -531,8 +639,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "3.0.0"
     },
     "cors": {
@@ -542,8 +655,13 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
+<<<<<<< HEAD
       "from": "D:\\egg-mysql\\config\\plugin.js",
       "path": "D:\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors",
+=======
+      "from": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-cors@2.2.3@egg-cors",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       "version": "2.2.3"
     }
   }

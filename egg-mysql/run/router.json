@@ -15,12 +15,16 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
+<<<<<<< HEAD
     "path": "/getShopping",
     "regexp": "/^\\/getShopping(?:\\/(?=$))?$/",
+=======
+    "path": "/publishMenu",
+    "regexp": "/^\\/publishMenu(?:\\/(?=$))?$/",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     "stack": [
       "wrappedController"
     ]
@@ -31,8 +35,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/publishMenu",
-    "regexp": "/^\\/publishMenu(?:\\/(?=$))?$/",
+    "path": "/getAllMenu",
+    "regexp": "/^\\/getAllMenu(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -103,6 +107,18 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/getComment",
+    "regexp": "/^\\/getComment(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/login",
     "regexp": "/^\\/login(?:\\/(?=$))?$/",
     "stack": [
@@ -115,20 +131,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/delpro",
-    "regexp": "/^\\/delpro(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
-    "path": "/uppro",
-    "regexp": "/^\\/uppro(?:\\/(?=$))?$/",
+    "path": "/reg",
+    "regexp": "/^\\/reg(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -141,6 +145,30 @@
     "paramNames": [],
     "path": "/uploadimg",
     "regexp": "/^\\/uploadimg(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/smsverif",
+    "regexp": "/^\\/smsverif(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/verifLogin",
+    "regexp": "/^\\/verifLogin(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

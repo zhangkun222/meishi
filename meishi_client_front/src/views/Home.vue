@@ -1,7 +1,12 @@
 <template>
   <div class="home">
+<<<<<<< HEAD
     <top-nav :style="style1" v-bind:datasrc='src'></top-nav>
     <div class="slideshow" ref="backTop">
+=======
+    <top-nav></top-nav>
+    <div class="slideshow">
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       <div>
         <el-carousel :interval="5000" arrow="always">
           <el-carousel-item v-for="item in bannerArr" :key="item.id">
@@ -17,11 +22,15 @@
         </el-carousel>
       </div>
 
+<<<<<<< HEAD
       <div
         class="banner-searchbox"
         ref="sortMenu"
         @scroll.passive="getScroll($event)"
       >
+=======
+      <div class="banner-searchbox">
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
         <input
           type="text"
           placeholder="搜索食谱/食材"
@@ -59,7 +68,11 @@
             </div>
           </div>
           <!-- 1 -->
+<<<<<<< HEAD
           <div class="mealsimg moni" v-if="moni">
+=======
+          <div class="mealsimg moni" v-if="moni" >
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
             <div class="imgarr" v-for="(items, index) in imgArr" :key="index">
               <div class="item-img"><img :src="items.img" /></div>
               <div class="item-title">
@@ -137,6 +150,10 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+    <footer-nav></footer-nav>
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
   </div>
 </template>
 
@@ -147,14 +164,18 @@ import banner2 from "@/assets/img/banner2.jpg";
 import banner3 from "@/assets/img/banner3.jpg";
 import banner4 from "@/assets/img/banner4.jpg";
 import menuimg from "@/assets/img/menu.png";
+<<<<<<< HEAD
 import top_logo from "@/assets/top-logo.png";
 import logo from "@/assets/logo.png";
 
 
+=======
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
 
 export default {
   data() {
     return {
+<<<<<<< HEAD
       src:logo,
       style1: "background-color: transparent;color: #000;height:81px;  width: 100%;",
       style: [
@@ -164,6 +185,11 @@ export default {
       moni: 1,
       aft: "",
       eve: "",
+=======
+      moni:1,
+      aft:"",
+      eve:"",
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
       a: 1,
       mealnum: 1,
       infoArr: [
@@ -237,28 +263,47 @@ export default {
         case "早餐":
           this.a = 1;
           this.mealnum = 1;
+<<<<<<< HEAD
           this.moni = 1;
           this.aft = "";
           this.eve = "";
+=======
+          this.moni=1;
+          this.aft="";
+          this.eve="";
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
           break;
         case "午餐":
           this.a = 2;
           this.mealnum = 2;
+<<<<<<< HEAD
           this.moni = "";
           this.aft = 2;
           this.eve = "";
+=======
+          this.moni="";
+          this.aft=2;
+          this.eve="";
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
           break;
         case "晚餐":
           this.a = 3;
           this.mealnum = 3;
+<<<<<<< HEAD
           this.moni = "";
           this.aft = "";
           this.eve = 3;
+=======
+          this.moni="";
+          this.aft="";
+          this.eve=3;
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
           break;
       }
       console.log(e.target.innerHTML.length);
     },
   },
+<<<<<<< HEAD
   mounted() {
     // 滚动条的获取
 
@@ -286,20 +331,32 @@ export default {
       true
     );
   },
+=======
+  // name: "Home",
+  // components: {
+  //  Home
+  // },
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
 };
 </script>
 
 <style lang="scss">
 .el-carousel__container {
+<<<<<<< HEAD
   background-color: #fff;
+=======
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
   position: relative;
   height: 740px !important;
 }
 .slides-title {
   font-size: 60px;
   color: #fff;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
   line-height: 66px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -318,7 +375,11 @@ export default {
 }
 .indexs {
   width: 100%;
+<<<<<<< HEAD
   height: 3000px; //整个高度
+=======
+  height: 3000px;//整个高度
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
   background-color: white;
 }
 .slideshow-indexs {
@@ -371,7 +432,10 @@ export default {
   height: 2422px;
   background-color: rgb(245, 235, 244);
   & > .three-meals {
+<<<<<<< HEAD
     text-align: left;
+=======
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     position: relative;
     & > .meals-title {
       font-size: 24px;
@@ -416,7 +480,10 @@ export default {
   // background-color: #fff;
 }
 .meals-title {
+<<<<<<< HEAD
   width: 200px;
+=======
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
   font-size: 24px;
   color: #272b2c;
   letter-spacing: -0.4px;

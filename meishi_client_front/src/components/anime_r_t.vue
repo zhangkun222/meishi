@@ -85,8 +85,8 @@ export default {
         &:nth-child(2n + 1) {
           margin-right: 30px;
         }
-        &:last-child {
-        }
+        // &:last-child {
+        // }
         text-decoration: none;
         display: inline-block;
         &:hover {

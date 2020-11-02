@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "keys": "D:\\egg-mysql\\config\\config.default.js",
   "middleware": "D:\\egg-mysql\\config\\config.default.js",
   "security": {
@@ -53,10 +54,67 @@
     "ssrf": {
       "ipBlackList": "D:\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
       "checkAddress": "D:\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+=======
+  "keys": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+  "middleware": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "ignoreJSON": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "type": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "useSession": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "cookieName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "sessionName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "headerName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "bodyName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "queryName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "refererWhiteList": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.local.js",
+      "maxAge": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "policy": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "checkAddress": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     }
   },
   "mysql": {
     "client": {
+<<<<<<< HEAD
       "host": "D:\\egg-mysql\\config\\config.default.js",
       "port": "D:\\egg-mysql\\config\\config.default.js",
       "user": "D:\\egg-mysql\\config\\config.default.js",
@@ -129,10 +187,92 @@
     "eventSources": {
       "default": "D:\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
       "development": "D:\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+=======
+      "host": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "port": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "user": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "password": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "database": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
+    },
+    "default": {
+      "database": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+      "connectionLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+    },
+    "app": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+    "agent": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+  },
+  "cluster": {
+    "listen": {
+<<<<<<< HEAD
+      "path": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "port": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "hostname": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+=======
+      "path": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "hostname": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+      "port": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
+    }
+  },
+  "cors": {
+    "origin": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+    "allowMethods": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+    "credentials": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\config\\config.default.js",
+    "autoFields": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldSize": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fields": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileSize": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "files": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "whitelist": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "tmpdir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "key": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "encrypt": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
+      "development": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
     }
   },
   "customLogger": {
     "scheduleLogger": {
+<<<<<<< HEAD
       "consoleLevel": "D:\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js",
       "file": "D:\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
     }
@@ -312,4 +452,193 @@
     "responseTimeout": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
   },
   "onClientError": "D:\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+=======
+      "consoleLevel": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js",
+      "file": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "fastReady": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideIgnore": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "mapping": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
+  },
+  "env": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "name": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "cookies": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "proxy": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "maxIpsCount": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "maxProxyCount": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "protocolHeaders": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "ipHeaders": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "hostHeaders": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "version": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "description": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "private": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+<<<<<<< HEAD
+      "egg": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-scripts": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+=======
+      "@alicloud/pop-core": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-scripts": "C:\\Users\\Administrator\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+>>>>>>> 79685e5d06535f4a33d783a9185c3e1ac5ee42d3
+    },
+    "devDependencies": {
+      "autod": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "autod-egg": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-bin": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-ci": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "egg-mock": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "eslint": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "eslint-config-egg": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "stop": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "dev": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "debug": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "test": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "test-local": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "cov": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "lint": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "ci": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "autod": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "url": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "author": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "license": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "baseDir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "HOME": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "rundir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "notFound": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "sitefile": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "middlewares": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "httpClient": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "formLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "jsonLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "textLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "strict": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "depth": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "parameterLimit": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "onerror": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "env": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "level": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "consoleLevel": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "outputJSON": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "buffer": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "appLogName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "coreLogName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "agentLogName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "errorLogName": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "logging": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "workerStartTimeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "serverTimeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+  "clusterClient": {
+    "maxWaitTime": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js",
+    "responseTimeout": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+  },
+  "onClientError": "C:\\Users\\lenovo\\Desktop\\meishi\\egg-mysql\\node_modules\\_egg@2.29.1@egg\\config\\config.default.js"
+>>>>>>> cdb33da2d4f63f703d53b0a9de015961c3cf1622
 }
